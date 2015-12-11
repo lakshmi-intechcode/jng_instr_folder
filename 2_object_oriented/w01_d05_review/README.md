@@ -1,4 +1,4 @@
-# Week 1 Review Topics
+2# Week 1 Review Topics
 
 #### Using Git (from your week 1 day 2 notes)
 
@@ -93,5 +93,65 @@ jason = {
 [http://stackoverflow.com/questions/17134653/difference-between-class-and-instance-methods](http://stackoverflow.com/questions/17134653/difference-between-class-and-instance-methods)
 
 
+
+##### Notes from Review Session
+
+```
+
+class Player:
+
+    hp = 100
+
+    def __init__(self, name, gender, race):
+        self.name = name
+        self.gender = gender
+        self.race = race
+        self.hp = 100
+        self.atk = 10
+        print("Welcome {}".format(name))
+
+    def attack(self):
+        return monster.hp - self.atk 
+
+
+name = input("Hi what is your name?")
+gender = input("Type 1 for Male, enter 2 for Female")
+race = input("are you a human, elf, or dwarf")
+
+//Example code, not tested
+//if gender != male and gender != female:
+//    print("you did not choose an option")
+
+
+//while player.hp > 0 and monster.hp > 0:
+//    run the battle method
+//        method option to run or to stay and fight
+
+
+player = Player(name, gender, race)
+
+
+class Player:
+    def __init__(self, name):
+        self.name = name 
+        self.gender = "n/a"
+
+
+player = Player(name=input("What is your name?\n"))
+
+
+class Game:
+
+    def __init__(self):
+        blah = blah
+
+    def gender_setup(self):
+        gender = input("enter 1 for female, 2 for male")
+
+        while gender != 1 and gender != 2:
+            print("sorry that is not an option")
+            self.gender_setup
+
+```
 
 
