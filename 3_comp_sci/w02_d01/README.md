@@ -33,18 +33,39 @@
 	* Make the B next pointer point to the X node
 
 ```
-* temp = B.net
+* temp = B.next
 * B.next = X
 * X.next = temp
+
+OR more simply
+
+* X.next = C
+* B.next = X
 ```
-* Traveling through an entire linked list one by one is `Big O of n` or "O(n)"
+* The top way with `temp` takes into account how we have to loop through a linked list. The second set in the box is just for demonstration
+* Remember that the only sense of direction we get in a linked list is through their `next` pointer. This is the reason why we can't just make 
+*Traveling through an entire linked list one by one is `Big O of n` or "O(n)"
 * If nodes next pointer is `null` we know we are at the end of the list
+* 
 
 * Check out the CS50 video on Linked List [here](https://www.youtube.com/watch?v=5nsKtQuT6E8)
 
 #### Part 2 - Binary Search and Linear Search
 
+* Linear Search is easier to program
+	* You are looping through an array one by one until you find what you are looking for
+	* "O(n)" - going through each value
+* Binary Search is harder to program but more efficient
+	* This only works with a sorted array/list
+	* "O(log n)" - binary search way. this is usually the fastest 
+* 
+
+***Videos***
+
 * [Youtube Video One](https://www.youtube.com/watch?v=wNVCJj642n4)
 * [Just Binary Search](https://www.youtube.com/watch?v=JQhciTuD3E8)
+
+
+
 
 
