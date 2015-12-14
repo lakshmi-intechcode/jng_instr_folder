@@ -1,4 +1,4 @@
-2# Week 1 Review Topics
+# Week 1 Review Topics
 
 #### Using Git (from your week 1 day 2 notes)
 
