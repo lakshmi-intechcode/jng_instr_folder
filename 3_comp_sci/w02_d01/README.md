@@ -44,11 +44,19 @@ OR more simply
 ```
 * The top way with `temp` takes into account how we have to loop through a linked list. The second set in the box is just for demonstration
 * Remember that the only sense of direction we get in a linked list is through their `next` pointer. This is the reason why we can't just make 
-*Traveling through an entire linked list one by one is `Big O of n` or "O(n)"
+* Traveling through an entire linked list one by one is `Big O of n` or "O(n)"
 * If nodes next pointer is `null` we know we are at the end of the list
-* 
 
-* Check out the CS50 video on Linked List [here](https://www.youtube.com/watch?v=5nsKtQuT6E8)
+
+#### Part 2 - Big O Notation
+
+* Big O Notation is a way to check/describe how efficient an algorithm is. That is how long it takes to run
+* Looping through a list of items in a linear fashion will be a `O(n)`
+* Having a loop nested inside of another loop will be an `O(n^2)`
+* Using the Binary Search would be a `O(logn)`
+* We only use the most significant terms
+	* If we had a function with two for loops in it it would be `O(2n)`. However, we would drop the 2 from that equation because as n gets expomemtially large the two doesn't matter. 
+	* If we had a function with three loops, loop A was a stand alone, and loop C was nested in loop B it would be `O(n + n^2)`. We would drop the smaller n in this equation for the same reason as the previous example
 
 #### Part 2 - Binary Search and Linear Search
 
@@ -56,16 +64,30 @@ OR more simply
 	* You are looping through an array one by one until you find what you are looking for
 	* "O(n)" - going through each value
 * Binary Search is harder to program but more efficient
-	* This only works with a sorted array/list
+	* This only works with a sorted array/list	
 	* "O(log n)" - binary search way. this is usually the fastest 
-* 
 
-***Videos***
 
-* [Youtube Video One](https://www.youtube.com/watch?v=wNVCJj642n4)
+#### Videos and Tutorials
+
+***Big O Notation***
+
+* [Wiki](https://en.wikipedia.org/wiki/Binary_search_algorithm)
+* [Interview Cake](https://www.interviewcake.com/article/python/big-o-notation-time-and-space-complexity)
+
+***Linked Lists***
+
+* [CS50 Youtube Video](https://www.youtube.com/watch?v=5nsKtQuT6E8)
+
+***Linear and Binary Search***
+
+* [Youtube Video on both](https://www.youtube.com/watch?v=wNVCJj642n4)
 * [Just Binary Search](https://www.youtube.com/watch?v=JQhciTuD3E8)
+* [Just Linear Search](https://www.youtube.com/watch?v=iwo5WAldDks)
 
+***Assert Method***
 
+* [Tutorials Point](http://www.tutorialspoint.com/python/assertions_in_python.htm)
 
 
 
