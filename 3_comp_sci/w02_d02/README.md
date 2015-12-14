@@ -61,6 +61,12 @@ Without using the `reverse` method reverse the string "Hello World"
 
 ![](https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif)
 
+#### Resources
+
+* [Stack Wiki](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)
+* [Queue Wiki](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)
+* [Bubble Wiki](https://en.wikipedia.org/wiki/Bubble_sort)
+* [Insertion Wiki](https://en.wikipedia.org/wiki/Insertion_sort)
 
 
 
