@@ -1,4 +1,4 @@
-# Trying To Organize HW Assignments
+# Organize HW and Lesson Schedule
 
 ### Week 1
 
