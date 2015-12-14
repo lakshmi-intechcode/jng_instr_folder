@@ -13,7 +13,6 @@
 * We are covering some computer science topics to help us think efficiently while programming
 
 ---
-
 ### Lesson
 
 #### Part 1 - Linked List
@@ -104,7 +103,6 @@ def my_func():
 	* This only works with a sorted array/list	
 	* Identify where the middle is, cut this in half, search through that half
 	* "O(log n)" - binary search way. this is usually the fastest 
-
 
 #### Videos and Tutorials
 

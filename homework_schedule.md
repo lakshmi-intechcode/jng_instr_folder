@@ -48,37 +48,31 @@
 ### Week 2
 
 ##### Day 1
-* [linked list](https://www.youtube.com/watch?v=5nsKtQuT6E8)
+* Linked List
 * nested arrays - fun exercise. multiple arrays. calling them using manually made methods inside of a class. (think similarly to a very basic ORM analogy)
-* text-adventure (Remove This)
+* binary search
+* linear search
 
 ##### Day 2
 * stack - cannot use built in methods, must make own
 * queue - cannot use built in methods, must make own
-* binary search tree
+* bubble
+* insertion
 
 ##### Day 3
-* bubble sort
-* insertion sort 
-* linear search
-* binary search
-* benchmark
-
-##### Day 4
+* timeit - testing
 * merge sort
 * quick sort
+* binary search tree
+
+##### Day 4
+* MVC 
 
 ##### Day 5
 * hangman
 * PIG
 
 ##### Lecture Ideas
-* Try to get through CS topics by Wednesday
-	* Monday - Linked Lists, linear, binary,
-	* Tuesday - Stack, Queue, bubble, insertion
-	* Wednesday - merge sort, quick sort, Binary Search Tree
-	
-* The exercises for CS topics will be done mainly using classes
 
 
 * By Thursday we can start MVC
