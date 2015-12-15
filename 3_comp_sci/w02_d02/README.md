@@ -63,8 +63,8 @@ Without using the `reverse` method reverse the string "Hello World"
 
 #### Resources
 
-* [Stack Wiki](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)
-* [Queue Wiki](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)
+* [Stack Wiki](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
+* [Queue Wiki](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
 * [Bubble Wiki](https://en.wikipedia.org/wiki/Bubble_sort)
 * [Insertion Wiki](https://en.wikipedia.org/wiki/Insertion_sort)
 
