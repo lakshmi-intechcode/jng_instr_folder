@@ -41,7 +41,13 @@
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Binary_search_tree.svg/300px-Binary_search_tree.svg.png)
 
+***NOTE***
+
+* Although the regular binary search is a "O(log n)" using it to insert or delete a value is still "O(n)"
+* With the binary search tree searching, inserting, and deleting, are all "O(log n)"
+
 #### Resources
 
+* [CS50 Merge Sort](https://www.youtube.com/watch?v=EeQ8pwjQxTM)
 * [Binary Search Tree Wiki](https://en.wikipedia.org/wiki/Binary_search_tree)
 * [Binary Search Tree Youtube Video](https://www.youtube.com/watch?v=pYT9F8_LFTM)
