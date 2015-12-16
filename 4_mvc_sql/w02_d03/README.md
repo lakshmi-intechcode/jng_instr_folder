@@ -178,7 +178,7 @@ SELECT * FROM william;
 | Mugatu                 | Zoolander        | 2001 |
 | Chazz Michael Michaels | The Campaign     | 2007 |
 
-* Run SELECT * FROM to see all the movies in the tomcrud database
+* Run SELECT * FROM to see all the movies in the william table
 
 ---
 
