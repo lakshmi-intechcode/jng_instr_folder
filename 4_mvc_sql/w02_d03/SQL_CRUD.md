@@ -228,4 +228,6 @@ DELETE FROM william WHERE character = "Mugatu"
 #### Part 4 - Resources
 
 - [ERD Draw IO](https://www.draw.io/)
+- [Beginner SQL Tutorial](http://beginner-sql-tutorial.com/sql-query-tuning.htm)
+- [SQL Course](http://www.sqlcourse.com/)
 
