@@ -17,22 +17,6 @@
 
 ### Lesson
 
-* Show them how to make a create file
-* Show them how to make a seed file
-* Show them how to connect to database
-* Show them how to grab and return values from a database
-* Python sqlite3 module commands
-	* sqlite3 comes shipped with every version of python after 2.5 so we can just import it. We do not need to go and download it. 
-	* sqlite3.connect
-	* connect.cursor
-	* cursor.execute
-	* connect.execute
-	* connect.commit
-	* connect.close
-	* cursor.fetchall
-* Data sanitization
-
-
 #### Part 1 - Recap of Yesterday and how does SQLite fall into our MVC app
 
 * The concept of MVC is to write organized code
@@ -129,6 +113,14 @@ print("Looks like we're all good")
 * `.commit()` - You only use this on the manipulation of data in your DB
 * `.close()` - closing your connection
 
+***SANITIZE DATA***
+
+* Notice the question marks in the example above. 
+* This is known as sanitizing your data
+* Everything inside the doc string (the triple quotes) will be read as SQL syntax. Because of this, if some person wanted to submit a username as `DROP TABLES` which is a SQL statement for destroying your tables, it will run.
+* With the question marks we ensure that every value being passed into our query is not read as a SQL statement but just as a string being passed in. 
+
+
 #### Part 4 - Models
 
 * Now time for actually talking to the Models
@@ -175,11 +167,6 @@ class Classname:
 		
 		return the_variable.fetchall()
 ```
-
-
-
-#### Part 5 - Sanitize Data - fix this. move it up
-
 
 #### Resources
 
