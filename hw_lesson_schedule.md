@@ -86,14 +86,29 @@
 * Check out their projects
 	* RPG
 	* Blackjack
-* Talk introduce relationships?
+* Review? 
+	* MVC
+	* CRUD
+	* SQL
+	* OOP
+* Introduce relationships?
+	* Show them joins?
+
 
 **Exercises**
+
 * create a database from csv file
 * querying a database
 * schema designer
 * mortgage calculator
 * loan or no loan
+
+**Edits**
+
+* Start with a schema designer? have them build out an erd
+	* erd of what? the csv file? another file? just make some shit up?
+	* maybe an erd that scaffolds into the mortgage calculator or loan/no loan assignment 
+* combine the create a db from a csv and queryinga db?
 
 ##### Day 2
 
