@@ -91,8 +91,9 @@
 	* CRUD
 	* SQL
 	* OOP
-* Introduce relationships?
+* Introduce relationships? How to have multiple tables?
 	* Show them joins?
+	* Foreign Keys?
 
 
 **Exercises**
@@ -109,6 +110,12 @@
 	* erd of what? the csv file? another file? just make some shit up?
 	* maybe an erd that scaffolds into the mortgage calculator or loan/no loan assignment 
 * combine the create a db from a csv and queryinga db?
+* Maybe do a music app?
+	* artists
+	* albums
+	* song
+	* Use join?
+* Have to show them out to use the schema designer web application
 
 ##### Day 2
 
@@ -137,9 +144,39 @@
 
 ##### Lecture Ideas
 
+---
 
+### Week 4
 
+##### Day 1
+- ORM
 
+##### Day 2
+- ORM
+
+##### Day 3
+- ORM
+
+##### Day 4
+- ORM
+
+##### Day 5
+- Assessment
+
+***Question***
+
+* Why are we doing ORM's here? 
+* What if I just started with HTML, CSS, JS, and jQuery
+* Is there a point in building their own ORM? Instead of spending a week on it, we can have a head start/more time with Front End. 
+* Teach the concept of ORM and the Django syntax later
+
+***Proposed change***
+
+* Day 1 - HTML, CSS, JS, jQuery
+* Day 2 - HTML, CSS, JS, jQuery
+* Day 3 - HTML, CSS, JS, jQuery
+* Day 4 - Review for Assessment
+* Day 5 - Assessment
 
 
 
