@@ -60,29 +60,67 @@
 * insertion
 
 ##### Day 3
-* timeit - testing
+* MVC
+* SQL
+
+##### Day 4
+* MVC
+* SQL 
+
+##### Day 5
 * merge sort
 * quick sort
 * binary search tree
 
+##### TWO WEEK BREAK
+* RPG game with persistence
+* BlackJack
+
+
+---
+### Week 3
+
+***Coming back from 2 week break***
+
+##### Day 1
+* Check out their projects
+	* RPG
+	* Blackjack
+* Talk introduce relationships?
+
+**Exercises**
+* create a database from csv file
+* querying a database
+* schema designer
+* mortgage calculator
+* loan or no loan
+
+##### Day 2
+
+**Exercises**
+
+* coffee maker
+* vigenere cipher
+* bank software
+* optimizing queries
+
+##### Day 3
+
+**Exercises**
+
+* Terminal trader
+* making an api
+
 ##### Day 4
-* MVC 
+
+**Exercises**
+
+* trader to bank
+* terminal trader extended
 
 ##### Day 5
-* hangman
-* PIG
 
 ##### Lecture Ideas
-
-
-* By Thursday we can start MVC
-* The weekend homework from Thursday onward could be to refactor their RPG game to a Model, View Controller format. Then write a blackjack game following the same format. if not blackjack maybe hangman?
-* 
-* Start MVC
-* Refactor RPG to be an MVC
-* Give them black jack and tell them to build it as an MVC
-* 
-
 
 
 

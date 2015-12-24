@@ -3,21 +3,26 @@
 ### Learning Objectives 
 ***Students Will Be Able To...***
 
-* Merge Sort
-* Quick Sort
-* Binary Search Tree
+* Pseudo code a merge sort
+* Pseudo code a quick sort
+* Diagram a Binary Search Tree
 
 ---
 
 ### Context
 
-* Moar Shit
+* As we discussed earlier there are several computer science topics that are relevant to speed and efficiency in programming. 
+* These will help with logical thinking and pseudo coding future apps
 
 ---
 
 ### Lesson
 
 #### Part 1 - Merge Sort
+
+* What is this
+* Diagram it for them
+* What is the Big O of this
 
 #### Part 2 - Quick Sort
 
