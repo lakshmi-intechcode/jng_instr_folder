@@ -1,4 +1,4 @@
-# HTML/CSS Sprinkles
+# Intro to HTML / CSS
 
 ### Learning Objectives
 ***Students will be able to...***
