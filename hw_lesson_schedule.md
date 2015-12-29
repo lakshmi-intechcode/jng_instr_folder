@@ -82,7 +82,8 @@
 
 ***Coming back from 2 week break***
 
-##### Day 1
+##### Day 1 - Review
+
 * Check out their projects
 	* RPG
 	* Blackjack
@@ -117,7 +118,7 @@
 	* Use join?
 * Have to show them out to use the schema designer web application
 
-##### Day 2
+##### Day 2 - Foreign Keys
 
 **Exercises**
 
@@ -126,14 +127,14 @@
 * bank software
 * optimizing queries
 
-##### Day 3
+##### Day 3 - JOINS
 
 **Exercises**
 
 * Terminal trader
 * making an api
 
-##### Day 4
+##### Day 4 - More MVC
 
 **Exercises**
 

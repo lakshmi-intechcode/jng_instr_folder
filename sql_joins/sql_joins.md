@@ -42,38 +42,125 @@
 
 * We are using more memory to store all this data and build all these relationships
 
-##### Part 2 - AS and ORDER BY
+##### Part 2 - Exercise createdb / seed
 
-* Let's make a createdb file
+***Five Min Exercise***
 
-```
-CREATE TABLE buildings(
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  name TEXT,
-  city TEXT,
-  build_year INTEGER
-);
-
-CREATE TABLE residents(
-  member_id INTEGER PRIMARY KEY AUTOINCREMENT,
-  first_name TEXT,
-  last_name TEXT,
-  residents INTEGER
-);
-```
-
-* Let's make a seed file
-
-
-* Make a database with a Python file
-* Make a Seed file to populate that database with two tables
-* Show them the `AS` statement
-* Show thme the `ORDER BY` statement
+* Make a createdb file and a seed file. 
+* createdb file will have
+	* two tables: `buildings` `residents`
+	* Buildings will have three columns: `name`, `city`, `build_year`
+	* residents will have three columns: `first_name`, `last_name`, `rent`
+	* which table should have the foriegn key? 
+* seed your database with the following information
 
 ```
-SELECT column, column_INT/number AS new_column_name FROM table ORDER BY new_column_name;
+BUILDINGS =[
+	["Empire State", "New York", 1930],
+	["Bradbury", "Los Angeles", 1893],
+	["White House", "Washington D.C.", 1800],
+]
+
+RESIDENTS = [
+	["Jay", "Z", 100000],
+	["Kobe", "Bryant", 90000],
+	["Barack", "Obama", 50000],
+]
 ```
 
+
+---
+***ANSWER***
+
+CREATEDB FILE
+
+```
+import sqlite3
+
+db = sqlite.connect('livingdb')
+
+cursor = db.cursor()
+
+cursor.execute('''
+	CREATE TABLE buildings(
+		id INTEGER PRIMARY KEY AUTOINCREMENT,
+		name TEXT,
+		city TEXT,
+		build_year INTEGER
+	);
+''')
+
+cursor.execute('''
+	CREATE TABLE residents(
+		id INTEGER PRIMARY KEY AUTOINCREMENT,
+		first_name TEXT,
+		last_name TEXT,
+		rent INTEGER,
+		building_id INTEGER,
+		FOREIGN KEY(building_id) AS buildings(id)
+	);
+''')
+
+db.commit()
+db.close()
+```
+
+SEED FILE
+
+```
+import sqlite3
+import pdb
+
+db = 'livingdb'
+
+BUILDINGS =[
+	["Empire State", "New York", 1930],
+	["Bradbury", "Los Angeles", 1893],
+	["White House", "Washington D.C.", 1800],
+]
+
+RESIDENTS = [
+	["Jay", "Z", 100000, 1],
+	["Kobe", "Bryant", 90000, 2],
+	["Barack", "Obama", 50000, 3],
+]
+conn = sqlite3.connect(db)
+c = conn.cursor()
+
+print("Destroying old data")
+c.execute("DELETE FROM buildings")
+c.execute("DELETE FROM residents")
+
+for building in BUILDINGS:
+	c.execute("""
+		INSERT INTO buildings ("name", "city", "build_year") VALUES (?, ?, ?)""",(building[0], building[1], building[2]))
+
+conn.commit()
+
+for resident in RESIDENTS:
+	c.execute("""
+		INSERT INTO residents ("first_name", "last_name", "rent") VALUES (?, ?, ?)""",(resident[0], resident[1], resident[2]))
+
+conn.commit()
+
+c.close()
+```
+
+
+##### Part 3 - AS / ORDER BY
+
+* Now let's take the data from the two tables and order their results the way we want them. 
+* We can even create a new column for this query's output
+* Open up the database using sqlite3 in the terminal
+
+```
+SELECT residents.first_name, residents.last_name, building.city, residents.rent * 12 AS yearly_rent FROM residents ORDER BY yearly_rent;
+```
 
 ##### Part 3 - JOIN and INNER JOIN (Cross Join?)
+
+* Lastly we have the ability to shorten that query even further using the `JOIN` statement in SQL
+
+
+
 

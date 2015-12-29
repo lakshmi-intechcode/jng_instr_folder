@@ -1,6 +1,6 @@
 import sqlite3
 
-db = sqlite3.connect('livingdb')
+db = sqlite.connect('livingdb')
 
 cursor = db.cursor()
 
@@ -18,7 +18,9 @@ cursor.execute('''
 		id INTEGER PRIMARY KEY AUTOINCREMENT,
 		first_name TEXT,
 		last_name TEXT,
-		residents INTEGER
+		rent INTEGER,
+		building_id INTEGER,
+		FOREIGN KEY(building_id) AS buildings(id)
 	);
 ''')
 
