@@ -44,6 +44,27 @@
 
 ##### Part 2 - AS and ORDER BY
 
+* Let's make a createdb file
+
+```
+CREATE TABLE buildings(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT,
+  city TEXT,
+  build_year INTEGER
+);
+
+CREATE TABLE residents(
+  member_id INTEGER PRIMARY KEY AUTOINCREMENT,
+  first_name TEXT,
+  last_name TEXT,
+  residents INTEGER
+);
+```
+
+* Let's make a seed file
+
+
 * Make a database with a Python file
 * Make a Seed file to populate that database with two tables
 * Show them the `AS` statement
