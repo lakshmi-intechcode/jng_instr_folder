@@ -118,7 +118,7 @@
 	* Use join?
 * Have to show them out to use the schema designer web application
 
-##### Day 2 - Foreign Keys
+##### Day 2 - Foreign Keys AND JOINS? or just Foriegn keys
 
 **Exercises**
 
@@ -127,14 +127,27 @@
 * bank software
 * optimizing queries
 
-##### Day 3 - JOINS
+##### Day 3 - JOINS OR API
 
 **Exercises**
 
+* Steal exercises from [sql website](http://www.sqlcourse2.com/joins.html)
+	* have to make a database to query from;
+	 
 * Terminal trader
 * making an api
 
-##### Day 4 - More MVC
+##### Day 4 - API along with MVC reviews? 
+
+***Exercise Ideas***
+
+* OMDB API - Create a movie and user database using the omdb api? You'd have to give them the end point for multiple queries because the documentation only gives them single queries. 
+* [Market On Demand API](http://dev.markitondemand.com/MODApis/) - Terminal Trader Exercise
+
+***Resources***
+
+* [http://www.andrewhavens.com/posts/20/beginners-guide-to-creating-a-rest-api/](http://www.andrewhavens.com/posts/20/beginners-guide-to-creating-a-rest-api/)
+* [http://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask](http://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask)
 
 **Exercises**
 
