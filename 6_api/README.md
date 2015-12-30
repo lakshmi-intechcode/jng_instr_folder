@@ -31,6 +31,7 @@
 * JSON Viewer
 * Explain wrapper
 * Explain Endpoints
+* Python Requests Library
 
 ##### Free APIs
 
@@ -45,8 +46,15 @@
 
 # HOMEWORK IDEAS
 
+##### Wednesday
+
+* OMDB API
+
+##### 
+
 * Use OMDB API
 * Build a wrapper that will allow users to search for movies
 * This wrapper will be imported to a models file
 * The model will hold methods which will take in user input and pass that parameter to the wrapper file to make the request
 * Once that is done build out a MVC application where the user can search a movie and the movie information will populate onto the terminal
+* Spell Buddy api does not need a key. Build onto the RPG app and let them learn D&D spells?

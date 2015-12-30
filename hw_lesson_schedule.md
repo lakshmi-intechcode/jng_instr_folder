@@ -89,53 +89,50 @@
 * Day 3 - api - build your own api? use external api?
 * Day 4 - api mvc
 
-##### Day 1 - Review - Advanced Python? 
+
+# HOMEWORK IDEAS
+
+##### Wednesday
+
+* OMDB API
+
+##### 
+
+* Use OMDB API
+* Build a wrapper that will allow users to search for movies
+* This wrapper will be imported to a models file
+* The model will hold methods which will take in user input and pass that parameter to the wrapper file to make the request
+* Once that is done build out a MVC application where the user can search a movie and the movie information will populate onto the terminal
+* Spell Buddy api does not need a key. Build onto the RPG app and let them learn D&D spells?
+
+
+##### Day 1 - Review / SQL Foreign Keys
 
 * Check out their projects
-	* RPG
-	* Blackjack
-* Review? 
+* Review 
 	* MVC
 	* CRUD
 	* SQL
 	* OOP
-* Advanced Python Topics
-	* List Comprehensions
-	* Generators
-* Introduce relationships? How to have multiple tables?
-	* Show them joins?
-	* Foreign Keys?
-
+* SQL Foreign Keys - Relational Databases - Multiple Tables
 
 **Exercises**
 
-* querying a database
-* mortgage calculator
-* loan or no loan
+* Create db from csv
+* Schema Designer
+* Querying a db
+* Movie database
 
-**Edits**
+##### Day 2 - SQL Joins / More Relational DB
 
-* Start with a schema designer? have them build out an erd
-	* erd of what? the csv file? another file? just make some shit up?
-	* maybe an erd that scaffolds into the mortgage calculator or loan/no loan assignment 
-* combine the create a db from a csv and queryinga db?
-* Maybe do a music app?
-	* artists
-	* albums
-	* song
-	* Use join?
-* Have to show them out to use the schema designer web application
-
-##### Day 2 - Foreign Keys AND JOINS? or just Foriegn keys
+* Talk about SQL Joins
 
 **Exercises**
 
-* coffee maker
-* vigenere cipher
 * bank software
 * optimizing queries
 
-##### Day 3 - JOINS OR API
+##### Day 3 - Intro to API
 
 * What do they need to know about APIS?
 * API - Application Programming Interface
@@ -146,50 +143,35 @@
 
 **Exercises**
 
-* Steal exercises from [sql website](http://www.sqlcourse2.com/joins.html)
-	* have to make a database to query from;
-	 
-* Terminal trader
-* making an api
+* OMDB api - Create a movie and user database using the omdb api. You have to give them to end point for multiple queries because the OMDB documentation sucks ass
 
-##### Day 4 - API along with MVC reviews? 
+##### Day 4 - API extended 
 
 ***Exercise Ideas***
 
-* OMDB API - Create a movie and user database using the omdb api? You'd have to give them the end point for multiple queries because the documentation only gives them single queries. 
 * [Market On Demand API](http://dev.markitondemand.com/MODApis/) - Terminal Trader Exercise
-
-***Resources***
-
-* [http://www.andrewhavens.com/posts/20/beginners-guide-to-creating-a-rest-api/](http://www.andrewhavens.com/posts/20/beginners-guide-to-creating-a-rest-api/)
-* [http://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask](http://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask)
-
-**Exercises**
-
-* trader to bank
-* terminal trader extended
-
-##### Day 5
-
-##### Lecture Ideas
+* Terminal Trader Extended
 
 ---
 
 ### Week 4
 
-##### Day 1
+##### Day 1 - HTML / CSS
 - ORM
 
-##### Day 2
+##### Day 2 - HTML / CSS
 - ORM
 
-##### Day 3
+##### Day 3 - HTML / CSS
 - ORM
 
-##### Day 4
-- ORM
+##### Day 4 - Advanced Python? / MVC Review
+* Advanced Python Topics
+	* List Comprehensions
+	* Generators
 
-##### Day 5
+
+##### Day 5 - Assessment
 - Assessment
 
 ***Question***
