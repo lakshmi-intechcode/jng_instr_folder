@@ -82,7 +82,14 @@
 
 ***Coming back from 2 week break***
 
-##### Day 1 - Review
+##### Notes
+
+* Day 1 - review, sql?  
+* Day 2 - sql foreign keys and joins
+* Day 3 - api - build your own api? use external api?
+* Day 4 - api mvc
+
+##### Day 1 - Review - Advanced Python? 
 
 * Check out their projects
 	* RPG
@@ -92,6 +99,9 @@
 	* CRUD
 	* SQL
 	* OOP
+* Advanced Python Topics
+	* List Comprehensions
+	* Generators
 * Introduce relationships? How to have multiple tables?
 	* Show them joins?
 	* Foreign Keys?
@@ -99,9 +109,7 @@
 
 **Exercises**
 
-* create a database from csv file
 * querying a database
-* schema designer
 * mortgage calculator
 * loan or no loan
 
@@ -128,6 +136,13 @@
 * optimizing queries
 
 ##### Day 3 - JOINS OR API
+
+* What do they need to know about APIS?
+* API - Application Programming Interface
+* REST - Representational State Transfer
+* CRUD - Create, Read, Update, Delete
+* HTTP CRUD - GET, POST, PUT, DELETE
+
 
 **Exercises**
 
