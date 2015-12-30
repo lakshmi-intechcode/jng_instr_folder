@@ -140,7 +140,6 @@
 * CRUD - Create, Read, Update, Delete
 * HTTP CRUD - GET, POST, PUT, DELETE
 
-
 **Exercises**
 
 * OMDB api - Create a movie and user database using the omdb api. You have to give them to end point for multiple queries because the OMDB documentation sucks ass
