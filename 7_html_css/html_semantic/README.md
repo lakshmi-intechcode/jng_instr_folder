@@ -58,3 +58,11 @@
 * aside
 * exercises?
 * Show them inspector
+* Indentation
+* Nesting elements
+* Use Emmet
+* head tag vs body tag
+* tags with attributes inside? 
+* some tags don't need closing tags?
+* what is the source attribute?
+* 

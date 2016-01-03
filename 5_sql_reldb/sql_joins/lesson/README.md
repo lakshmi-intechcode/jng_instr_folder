@@ -156,7 +156,7 @@ c.close()
 SELECT residents.first_name, residents.last_name, buildings.city, residents.rent * 12 AS yearly_rent FROM residents, buildings ORDER BY yearly_rent;
 ```
 
-##### Part 3 - JOIN and INNER JOIN (Cross Join?)
+##### Part 3 - JOIN and INNER JOIN
 
 * Without knowing it we already performed a SQL Join
 * A Join is performed whenever we have a relation, and join two or more tables to return a combined value/values
@@ -165,7 +165,10 @@ SELECT residents.first_name, residents.last_name, buildings.city, residents.rent
 ```
 SELECT residents.first_name, residents.last_name, buildings.city, buildings.name FROM residents INNER JOIN buildings;
 ```
+
+
 * INNER JOIN is the most commonly used join. 
+* There are others but for the purposes of this course we will not be exploring them
 
 
 

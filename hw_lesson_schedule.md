@@ -134,11 +134,12 @@
 
 ##### Day 3 - Intro to API
 
-* What do they need to know about APIS?
 * API - Application Programming Interface
 * REST - Representational State Transfer
 * CRUD - Create, Read, Update, Delete
 * HTTP CRUD - GET, POST, PUT, DELETE
+* Endpoints
+* JSON
 
 **Exercises**
 
@@ -156,7 +157,9 @@
 ### Week 4
 
 ##### Day 1 - HTML / CSS
-- ORM
+
+- Intro to HTML
+- Intro to CSS
 
 ##### Day 2 - HTML / CSS
 - ORM
@@ -173,6 +176,23 @@
 ##### Day 5 - Assessment
 - Assessment
 
+### HOMEWORK IDEAS
+
+##### HTML / CSS HOMEWORK IDEAS
+
+- Build a name tag sign?
+- Build a blog? 
+- Build a navigation bar?
+
+##### JavaScript / jQuery / DOM
+
+- Build tic tac toe? 
+
+##### Advanced Python 
+
+- give them a csv file and have them build lists using list comprehensions
+
+
 ***Question***
 
 * Why are we doing ORM's here? 
@@ -182,11 +202,15 @@
 
 ***Proposed change***
 
-* Day 1 - HTML, CSS, JS, jQuery
-* Day 2 - HTML, CSS, JS, jQuery
-* Day 3 - HTML, CSS, JS, jQuery
+* Day 1 - HTML, CSS, Advanced Python
+* Day 2 - HTML, CSS, Advanced Python
+* Day 3 - HTML, CSS, Advanced Python
 * Day 4 - Review for Assessment
 * Day 5 - Assessment
+
+Week 5 - can fit more javascript and jquery and dom manipulation since we got some html and css out of the way. 
+
+
 
 
 
