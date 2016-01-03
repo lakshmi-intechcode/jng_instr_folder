@@ -3,7 +3,6 @@ SEED YOUR TABLES
 """
 
 import sqlite3
-import pdb
 
 db = 'livingdb'
 

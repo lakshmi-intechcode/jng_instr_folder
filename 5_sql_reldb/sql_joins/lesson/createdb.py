@@ -1,6 +1,6 @@
 import sqlite3
 
-db = sqlite.connect('livingdb')
+db = sqlite3.connect('livingdb')
 
 cursor = db.cursor()
 
@@ -20,7 +20,7 @@ cursor.execute('''
 		last_name TEXT,
 		rent INTEGER,
 		building_id INTEGER,
-		FOREIGN KEY(building_id) AS buildings(id)
+		FOREIGN KEY(building_id) REFERENCES buildings(id)
 	);
 ''')
 

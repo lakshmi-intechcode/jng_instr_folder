@@ -97,7 +97,7 @@ cursor.execute('''
 		last_name TEXT,
 		rent INTEGER,
 		building_id INTEGER,
-		FOREIGN KEY(building_id) AS buildings(id)
+		FOREIGN KEY(building_id) REFERENCES buildings(id)
 	);
 ''')
 
@@ -109,7 +109,6 @@ SEED FILE
 
 ```
 import sqlite3
-import pdb
 
 db = 'livingdb'
 
@@ -147,19 +146,26 @@ c.close()
 ```
 
 
-##### Part 3 - AS / ORDER BY
+##### Part 3 - AS / ORDER BY / JOINS
 
 * Now let's take the data from the two tables and order their results the way we want them. 
 * We can even create a new column for this query's output
 * Open up the database using sqlite3 in the terminal
 
 ```
-SELECT residents.first_name, residents.last_name, building.city, residents.rent * 12 AS yearly_rent FROM residents ORDER BY yearly_rent;
+SELECT residents.first_name, residents.last_name, buildings.city, residents.rent * 12 AS yearly_rent FROM residents, buildings ORDER BY yearly_rent;
 ```
 
 ##### Part 3 - JOIN and INNER JOIN (Cross Join?)
 
-* Lastly we have the ability to shorten that query even further using the `JOIN` statement in SQL
+* Without knowing it we already performed a SQL Join
+* A Join is performed whenever we have a relation, and join two or more tables to return a combined value/values
+* Other syntax to do that would be this
+
+```
+SELECT residents.first_name, residents.last_name, buildings.city, buildings.name FROM residents INNER JOIN buildings;
+```
+* INNER JOIN is the most commonly used join. 
 
 
 
