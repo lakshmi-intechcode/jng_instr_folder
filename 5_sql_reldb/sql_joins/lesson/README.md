@@ -165,8 +165,6 @@ SELECT residents.first_name, residents.last_name, buildings.city, residents.rent
 ```
 SELECT residents.first_name, residents.last_name, buildings.city, buildings.name FROM residents INNER JOIN buildings;
 ```
-
-
 * INNER JOIN is the most commonly used join. 
 * There are others but for the purposes of this course we will not be exploring them
 
