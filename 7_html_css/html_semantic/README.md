@@ -56,6 +56,9 @@
 * footer
 * nav
 * aside
+
+
+* block elements vs inline elements
 * exercises?
 * Show them inspector
 * Indentation
