@@ -99,22 +99,10 @@ INSERT INTO members (gym_id, first_name, last_name, age) VALUES (1, 'Arnold', 'S
 ```
 SELECT * FROM members;
 ```
-* Now let's try deleting a gym
-
-```
-DELETE FROM gyms WHERE id = 3;
-```
-* We received an error because of the foreign key connection
-* Now let's try dropping our gym table
-
-```
-DROP TABLE gyms;
-```
-* We got an error because there is a foreign key connection. 
 * Now let's use the foreign key to grab us some items
 
 ```
-SELECT members.first_name FROM members, gyms WHERE members.gym_id=gyms.id;
+SELECT members.first_name FROM members, gyms WHERE members.gym_id=2;
 ```
 
 
