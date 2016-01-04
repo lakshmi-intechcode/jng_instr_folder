@@ -111,3 +111,10 @@ DELETE FROM gyms WHERE id = 3;
 DROP TABLE gyms;
 ```
 * We got an error because there is a foreign key connection. 
+* Now let's use the foreign key to grab us some items
+
+```
+SELECT members.first_name FROM members, gyms WHERE members.gym_id=gyms.id;
+```
+
+

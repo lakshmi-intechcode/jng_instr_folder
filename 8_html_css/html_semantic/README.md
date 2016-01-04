@@ -57,7 +57,7 @@
 * nav
 * aside
 
-
+* Normal Document FLow
 * block elements vs inline elements
 * exercises?
 * Show them inspector
