@@ -7,6 +7,7 @@
 * Use Python Generators to look through a iterable
 * Use Kwargs inside of a Python method to print out unknown amount of arguments
 * Declare specific methods to be "Class Methods"
+* Python Collections
 
 ---
 ### Context
@@ -20,8 +21,9 @@
 
 * Python comes with the ability to make 
 
-
 ##### Part 2 - Generators
+
+* Generators allow us to blah blah
 
 ##### Part 3 - Kwargs
 
