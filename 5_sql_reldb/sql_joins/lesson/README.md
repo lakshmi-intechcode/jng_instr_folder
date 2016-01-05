@@ -168,6 +168,7 @@ SELECT residents.first_name, residents.last_name, buildings.city, buildings.name
 * INNER JOIN is the most commonly used join. 
 * There are others but for the purposes of this course we will not be exploring them
 
+![](http://www.securesolutions.no/wp-content/uploads/2014/07/joins-1.jpg)
 
 
 
