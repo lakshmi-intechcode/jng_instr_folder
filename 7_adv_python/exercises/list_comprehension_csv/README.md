@@ -5,6 +5,11 @@
 * Okay so I couldn't find a easily downloadable file for fun data like movies or music, so we're going to stick with the population file from the lecture. For this assignment we will be using list comprehensions to complete all the iterating exercises. 
 * We'll begin with some more easy list comprehensions then move towards importing and filtering through the csv file. 
 
+***NOTE***
+
+* Don't forget you have access to Pythons built in methods. (`sort`, `reverse`, and the like)
+
+
 ##### Objective 1
 
 * Take an integer as an argument

@@ -19,13 +19,38 @@
 
 ##### Part 1 - List Comprehensions
 
-* Python comes with the ability to make 
+* Python comes with the ability to give us a list with one line of code
+* List Comprehensions allow us to build a list of values by filtering through an iterable. 
+	* We know that iterables are any data types / data structures that can be looped through. (strings, lists, tuples, and the like)
+* The syntax for a list comprehension will look like this:
+
+```
+[ expression for item in list if conditional ]
+```
+* The expression is what you want to do to each item
+* The for loop is... the for loop
+* The conditional is an optional parameter. 
+* Let's print out a list of all the numbers from 1 to 20
+
+```
+num_list = [num for num in range(20)]
+
+// [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+```
+
+***Five Min Exercise***
+
+* Write a method that will take in a string as an argument
+* Use a list comprehension that will return a list with all the values being vowels
+* Print out the number of vowels from the string that was inputed
 
 ##### Part 2 - Generators
 
 * Generators allow us to blah blah
 
 ##### Part 3 - Kwargs
+
+* Kwargs 
 
 ##### Resources
 
