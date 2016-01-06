@@ -50,7 +50,25 @@ num_list = [num for num in range(20)]
 
 ##### Part 3 - Kwargs
 
-* Kwargs 
+* Kwargs stand for Keyword Arguments. 
+* They are some funky Python syntax. I have not seen kwargs used in another language other than Python. Nonetheless it can be useful in some use cases. 
+* `**kwargs` allow us to pass in an unknown amount of arguments to a method using a KEYWORD
+
+```
+kwargs = {"first_name":"Volder", "last_name": "Mort"}
+
+def hello(**kwargs):
+	if len(kwargs) > 0:
+		for key,value in kwargs.items():
+			print("Your {x} is {y}".format(x = key, y = value))
+
+hello(**kwargs)
+```
+
+***Five Min Exercise***
+
+* Write a method that takes in kwargs with multiple key value pairs
+* Return all the values that... BLAH BLAH BLAH FIGURE SOMETHING OUT
 
 ##### Resources
 

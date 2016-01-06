@@ -90,10 +90,19 @@ print(requests.get("http://spell-buddy.herokuapp.com/api/spells?name=magic%20mis
 
 ##### Part 3 - JSON vs XML
 
-* Download JSON Viewer
+* Notice in the last example we used the method `.json()`
+* There are two types of file formats normally supported by API's. They are JSON and XML
+* For the purpose of this class, and more recent up to date technologies we will be using JSON
+* JSON looks like a dictionary
+
+***NOTE***
+
+* XML is used more in line with big banks or larger coorporations with older technologies. 
 
 ##### Part 4 - What are end points?
 
+* Endpoints are a webservice that points us to specific part of an API
+* Many API's will have multiple endpoints and you have to target the right one to grab the data you want
 
 ##### Resources
 
