@@ -29,10 +29,45 @@
 
 ##### Part 2 - API Limitations / API KeysWhat are API keys
 
-* How many API calls do we have?
-* Sometimes we have to pay for access to APIs
-* Not all APIs are free and can be accessed by the public at any given time?
-* How can we ignore API keys, we never want to push a key to github
+* There are so many APIs, some are free and others require payment
+* You may also stumble upon an `API key` requirement
+* API keys are used by a web app to limit who and how many requests can be made to the API
+* Some companies that are free but require a key are Rotten Tomatoes, Twitter, Facebook, Google Maps, and many more
+* Usually you will request a key. If and when provided you will have to use that key in your Endpoint call
+* When you get a key to an API make sure to see if and what the limit of requests are.
 
-##### Part 3 - Gitignore
+##### Part 5 - Gitignore and Environmental Variables
+
+* If everybody gets a unique key how can we keep it safe so nobody steals it
+* NEVER PUSH YOUR KEY TO GITHUB
+* You can create a `gitignore` file and choose which files to not push to github
+* You can also use Environmental Variables. 
+
+***Five Min Exercise***
+
+* In yesterdays folder, outside the OMDB folder make a new folder 
+* Create a sqlite3 database in that folder
+* Create a readme file and a py file
+* Create a text file
+* gitignore the text and database files
+* push to github and see what happens
+
+##### Part 3 - RESTful Practices
+
+* We know that we can employ RESTful practices to API operations following CRUD and HTTP Verbs
+* Remember APIs are not only external. Your SQLite MVC applications can and show follow RESTful practices
+* Six Restful Rules From [This Blog](http://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask) and also the [REST Wiki](https://en.wikipedia.org/wiki/Representational_state_transfer#Uniform_interface)
+	* Client-Server
+	* Stateless
+	* Cacheable
+	* Layered System
+	* Uniform Interface
+	* Code on Demand
+
+##### Part 4 - Endpoints and HTTP Verbs
+
+
+
+
+
 
