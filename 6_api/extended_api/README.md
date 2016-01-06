@@ -52,7 +52,9 @@
 * gitignore the text and database files
 * push to github and see what happens
 
-##### Part 3 - RESTful Practices
+##### Part 3 - A Breif extension of RESTful Practices
+
+***It will not make complete sense until next phase when we start building web applications that others can access***
 
 * We know that we can employ RESTful practices to API operations following CRUD and HTTP Verbs
 * Remember APIs are not only external. Your SQLite MVC applications can and show follow RESTful practices
@@ -64,7 +66,16 @@
 	* Uniform Interface
 	* Code on Demand
 
-##### Part 4 - Endpoints and HTTP Verbs
+* The same endpoint can be used multiple times. The HTTP Verb / Method is important in telling the application what the type of request is
+
+
+| HTTP Method | Action                        | Example URI                      |
+|-------------|-------------------------------|----------------------------------|
+| GET         | Grab data for ALL items       | http://movies.com/api/movies     |
+| GET         | Grab data for a specific item | http://movies.com/api/movies/898 |
+| POST        | Create a new item             | http://movies.com/api/movies     |
+| PUT         | Update an existing item       | http://movies.com/api/movies/898 |
+| DELETE      | Delete a specific item        | http://movies.com/api/movies/898 |
 
 
 
