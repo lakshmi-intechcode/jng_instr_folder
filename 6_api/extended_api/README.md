@@ -5,7 +5,7 @@
 
 * Make more request to an external api
 * Wrap your request in Python methods and classes
-* Register for a api key to use later
+* Register for a api key to use later(look at google api)
 
 ---
 ### Context 
@@ -54,7 +54,7 @@
 
 ##### Part 3 - A Breif extension of RESTful Practices
 
-***It will not make complete sense until next phase when we start building web applications that others can access***
+***It may not make complete sense until next phase when we start building web applications that others can access***
 
 * We know that we can employ RESTful practices to API operations following CRUD and HTTP Verbs
 * Remember APIs are not only external. Your SQLite MVC applications can and show follow RESTful practices

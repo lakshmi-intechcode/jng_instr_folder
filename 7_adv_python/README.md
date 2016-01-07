@@ -44,11 +44,24 @@ num_list = [num for num in range(20)]
 * Use a list comprehension that will return a list with all the values being vowels
 * Print out the number of vowels from the string that was inputed
 
-##### Part 2 - Generators
+##### Part 2 - Generators - Controllers - Class Methods
 
 * Generators allow us to blah blah
 
-##### Part 3 - Kwargs
+##### Part 3 - Args and Kwargs
+
+* Python Args and Kwargs allow us to pass in an undefined/unknown number of arguments in a method/function
+	* Remember when the function is created we can set "parameters" to it
+	* When the function is invoked we pass in "arguments"
+
+***Args***
+* Args are used to send in a non-keyword variable length argument list to a function
+* What does this mean in English? 
+* We can use this operation with the syntax `*argv`
+
+* Parameter / Operation
+
+***Kwargs***
 
 * Kwargs stand for Keyword Arguments. 
 * They are some funky Python syntax. I have not seen kwargs used in another language other than Python. Nonetheless it can be useful in some use cases. 

@@ -45,3 +45,4 @@ python3 -i hello.py
 * [Python Tips Args and Kwargs](http://pythontips.com/2013/08/04/args-and-kwargs-in-python-explained/)
 * [Python File IO Tutorials Point](http://www.tutorialspoint.com/python/python_files_io.htm)
 * [What are Generators](https://www.jeffknupp.com/blog/2013/04/07/improve-your-python-yield-and-generators-explained/)
+* [URI Wiki](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)
