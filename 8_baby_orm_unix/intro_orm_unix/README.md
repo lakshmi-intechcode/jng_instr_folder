@@ -37,18 +37,3 @@ SELECT * FROM Artists;
 ```
 Artists.all()
 ```
-
-##### Part 3 - Kwargs
-
-* Kwargs stand for keyword arguments
-
-* What if we wanted to 
-
-
-
-
-
-
-
-
-
