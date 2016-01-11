@@ -6,8 +6,7 @@
 * Use List Comprehensions with a imported csv file
 * Use Python Generators to look through a iterable
 * Use Kwargs inside of a Python method to print out unknown amount of arguments
-* Declare specific methods to be "Class Methods"
-* Python Collections
+* Use Ternary Operators in place of if/else
 
 ---
 ### Context
@@ -32,7 +31,7 @@ condition ? expression1 : expression2
 expression1 if condition else expression2
 ```
 
-***Five Min Exercise
+***Five Min Exercise***
 
 * Take a few minutes to google some examples if you need to
 * Write a ternary operator to 
