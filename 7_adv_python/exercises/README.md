@@ -1,10 +1,11 @@
-# Measuring the Population
+# Advanced Python and Some Population Stuff
 
 ##### Description
 
-* Okay so I couldn't find a easily downloadable file for fun data like movies or music, so we're going to stick with the population file from the lecture. For this assignment we will be using list comprehensions to complete all the iterating exercises. 
-* We'll begin with some more easy list comprehensions then move towards importing and filtering through the csv file. 
-
+* Okay so I couldn't find a easily downloadable file for fun data like movies or music, so we're going to use this bland population data
+* There are multiple prompts in this README. The second half of the homework will be using the population.csv file
+* Once you are finished with these prompts refactor your weekend terminal trader application, and complete the vocabulary review if you have not done so. 
+ 
 ***NOTE***
 
 * Don't forget you have access to Pythons built in methods. (`sort`, `reverse`, and the like)
@@ -19,8 +20,8 @@
 ##### Objective 2 - Vowels
 
 * Take a string as an argument
-* Return a list containing only the vowels in the string in which they appear
-* First try this without a ternary operator, then see if you can refactor it with one
+* Use list comprehension to see if the string is a palindrome
+* Palindrome is a word or phrase that is the same forward as it is backwards
 
 ##### Objective 3 - Reverse
 
@@ -51,7 +52,22 @@
 ```
 * Write a method that will take in a number as an argument and print out all the numbers/fizzbuzz/ in that sequence, USING GENERATORS
 
-##### Objective 5.5 - BONUS 
+##### Objective 6 - Random
+
+* use the random library
+* print out a random number from two given inputs
+* Use A Generator
+
+```
+import random
+
+def rand_num(a,b):
+	pass
+	
+rand_num(34, 98)
+```
+
+##### Objective 6.5 - BONUS 
 
 * Use the timeit module
 * Write a function that will take in a number and print out all numbers from zero to input (Use Lists)
@@ -60,25 +76,25 @@
 
 ### Using Population.csv
 
-##### Objective 6 - States
+##### Objective 7 - States
 
 * How many people live in 'CA'
 * How many people live in 'FL'
 * How many people live in 'NJ'
 
-##### Objective 7 - Age
+##### Objective 8 - Age
 
 * Take in two numbers between 1 and 100. How many people have an age between those given numbers
   
-##### Objective 8 - Ethnicities
+##### Objective 9 - Ethnicities
 
 * Print out the ethnicities and the number of individuals for each ethnicity
 
-##### Objective 9 - Population Ranking
+##### Objective 10 - Population Ranking
 
 * Print out the top 10 most populated states and their population, in order from largest to smallest
 
-##### Objective 10 - Age Compare
+##### Objective 11 - Age Compare
 
 * Write a method where a user can input one state or several states
 * Return the average age of all the people in those state, in order from highest to lowest

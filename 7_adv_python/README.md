@@ -65,6 +65,15 @@ num_list = [num for num in range(20)]
 * Use a list comprehension that will return a list with all the values being vowels
 * Print out the number of vowels from the string that was inputed
 
+***Answer***
+
+```
+def vowels(str):
+  vowels = "aeiou"
+  return [char for char in str if char in vowels]
+```
+
+
 ##### Part 2 - Generators - Controllers - Class Methods
 
 ***Five Min Exercise*** 
