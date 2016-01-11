@@ -37,3 +37,15 @@ SELECT * FROM Artists;
 ```
 Artists.all()
 ```
+* This can be called at any time a user wants to search for ALL artists
+* How might we do this if we wanted to actually have some where conditions? return a specific value?
+
+```
+SELECT * FROM Artists WHERE name = "Linkin Park";
+```
+* With an ORM this may look like
+
+```
+Artists.filter(name = "Linkin Park")
+```
+* What if we had multiple conditions? What can we use for that? (**Kwargs)

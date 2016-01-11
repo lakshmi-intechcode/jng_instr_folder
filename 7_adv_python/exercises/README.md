@@ -15,9 +15,8 @@
 
 * Take an integer as an argument
 * Return a list where all values are the even numbers up until the argument
-* Use a ternary operatory
 
-##### Objective 2 - Vowels
+##### Objective 2 - Palindrome
 
 * Take a string as an argument
 * Use list comprehension to see if the string is a palindrome
