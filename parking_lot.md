@@ -46,3 +46,5 @@ python3 -i hello.py
 * [Python File IO Tutorials Point](http://www.tutorialspoint.com/python/python_files_io.htm)
 * [What are Generators](https://www.jeffknupp.com/blog/2013/04/07/improve-your-python-yield-and-generators-explained/)
 * [URI Wiki](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)
+* [Why Class Methods Stack OverFlow 1](http://stackoverflow.com/questions/10586787/when-should-i-use-classmethod-and-when-def-methodself)
+* [Why Class Methods Stack OverFlow 2](http://stackoverflow.com/questions/38238/what-are-class-methods-in-python-for)
