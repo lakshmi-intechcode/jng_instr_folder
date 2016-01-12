@@ -55,5 +55,7 @@ Artists.filter(name = "Linkin Park")
 * `setattr()` - This is used to set an attribute to an instance of a class. It takes in three parameters. The class name, the attribute name, and the value. How might you use this with kwargs? 
 * `hasattr()` - This will check for an attribute in a instance. It will take in two parameters. The name of the class and the property you're looking for
 	* If you see documentation for `getattr()` we suggest using hasattr over that because getattr can return an error and make it seem like it does not exists at all. 
+* [Blog for setattr and hasattr](http://www.dotnetperls.com/type-python)
 * `class.__name__` - This is used to get our class name as a string
+* Check out this [stack overflow answer](http://stackoverflow.com/questions/18326719/python-class-variable-name-vs-name) for `__name__` 
 * `**kwargs` - we already studied this. Keyword arguments!!! wooooo
