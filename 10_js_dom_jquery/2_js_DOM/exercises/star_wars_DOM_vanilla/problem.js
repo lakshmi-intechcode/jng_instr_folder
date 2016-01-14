@@ -5,78 +5,55 @@
 		"Luke Skywalker",
 		"Obi Wan Kenobi"
 	];
-
 	var millenium = [
 		"Han Solo",
 		"Chewbacca"
 	];
-
 	var royalty = "Leia Organa";
-
 	var darkside = "Darth Vader";
-//combine characters for falcon
-	var heroes = jedi.concat(millenium);
 
+//combine characters for falcon
+	var heroes = 
+
+//Values for Control Flow with click events
 	var time = "arrive";
 	var escape = false;
 
 	///////////////////////// Making Your Story /////////////////////////
-	var tatooine = document.getElementById("tatooine");
-	var falcon = document.getElementById("falcon");
-	var deathStar = document.getElementById("death");
-	var xwing = document.getElementById("wing");
+
+//target the different DOM elements
+	var tatooine = 
+	var falcon = 
+	var deathStar = 
+	var xwing = 
 
 	var findLuke = function(){
-		//make obi wan and luke as an unordered list in tatooine
-
-		for (var i = 0; i < jedi.length; i++){
-			var div = document.createElement("div");
-			div.innerHTML = jedi[i];
-			div.setAttribute("class", "jedi");
-			tatooine.appendChild(div);
-		}
+		// Make divs that will have the text in the jedi array
+		// One div for obi wan and one for luke
+		// These divs will have a class called jedi
+		// These divs should be appended to tatooine
 	};
 
 	var leaveTatooine = function(){
-		// add list together, then use for loop
-		// make obi wan, luke, han, and chewy all appear in the millenium falcon
-		// remove luke and obi wan from tatooine
-		var remove = document.getElementsByClassName("jedi");
-		remove_length = remove.length
-		for (var i = 0; i < remove_length; i++){
-			tatooine.removeChild(remove[0])
-		};
-
-		for (var i = 0; i<heroes.length; i++){
-			var div = document.createElement("div");
-			div.innerHTML = heroes[i];
-			div.setAttribute("class", "heroes");
-			falcon.appendChild(div);
-		};
+		// Remove Obi Wan and Luke from Tatooine
+		// Put Obi Wan, Luke, Han, and Chewy on the Millenium Falcon
+		// This will be easier if you combine these two groups using the already defined "heroes" variable up top
+		// Give each hero element their own div
+		// Give all the newly created divs a class called "heroes"
+		// Append all the new heroes divs to the Millenium Falcon
 	};
 
 	var findLeia = function(){
-		//remove everybody from the falcon
-		//add them all to the death star
-		//add leia to the death star
-
-		var remove = document.getElementsByClassName("heroes");
-		remove_length = remove.length
-		for (var i = 0; i<remove_length; i++){
-			falcon.removeChild(remove[0]);
-		};
-
-		heroes.push(royalty);
-
-		for (var i=0; i<heroes.length; i++){
-			var div = document.createElement("div");
-			div.innerHTML = heroes[i];
-			div.setAttribute("class", "heroes");
-			deathStar.appendChild(div);
-		};
+		// Remove all characters from the falcon
+		// Put them on the Death Star
+		// Put Leia on the death Star
+		// Leia is in her own variable right now, how can we put her with the other heroes?
+		// Give all the heroes their own div elements
+		// Append the hero divs to the death star
 	};
 
 	var vaderAndObi = function(){
+		// OH MAN DARTH VADER HAS APPEARED
 		//append vader to the death star
 		//remove Obi Wan Kenobi
 
