@@ -48,3 +48,17 @@ python3 -i hello.py
 * [URI Wiki](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)
 * [Why Class Methods Stack OverFlow 1](http://stackoverflow.com/questions/10586787/when-should-i-use-classmethod-and-when-def-methodself)
 * [Why Class Methods Stack OverFlow 2](http://stackoverflow.com/questions/38238/what-are-class-methods-in-python-for)
+
+
+### Schedule 
+
+| Weeks | Day 1                                                          | Day 2                                        | Day 3                                      | Day 4                              | Day 5                                    | Weekend Assignments      |
+|-------|----------------------------------------------------------------|----------------------------------------------|--------------------------------------------|------------------------------------|------------------------------------------|--------------------------|
+| 1     | Python  Fundamentals  One                                      | Python Fundamentals Two                      | Intro To Object Oriented Programming       | More OOPS and Inheritance          | Review                                   |                          |
+| 2     | Binary Search Linear Search Linked List                        | Bubble Sort Insertion Sort Stacks and Queues | SQL Intro SQL CRUD MVC Intro Views /Models | SQL / MVC Models SQL Conn Createdb | Binary Search Tree Merge Sort Quick Sort | Xmas Break RPG Blackjack |
+| 3     | SQL Relational DB SQL Foreign Keys                             | SQL Relational DB SQL Joins                  | OMDB API                                   | Markit API                         | API                                      | Trader to Bank           |
+| 4     | Advanced Python Generators List Comprehensions Args and Kwargs | Baby ORM Read                                | Baby ORM  Full CRUD                        | Baby ORM  Full CRUD                | Assessment                               |                          |
+|       |                                                                |                                              |                                            |                                    |                                          |                          |
+|       |                                                                |                                              |                                            |                                    |                                          |                          |
+|       |                                                                |                                              |                                            |                                    |                                          |                          |
+|       |                                                                |                                              |                                            |                                    |                                          |                          |
