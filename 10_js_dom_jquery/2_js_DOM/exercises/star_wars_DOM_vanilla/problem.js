@@ -50,89 +50,52 @@
 		// Leia is in her own variable right now, how can we put her with the other heroes?
 		// Give all the heroes their own div elements
 		// Append the hero divs to the death star
+		// Give all the hero divs a class of "heroes"
 	};
 
 	var vaderAndObi = function(){
-		// OH MAN DARTH VADER HAS APPEARED
-		//append vader to the death star
-		//remove Obi Wan Kenobi
-
-		var good = document.getElementsByClassName("heroes");
-
-		for (var i = 0; i<good.length; i++){
-			if (good[i].innerHTML === "Obi Wan Kenobi"){
-				deathStar.removeChild(good[i])
-				var div = document.createElement("div");
-				div.setAttribute("class", "vader");
-				div.innerHTML = darkside;
-				deathStar.appendChild(div);
-
-				//Remove Obi Way from Heroes Array
-				var ind = heroes.indexOf("Obi Wan Kenobi");
-				heroes.splice(ind, 1);
-			}; 
-		};
+		// DARTH VADER HAS APPEARED!!! (**Play Christopher Nolan Loud Background Noise**)
+		// Obi Wan has been struck down!!!
+		// Make a div with the text for Darth Vader inside. 
+		// Give that div a class for "vader"
+		// Remove Obi Wan from the Death Star
+		// Append Darth Vader to the Death Star
+		// Remove Obi Wan from the Heroes Array
 	};
 
 	var retreat = function(){
-		//delete the heroes from death star
-		//add heroes to falcon
-
-		var good = document.getElementsByClassName("heroes");
-		var party = good.length;
-
-		for (var i=0; i<party; i++){
-			deathStar.removeChild(good[0]);
-		};
-
-		for(var i=0; i<heroes.length; i++){
-			var div = document.createElement("div");
-			div.innerHTML = heroes[i];
-			div.setAttribute("class", "heroes");
-			falcon.appendChild(div);
-		}
+		// Obi Wan gave the rest of the heroes time to retreat
+		// Remove the heroes from the Death Star
+		// Append the heroes to the falcon
+		// All heroes must have their own divs
+		// All hero divs must have a class "heroes"
 	};
 
 	var battle = function(){
-		//Delete Leia from the falcon element
-		//Delete Leia from the heroes list
-		//Delete Luke from falcon
-		//Append Luke to X-wing
-
-		var depart = document.getElementsByClassName("heroes");
-
-		for(var i=0; i<depart.length; i++){
-			if (depart[i].innerHTML === "Luke Skywalker" || depart[i].innerHTML === "Leia Organa"){
-				falcon.removeChild(depart[i]);
-				i-=1
-			};
-		};
-
-		var div = document.createElement("div");
-		div.innerHTML = "Luke Skywalker";
-		xwing.appendChild(div);
-		deathStar.remove()
-
+		// Leia is safe on another shit
+		// Remove her from the falcon
+		// Remove Leia from the heroes array
+		// Luke is getting in the X-wing
+		// Remove him from the falcon
+		// Append Luke to the X-wing
+		// The Millenium Falcon and the X-wing have destroyed the death star
+		// Remove the death star image
 	};
 
 
 ////////////////////////////// CLICK EVENTS /////////////////////////////
 	tatooine.addEventListener('click', findLuke);
 	falcon.addEventListener('click', function(){
-		if (escape === true){
-			retreat();
-		} else {
-			leaveTatooine();
-		};
+		//There are two functions available when a user clicks on the falcon
+		// retreat()
+		// leaveTatooine()
+		// How would you control this so the correct function runs at the correct time
 	});
 	deathStar.addEventListener("click", function(){
-		if (time === "arrive"){
-			findLeia();
-			time = "depart";
-		} else if (time === "depart"){
-			vaderAndObi();
-			escape = true;
-		};
+		//There are two functions available when a user clicks on the deathStar
+		// findLeia()
+		// vaderAndObi()
+		// How would you control this so the correct function runs at the correct time
 	});
 	xwing.addEventListener("click", battle);
 
