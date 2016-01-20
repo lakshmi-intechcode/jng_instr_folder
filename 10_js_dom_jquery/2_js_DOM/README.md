@@ -9,6 +9,7 @@
 	* adding
 	* removing
 	* changing
+* Utilize JS Scope along with Higher Order Functions
 
 ---
 ### Context
@@ -31,13 +32,33 @@
 ##### Part 2 - Closures / Callbacks / Higher Order Functions 
 
 * Lets take into account variables and functions as parameters. 
+* All callbacks are closures but not all closures are callbacks
+* Callbacks are also known as "Higher Order Functions" but for the purpose of this course we will be sticking with the term "Callbacks"
+* A callback is a function that has been created and defined but NOT invoked.
+* Instead it is sitting around waiting to be "called back" but some sort of event such as a click event, or the invocation of another function. 
+* See the calculator example from class below
 
 ```
-var name = "Jason";
+var add = function(a,b){
+	return(a+myNum)
+};
 
-var myFunc = function(x){
+var sub = function(a,b){
+	console.log(a-b)
+};
+
+var multi = function(a,b){
+	console.log(a*b)
+};
+
+var calculator = function(a,b,callback){
+	var myNum= 234
+	var sum = callback(a,myNum)
 	
-}
+	console.log(sum)
+};
+
+calculator(7,8,add)
 ```
 
 
@@ -53,7 +74,7 @@ var myFunc = function(x){
 
 * Google these functions/methods and write down what they do
 * We will come back as a class and talk about them
-* Accession
+* Targeting
   * `document.getElementById`
   * `document.getElementsByClassName`
   * `document.getElementsByTagName`
@@ -97,9 +118,17 @@ var myFunc = function(x){
 	* The second argument is a block of code that will be run when the event is starts	
 	
 ```
-myButton.addEventListener("click", function(){
-	document.getElementById("paragraph").innerHTML = "BLAH BLAH"
-});
+var header = document.getElementById("myHeader")
+
+var namedFunc= function(){
+	alert("Does this work?")
+}
+
+header.addEventListener("click", namedFunc);
+
+// header.addEventListener("click", function(){
+// 	alert("Does this work?")
+// })
 ```	
 
 
