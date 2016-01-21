@@ -100,8 +100,56 @@ $(function(){})
 	* document.getElementsByClassName()
 	* document.createElement()
 	* AND OTHERS
+* jQuery takes all of these methods and wraps them into a single statement `$`
 * The most often used jQuery statement is the `$`
+* `$` tells us we are accessing jQuery. 
+* We follow the `$` with a `(selector)`. This is grabbing an HTML element. 
+* We can then follow this with a method that we want to do. e.g. append, remove, and the like
+* Open the index.html file with the jQuery CDN and go into the inspector
+* Play around with jQuery
+
+```
+var body = $('body')
+var h1 = $('h1') 
+```
+* We also use `CSS` selectors to identify elements with id's and or classes
+* Here are some examples
+
+```
+var menu = $("#menu");
+
+var heading = $("h1");
+
+var paragraph = $("article.p");
+
+var listItems = $("ul li");
+```
+
+***Five Min Exercise***
+
+* Research time!
+* What is the difference between
+	* append vs appendTo
+	* prepend vs prependTo
+	* empty vs remove
+
+[append vs appendTo](https://www.codecademy.com/forum_questions/50031633dd2be800020302b5)
+[prepend vs prependTo](http://stackoverflow.com/questions/19433061/difference-between-prepend-and-prependto)
+
+##### Part 5 - This / Call / Apply - maybe talk about this tomorrow with CSS positioning
+
+* What is this
+* Using Call / Apply / Bind
+* this in the global scope refers to the window object
+* this will refer to the object that is referencing it during it's invocation. 
+* this does not only refer to the object that referenced it but it will contain the value of the object
 * 
+
+
+
+
+
+
 
 
 
