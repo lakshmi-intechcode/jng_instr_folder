@@ -125,25 +125,8 @@ var paragraph = $("article.p");
 var listItems = $("ul li");
 ```
 
-***Five Min Exercise***
 
-* Research time!
-* What is the difference between
-	* append vs appendTo
-	* prepend vs prependTo
-	* empty vs remove
 
-[append vs appendTo](https://www.codecademy.com/forum_questions/50031633dd2be800020302b5)
-[prepend vs prependTo](http://stackoverflow.com/questions/19433061/difference-between-prepend-and-prependto)
-
-##### Part 5 - This / Call / Apply - maybe talk about this tomorrow with CSS positioning
-
-* What is this
-* Using Call / Apply / Bind
-* this in the global scope refers to the window object
-* this will refer to the object that is referencing it during it's invocation. 
-* this does not only refer to the object that referenced it but it will contain the value of the object
-* 
 
 
 
