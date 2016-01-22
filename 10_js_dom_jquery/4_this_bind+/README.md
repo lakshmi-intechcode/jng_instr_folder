@@ -39,11 +39,20 @@
 ```
 var myThis = function(x){
 		console.log(this)
-	}
+}
 
-	$("button").on("click", myThis)
+$("button").on("click", myThis)
 ```
 
-##### Part 3 - THIS constructor function
+##### Part 3 - Bind / Call / Apply
+
+* Noticed what we did in the above example was a named callback
+* What if we DID want to reference something inside of the callback function, and NOT the object value that invoked it
+	* e.g. the myThis function instead of the button object
+* That's where Bind / Call / Apply come in.
+* You will need to `bind` the value to to the object value you want so `this` will not target the invoking object. 
+* Check out the [JavaScript is Sexy Bind / Apply / Call Entry](http://javascriptissexy.com/javascript-apply-call-and-bind-methods-are-essential-for-javascript-professionals/)
+
+
 
 
