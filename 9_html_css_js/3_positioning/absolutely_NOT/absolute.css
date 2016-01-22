@@ -4,7 +4,7 @@
   width: 200px;
 }
 
-/*The three divs WITH Absolute Positioning*/
+
 .blue{
   background-color: blue;
   position: absolute;
@@ -26,7 +26,7 @@
   left: 80px;
 } 
 
-/*The one div WITHOUT Absolute Positioning*/
+
 .red{ 
   background-color: red;
 }

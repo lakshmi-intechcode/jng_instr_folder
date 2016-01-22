@@ -3,24 +3,18 @@
   height: 100px;
   width: 100px;
 }
-
-/*Set container size*/
 #container{
   height: 1000px;
   width: 1000px;
   position: relative;
-  background-color: red;
+  background-color: #E4E057;
 }
-
-/*Square with a relative position*/
 .green{
   background-color: green;
   width: 500px;
   height: 500px;
-  position: relative;
+  /*position: absolute;*/
 }
-
-/*Squares with absolute positions*/
 .blue{
   background-color: blue;
   position: absolute;
@@ -33,7 +27,6 @@
   height: 500px;
   position: absolute; 
 }
-
 .pink{
   background-color: pink;
   position: absolute;

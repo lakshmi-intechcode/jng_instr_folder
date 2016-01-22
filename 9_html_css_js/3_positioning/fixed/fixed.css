@@ -4,7 +4,6 @@
   height: 100px;
   width: 100px;
 }
-
 /*Container Sized*/
 #container{
   border: 1px solid black;
@@ -14,20 +13,17 @@
   background-color: green;
   margin: 100px;
 }
-
 /*Square with FIXED position*/
 .orange{
   background-color: orange;
   position: fixed;
 }
-
 /*Absolute Square by itself*/
 .abso{
   background-color: #E0DFDD;
   position: absolute;
   bottom:100px;
 }
-
 /*Squares with Absolute Positioning that are nested*/
 .red{
   background-color: red;
@@ -35,14 +31,12 @@
   left: 50px;
   top: 50px;
 }
-
 .purple{
   background-color: #CC76E0;
   position: absolute;
   left: 50px;
   top: 50px;
 }
-
 .pink{
   background-color: pink;
   position: absolute;
