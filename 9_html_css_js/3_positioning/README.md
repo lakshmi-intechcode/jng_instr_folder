@@ -93,6 +93,11 @@
 	* `relative`
 	* `static`
 
+***STATIC***
+
+* The default position
+* Does not count as being positioned
+
 ***FLOATS***
 
 * WE NEVER USE FLOATS
@@ -105,16 +110,21 @@
 - ```clear: left;``` will "turn off" the left floating of elements
 * I WILL NOT BE DEMOING THIS BECAUSE WE WILL NEVER BE USING FLOATS
 
-***Static***
+***FIXED***
 
-* The default position
-* Does not count as being positioned
+* Fixed position will always be relative to the browser. 
+* It will stay on the screen even if the user scrolls up or down
+
+***ABSOLUTE***
+
+* NEVER USE ABSOLUTE!!!
+* It removes elements from the NDF
+* If a child element has position absolute the parent will act as if the child is not there
+* The element with position absolute will work relative to it's direct parent BUT the parent and all other elements will not recognize a element with position absolute
+
+***RELATIVE***
+
 * 
-
-
-
-
-	
 
 
 
