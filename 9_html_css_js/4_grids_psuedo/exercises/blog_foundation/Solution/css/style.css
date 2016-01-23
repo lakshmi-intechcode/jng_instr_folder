@@ -1,0 +1,30 @@
+/************************
+Styling for page that is not in the contact section
+Most of the styling is already done through foundation
+****************************/
+.container{
+	padding-top: 10px;
+}
+
+.blog{
+	text-indent: 50px;
+}
+
+.homeImg{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+/**********************
+Styling the contact section 
+unordered list on the bottom
+**********************/
+
+li{
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.image{
+	width: 100%;
+}
