@@ -6,6 +6,8 @@
 * Use CSS Reset
 * Use CSS Normalize
 * Use CSS Grid layout
+* Use CSS Media Queries
+* Use CSS Pseudo:classes
 
 ---
 ### Context
@@ -16,6 +18,86 @@
 ### Lesson
 
 ##### Part 1 - Media Queries
+
+***What do media queries do?***
+
+* Media queries allow us to specify styling of HTML content specific to different devices
+* They are used for Responsive Design
+
+***Responsive Design***
+
+* Responsive Design allows us to load the same HTML on any device and it will change it's style dynamically
+* `Show them the inspector different device view`
+* let's make a html file and put this inside the head
+
+```
+<meta name="viewport" content="width=device-width,initial-scale=1">
+```
+* add the following divs to the file
+
+```
+<div class="mobile">I am on a phone</div>
+<div class="tablet">I am on a tablet</div>
+<div class="computer">I am on a computer</div>
+```
+
+***Five Min Exercise***
+
+* Can you figure out how to set the tablet to display? 
+	* The IPad tablet size is about 1024px
+* Can you figure out how to set the computer to display? 
+	* The average computer size is, well bigger than a tablet.
+
+***Solution***
+
+* Lets add this inside a style.css file and link that file to the html
+
+```
+@media only screen and (max-width: 667px)
+
+.tablet{
+	display:none;
+}
+.computer{
+	display:none;
+}
+```
+* Noticed we set a `max-width` to this media query. 
+* This styling will only appear on screens less than 667px
+* Let's add some more to the stylesheet. This time a `min-width`
+
+```
+@media only screen and (min-width: 667px) and (max-width: 1024px)
+
+.mobile{
+	display: none;
+}
+.computer{
+	display: none;
+}
+```
+* And finally the computer display
+
+```
+@media only screen and (min-width: 1024px)
+
+.mobile .tablet{
+	display: none;
+}
+```
+
+* Change the browser size and check it out
+* `Remember to show them the developer console device preview`
+
+***Device width***
+
+* In the meta tag you saw device width instead of width. Now with so many devices having high density retina displays we want to target the physical width of a device.
+
+***Meta Tag***
+
+* The meta tag tells our device it should display the page in relation to the device size. 
+
+***Last Example***
 
 * Take a look at the [w3schools media query example](http://www.w3schools.com/cssref/css3_pr_mediaquery.asp)
 
