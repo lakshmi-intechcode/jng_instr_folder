@@ -26,7 +26,7 @@ a:active{
 
 /*ADD STYLING TO ONLY THE FIRST CHILD*/
 li:first-child{
-	font-size: 1.5em;
+	font-size: 1.9em;
 	color: #E3434E;
 }
 
@@ -46,8 +46,6 @@ button:hover{
 	color: red;
 }
 
-
-
 #flashbox, #supermanbox, #casperbox, #sonicbox{
 	width: 250px;
 	height: 150px;
@@ -60,6 +58,11 @@ button:hover{
 	-webkit-transition: all .5s ease .05s;
 	-o-transition: all .5s ease .05s;
 }
+
+#flashbox:hover{
+	margin-left: 1500px;
+}
+
 #supermanbox{
 	transition: all 5s ease .05s;
 	-moz-transition: all 5s ease .05s;
@@ -81,9 +84,7 @@ button:hover{
 	height: 100%;
 }
 
-#flashbox:hover{
-	margin-left: 1500px;
-}
+
 
 #supermanbox:hover{
 	margin-left: 1500px;
