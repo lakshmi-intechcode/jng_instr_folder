@@ -17,7 +17,38 @@
 ---
 ### Lesson
 
-##### Part 1 - Media Queries
+##### Part 1 - Pseudo Classes
+
+* Review different display types
+* Review Selectors and Inheritence
+* Now introduce Pseudo Classes
+* Pseudo Classes will apply specific CSS styling to an element on window onload or through user interaction This allows our page to look more dynamic. Some pseudo-classes are:
+	* :active
+	* :first-child
+	* :last-child
+	* :nth-child
+	* :hover
+	
+***NOTE***
+
+* Pseudo Classes ARE NOT JAVASCRIPT. We are manipulating the style of an HTML element using only CSS. 
+
+***SHOW THEM THE HTML CSS EXAMPLE - STOP AT HOVER***
+
+##### Part 2 - CSS Transition
+
+The transition property allows us to control an animations speed. It can take up to four parameters: 
+
+* property - this is the property that the transition is `listening` for.
+* duration - how much time it will take to execute
+* timing-function - what kind of animation will it be. `ease`, `linear`, `step-end`
+* delay - how long before this transition takes effect
+
+***SHOW THEM THE FLASH AND SUPERMAN***
+
+* The Transitions property also gives us control of fading elements
+
+##### Part 3 - Media Queries
 
 ***What do media queries do?***
 
@@ -113,7 +144,7 @@ https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwizi
 	* 50% width and centered when the screen is half sized
 	* 100% width when the screen is cell phone sized
 
-##### Part 2 - CSS Reset vs Normalize
+##### Part 4 - CSS Reset vs Normalize
 
 * Browsers will render HTML elements differently
 
@@ -132,7 +163,7 @@ https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwizi
 
 * Many frameworks already incorporate this kind of information so we don't always need to download and use Normalize CSS files
 
-##### Part 3 - CSS Grids
+##### Part 5 - CSS Grids
 
 * What are the different grid systems out there?
 	* Skeleton - extremely lightweight. May have a hard time with mobile responsive
@@ -144,7 +175,7 @@ https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwizi
 * Instead we used "media queries" This leads to very hard to read code in your stylesheet and your HTML 
 * The grid system is used to organize your code while allowing you to easily build a responsive site
 
-##### Part 4 - Foundation CSS
+##### Part 6 - Foundation CSS
 
 * As you may have already heard my favorite CSS Grid Framework is Foundation CSS
 * It is Semantic, Clean, very easy to use, constantly growing, and has great documentation. 
