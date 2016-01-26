@@ -51,15 +51,25 @@
 	* This file will hold all the information of the kinds of packages a specific project is using
 * Let's install virtual environment package and the newest version of django
 * `pip3 install virtualenv`
-* `pip3 install django` OR `pip3 install django==1.9`
+* `pip3 install django-toolbelt`
+	* `pip3 install django` OR `pip3 install django==1.9`
+* 
 	* if you leave off the version you will get the latest version
 	* if you download an old version you can just upgrade that package
+* NOTE!!!
+	* Pip installs things to a folder on your computer. It's not pulling from some cloud spot online every day.
+	* That is why pip and pip3 are different, or any other package manager for that matter
+* `which` command
+	* check out the which command
+	* `which python3` will show you the path to the python 3 files
 
 ##### Part 3 - Starting Django / Code Along
 
 ***Common Commands***
 
-* `django-admin.py startproject project_name`
+* `django-admin startproject project_name`
+	* Normally is `django-admin.py startproject project_name` if you just have django installed
+	* We have django toolbelt installed so we can hold off on the `.py`
 
 ***Start a project***
 
@@ -73,7 +83,7 @@
 		* `Installed Apps` - What are the default apps that Django comes with. When we make new apps we will have to include them here
 			* `django.contrib.admin` - allows us to user the superuser admin page
 			* `django.contrib.auth` - authentication for users 
-			* `django.conf.urls` - we can use this with the `urls.py` folder
+	* Database settings - Django comes with sqlite3 as default. We will use Postgres later on in the course
 	* `urls.py` - The overall hub of all the urls you will have throughout building your project
 	* `manage.py` - This file is used to call multiple commands in the terminal 
 * Take a look at what you got so far
@@ -86,6 +96,8 @@
 * Using `manage.py` we can run a command called `migrate`
 * `python3 manage.py makemigrations`
 * `python3 manage.py migrate`
+* Make migrations will make new files in your computer, we'll take a look at them later when we have to migrate a new application
+	* These are used as blueprints to what your migrate should be doing
 
 ***Start an App***
 
@@ -121,7 +133,8 @@ class Post(models.Model):
 	def __str__(self):
 		return self.title
 ```
-
+* There are many different fields you can utilize in the models
+	* [Django Docs to see different Fields we can use in Models](https://docs.djangoproject.com/en/1.9/ref/models/fields/)
 * Then we have to connect this app to the `settings.py` file
 
 ```
@@ -138,16 +151,19 @@ INSTALLED_APPS = [
 * Whenever we make a new app we'll have to make migrations and migrate.
 	* `python3 manage.py makemigrations` - tells django we made changes to our models
 	* `python3 manage.py migrate` - tells django to apply those changes to our database
-* There are many different fields you can utilize in the models
-	* [Django Docs to see different Fields we can use in Models](https://docs.djangoproject.com/en/1.9/ref/models/fields/)
-	
+
 ***CRUD / HTTP VERBS***
 
 * Review all your knowledge
-* CRUD
-	* Create, Read, Update, Delete
-	* Make new, Get, Edit, Delete
-	* POST, GET, PUT/PATCH, DELETE
+
+***Five Min Exercise***
+
+* All three students must go to the whiteboard and draw out a table
+* Each column represents the following
+	* What CRUD stands for
+	* What does it mean in SQL
+	* What does it mean as HTTP VERBS
+	* What does it mean in English
 
 ***Function Based Views***
 
@@ -173,8 +189,26 @@ def posts_home(request):
 
 ***Request Response Cycle and `urls.py`***
 
-* 
 
+
+
+##### Thom Notes
+
+* shell - ORM
+	* also creates a connection to your db
+* py manage.py dbshell
+* maybe change app name so it is not the same as the class name
+	* Apps are named plural
+	* Models are singular
+* Rendering a page with context - Rendering a form with context
+
+
+
+	
+
+
+* echo $PATH
+	* venv just prepends that with the virtual environment
 
 ##### admin BONUS
 
