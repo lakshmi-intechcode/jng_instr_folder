@@ -189,6 +189,65 @@ def posts_home(request):
 
 ***Request Response Cycle and `urls.py`***
 
+* The view is useless unless we have something that talks to it
+* SAVE US Request Response Cycle!!!!
+* Remember when we create a view, it will handle a request and return a response.
+* However how do we know what request goes to what view? 
+* We do this with our urlpatterns
+* URL patterns will map the request to where it needs to go
+* Let's hardcode your post_home view into the urls.py
+
+```
+from posts import views
+
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+    # You can also import views
+    url(r'^posts/$', views.post_home),
+]
+```
+
+##### Part 4 - HTML Forms
+
+* What if we want to render something more than just a string? Such as an HTML form
+* Let's create a `templates` folder inside of the project `blog` and then an `index.html` folder inside of it
+* Now we can change our view to use render instead of `HttpResponse`
+
+```
+def post_home(request):
+	return render(request, "index.html",{})
+```
+* There is an empty dictionary for a reason. This is because we had nothing to pass into the template.
+* For more dynamic information we can pass in dictionaries
+
+## YOU LEFT OFF HERE. FIX THIS SHIT
+
+```
+def post_detail(request):
+	context = {
+		"title": "POST_DETAIL"
+	}
+	return render(request, "index.html", context)
+
+def post_list(request):
+	context = {
+		"title": "POST_LIST"
+	}
+	return render(request, "index.html", context)
+```
+```
+
+* When doing a Django Tutorial you may find something called a Model Form
+* This is when you use a model to populate a form with data
+* For the homeworks tonight you will be focused on `HTML forms`
+
+
+***This and a little extra will be what is needed for the deaf grandpa application***
+
+##### Part 5 - Django ORM
+
+* We build a `baby orm` in the last phase. 
+* Now we will be using Django's ORM
 
 
 
