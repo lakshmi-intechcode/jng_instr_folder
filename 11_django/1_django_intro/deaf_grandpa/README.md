@@ -1,25 +1,24 @@
-Deaf Grandpa
-============
+# Deaf Grandpa
 
-Welcome to your first foray into web programming! Also, say hi to your deaf old Grandpa!
+##### Description
 
-Well, don't say *'hi'*. Say *'HI GRANDPA'*. He can't hear so well.
+* Welcome to your first attempt at web development. Say hi to your deaf old Grandpa! 
+* Well, don't say *'hi'*. Say *'HI GRANDPA'*. He can't hear so well.
+* You have been provided with some starter code. 
+* If you enter your phrase in lower case your Grandpa will respond with *'What, I can't hear you Sonny!*
+* If you enter your phrase in upper case, he should repeat what you said and then insult you with something funny.
+* Make sure to run your server and test your code in action
+	* `python3 manage.py runserver`
+	* 127.0.0.1:8000
 
-If you speak in lower case to Grandpa, he should respond with *'What, I can't hear you Sonny!*
+##### Objectives
 
-If you speak in all upper case, he should repeat what you said and then insult you with something funny.
+***The Main Page***
 
-Run the server to see what is already there in action. `python3 manage.py runserver`
-
-This small exercise should go down like this:
-
-#### The Main Page
-
-We have the main page, where there is a form that will let you say something to grandpa. That is already built for you.
-
-You will need to extend it so grandpa can say something back.
-
-There are three components to this main page:
+* Your starter code has a form built out for you
+* You will need to extend it so grandpa will say something back
+* Remember there are three parts to this page
+	* 
 
 The "View": In Django, controller functions are called "views". It makes sense, because they control which variables and data the user gets to see in the template. You'll find this in `deafgrandpa/views.py`
 

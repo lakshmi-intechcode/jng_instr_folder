@@ -207,7 +207,7 @@ urlpatterns = [
 ]
 ```
 
-##### Part 4 - HTML Forms
+##### Part 4 - Render a template
 
 * What if we want to render something more than just a string? Such as an HTML form
 * Let's create a `templates` folder inside of the project `blog` and then an `index.html` folder inside of it
@@ -220,47 +220,78 @@ def post_home(request):
 * There is an empty dictionary for a reason. This is because we had nothing to pass into the template.
 * For more dynamic information we can pass in dictionaries
 
-## YOU LEFT OFF HERE. FIX THIS SHIT
-
 ```
-def post_detail(request):
+def post_home(request):
 	context = {
-		"title": "POST_DETAIL"
-	}
-	return render(request, "index.html", context)
-
-def post_list(request):
-	context = {
-		"title": "POST_LIST"
+		"title": "Hello World"
 	}
 	return render(request, "index.html", context)
 ```
+* Now we can alter the template we just made to take in the context.
+* In your HTML use templating to bring in dynamic data
+
+```
+	<h1>{{title}}</h1>
 ```
 
-* When doing a Django Tutorial you may find something called a Model Form
-* This is when you use a model to populate a form with data
-* For the homeworks tonight you will be focused on `HTML forms`
+***Your homework will consist of passing information back and forth to the views and templates. Think about how you will do this if you wanted to create a variable and store it in the context***
 
+##### Part 5 - HTML forms
 
-***This and a little extra will be what is needed for the deaf grandpa application***
+* In the view we're going to start using the form tag
+* If you look at other Django tutorials you may see something called a Model Form. We'll take a look at those later. 
+* For today's exercises you'll only need to know about how the HTML form works
+
+```
+	<form method="POST" action="">{%csrf_token%}
+
+		{{ form.as_p }}
+
+		<input type="submit" value="Create Post"/>
+	</form>
+```
+* method - HTML forms are by default a GET method
+	* HTML forms only take POST or GET
+* What is POST vs GET
+* Action - What url will this form be hitting
+* csrf = cross site request forgery. We need security to validate data
+* Django provides csrf token by default
+	* `{%csrf_token%}`
 
 ##### Part 5 - Django ORM
 
-* We build a `baby orm` in the last phase. 
+* We built a `baby orm` in the last phase. 
 * Now we will be using Django's ORM
+* I'm going to show you the different orm methods in the shell
+* Open the shell 
+	* `py manage.py shell` - 
+		* Opens a python repl with regards to Django. 
+		* Also connects to your DB so you can updated it in real time.
+	* `py manage.py dbshell`
+		* Opens the shell for database queries
+* Import your models to use them
+	* `>>> from posts.models import Post`
+* Make a all query
+	* `>>> Post.objects.all()`
+* Make a filter query
+	* `>>> Post.objects.filter(title="abc")`
+	* `>>> Post.objects.filter(title__icontains="abc")`
+* Create a new post
+	* `>>> Post.objects.create(title="New Post", content="New Content")`
+	* These are real time and actual instances of the class that have been entered into the Database. If we query the DB again you will see your new posts
+	* `>>> Post.objects.all()`
+* Assign your query set to a variable and loop through them.
 
+```
+queryset = Post.objects.all()
 
-
-##### Thom Notes
-
-* shell - ORM
-	* also creates a connection to your db
-* py manage.py dbshell
-* maybe change app name so it is not the same as the class name
-	* Apps are named plural
-	* Models are singular
-* Rendering a page with context - Rendering a form with context
-
+for obj in queryset:
+	print(obj.title)
+	print(obj.id)
+	print(obj.pk)
+```
+* Think about how we can use these methods in the views.py. 
+* Maybe assign their return values to a variable? 
 
 
 	
