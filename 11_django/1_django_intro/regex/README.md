@@ -1,27 +1,23 @@
-Regular Expressions
-===================
+# EXPRESS YOSELF!
 
-Sometimes you gotta regulate on your friends and family. As programmers, we gotta regulate on strings.
+* Regular expressions are patterns to match strings.
+* To the naked eye it just looks like chuck norris showed up behind you and started slamming your head into the keyboard.
+* BUT hopefully after this README it will all make sense
+* Checkout [pythex](http://pythex.org/) and use it to test your regular expressions
 
-Regular expressions are patterns to match your strings. At first they look like somebody just jammed the keyboard with their forehead, but don't fret - they will soon make sense.
+##### Syntax
 
-Use [pythex](http://pythex.org/) to test your regular expressions.
-```regex
-[A-Z]
-```
-This is a range of capital letters. Any one capital letter matches this pattern.
-```
-[A-Z]{3,}
-```
-This is same range of capital letters, with a condition that it is 3 characters or more.
-```
-[A-Za-z0-9]{6}
-```
-The first range lets us use any letter, capital or lowercase, and any number, in any order. There must be 6 characters to match.
-```
-^LOL\s[A-Za-z]*
-```
-Ok, now it looks weird. The ^ means that the string must start with the first expression, which is LOL. \s means whitespace. And it ends with a range of all letters. * means that that range of all letters can be any length. Here's what matches:
+* Find a range of capital letters. Any one capital letter will match this pattern
+	* `[A-Z]`
+* Same thing with the range but add a condition. This condition states it has to be three characters or more
+	* `[A-Z]{3,}`
+* The first range tells us we can use any letter, capital, lowercase, or number. The condition is there has to be six characters that match
+	* `[A-Za-z0-9]{6}`
+* The ^ indicates the string must start with that first expression. Here it is LOL. \s means whitespace. It ends with a range of any letter lower or upper case. * means the range can be any length
+	* `^LOL\s[A-Za-z]*`
+
+
+
 ```py
 'LOL Hi' # Matches  
 'LOL whatsupdog' # Matches  
@@ -29,7 +25,8 @@ Ok, now it looks weird. The ^ means that the string must start with the first ex
 'LOL hey d00d' # doesnt match, only letters allowed  
 'whats up' # doesn't match, must start with LOL  
 ```
-You got it? Sandbox in rubular and read the quick reference guide. Write your answers in the answers.md file.
+
+***Now take a look at the below prompts and write your answers in the other markdown file***
 
 #### Round 1: Name
 

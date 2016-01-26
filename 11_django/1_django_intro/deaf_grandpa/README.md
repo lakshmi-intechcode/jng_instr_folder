@@ -18,33 +18,33 @@
 * Your starter code has a form built out for you
 * You will need to extend it so grandpa will say something back
 * Remember there are three parts to this page
-	* 
+	* `views.py` can take a request, store values, and pass values to a template, and respond with a template
+	* `templates` are the html file that you will render for the end user. They can be found in `deafgrandpa/templates/deafgrandpa/*.html`
+	* `url dispatch` - This is where the routing is done - it receives requests and tries to match the urls using regex. Take a look at `deafgrandpa/urls.py`
 
-The "View": In Django, controller functions are called "views". It makes sense, because they control which variables and data the user gets to see in the template. You'll find this in `deafgrandpa/views.py`
+***The Form Submission***
 
-The "Template": This is the .html file that is rendered on the page. It can be sent a dictionary from the view when rendered. You'll find this in `deafgrandpa/templates/deafgrandpa/*.html`
+* Remember forms have two attributes
+	* Action - You'll see an action in the form that leads to `/say`
+	* Method can be GET or POST- Remember what each one does? You'll need POST for this assignment
+* Since the form already has an action and method completed we will have to post data to `/say`
+* Create a route in urls.py that will go to `/say` and create a corresponding function in the `views.py`
+* DO NOT forget all view functions take a request as an argument
+* You will find the data the user sent in a dictionary stored at `request.POST`.
+* We don't want to render on a POST route
+* Instead we can redirect to a route with GET (We did not cover redirect in class, you will have to research this)
+	* POST should only be sending data to the server
+	* GET is used to retrieve information
+	* [Read more about GET and POST at w3schools](http://www.w3schools.com/tags/ref_httpmethods.asp).
+* Redirect may look something like
 
-The URL dispatch: This is where the routing is done - it receives requests and tries to match the urls using regex. Take a look at `deafgrandpa/urls.py`
-
-#### The Form Submission
-
-If you look at the form, it has an action and a method. The action is `/say`, and the method is POST. So we will need to post data to `/say`.
-
-Create a route in urls.py that will go to `/say`, and create the corresponding function in `views.py`.
-
-All view functions take the request as an argument. It holds a lot of data about the user and their actions - do some sandboxing.
-
-You will find the data the user sent in a dictionary stored at `request.POST`.
-
-We don't want to render on a POST route - we want to redirect back to a GET. POSTs are only for sending data to server - GETs are for retrieving. [Read more about GET and POST](http://www.w3schools.com/tags/ref_httpmethods.asp).
-
-So redirect back to the index route, with a [query string](http://en.wikipedia.org/wiki/Query_string) attached. Something like:
 ```
 return redirect('/?grandpasays=I can't hear you Sonny!')
 ```
-#### Back to the Main Page
 
-Figure out how to get the contents of this query string and pass it into the rendered template. You will find resources on render and redirect below. The Django documentation is less accessible than we would all like, so read carefully.
+***FINAL STEP***
+
+* Figure out how to get the contents of this query string and pass it into the rendered template. You will find resources on render and redirect below. The Django documentation is less accessible than we would all like, so read carefully.
 
 #### Resources
 
