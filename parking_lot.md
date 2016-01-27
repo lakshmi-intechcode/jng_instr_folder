@@ -27,6 +27,31 @@ python3 -i hello.py
 >>> hello()
 >>> 'HELLO WORLD'
 ```
+* Talk about Bootstrap map.min shit
+
+```
+
+#### Static Files (i.e. CSS, JS, Images, etc.)
+
+Also take a look at the [static folder](https://docs.djangoproject.com/en/1.8/howto/static-files/) and the link to the CSS file inside in our template. If you want to include images, CSS, Javascript files, etc. You will need to change your `settings.py` file to include your defined static folder in the `STATICFILES_DIRS` tuple
+
+e.g.
+```python
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"), //This joins your defined static folder with the base directory and adds it to the staticfiles_dir tuple
+    '/var/www/static/',
+)
+```
+
+Now that we're our Django app has been properly set up to include our static files and our inital `todo` model. Let's begin creating our URls! You will need the following routes configured in your apps' `URLs.py` file:
+   
+    - todos/create/
+    - todos/<todo_id>/
+    - todos/<todo_id>/update/
+    - todos/<todo_id>/delete/
+```
+
+
 
 ---
 
