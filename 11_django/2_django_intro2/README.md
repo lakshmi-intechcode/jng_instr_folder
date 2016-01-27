@@ -53,8 +53,18 @@ urlpatterns =[
 	* the second argument is what will be the `namespace` that will indicate those application urls are being targeted
 * The todos/urls.py file is pure Python code and is a simple mapping between URL patterns (regular expressions) to Django Views (Functions/Classes). Separating our urls into project/urls and app/urls keeps our app modular. 
 
+***Set up settings file***
 
-
+* Start to make your view functions target their specific templates
+* settings.py -- BASE_DIR
+	* base directory where manage.py is
+	* os is a python module that will solve the path issues between operating systems
+	* In DATABASES we see `os.path.join(BASE_DIR, database) - Example of how we do * not have a hardcoded filepath
+* Setting up templates
+* Go to settings.py
+* Scroll to TEMPLATES
+* Change the DIRS to have the base dir and templates
+	* `'DIRS': [os.path.join(BASE_DIR, 'templates')],`
 
 ***Why go through all this trouble***
 
