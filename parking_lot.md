@@ -27,15 +27,15 @@ python3 -i hello.py
 >>> hello()
 >>> 'HELLO WORLD'
 ```
-* Talk about Bootstrap map.min shit
+* In class we talked about the bootstrap map.min file
+	* It is something that allows people to use bootstrap with css preprocessor such as LESS and SASS
 
-```
+***Django Static Files***
 
-#### Static Files (i.e. CSS, JS, Images, etc.)
+* Django static files are the CSS, JS, images, and the like that you will be incorporating into your project
+* Take a look at the [static folder documentation](https://docs.djangoproject.com/en/1.8/howto/static-files/)
+* If you want to include images, CSS, Javascript files, etc. You will need to change your `settings.py` file to include your defined static folder in the `STATICFILES_DIRS` tuple
 
-Also take a look at the [static folder](https://docs.djangoproject.com/en/1.8/howto/static-files/) and the link to the CSS file inside in our template. If you want to include images, CSS, Javascript files, etc. You will need to change your `settings.py` file to include your defined static folder in the `STATICFILES_DIRS` tuple
-
-e.g.
 ```python
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"), //This joins your defined static folder with the base directory and adds it to the staticfiles_dir tuple
@@ -43,14 +43,11 @@ STATICFILES_DIRS = (
 )
 ```
 
-Now that we're our Django app has been properly set up to include our static files and our inital `todo` model. Let's begin creating our URls! You will need the following routes configured in your apps' `URLs.py` file:
-   
-    - todos/create/
-    - todos/<todo_id>/
+* If we do it this way we can configure our urls in the `urls.py` file to look something like this: (This example takes into account an app with a todo model)   
+    * todos/create/
+    * todos/<todo_id>/
     - todos/<todo_id>/update/
     - todos/<todo_id>/delete/
-```
-
 
 
 ---
@@ -88,6 +85,7 @@ Now that we're our Django app has been properly set up to include our static fil
 * [JavaScript is Sexy Callback Functions](http://javascriptissexy.com/understand-javascript-callback-functions-and-use-them/)
 * [JavaScript is Sexy Scope and Hoisting](http://javascriptissexy.com/javascript-variable-scope-and-hoisting-explained/)
 * [JavaScript is Sexy "this"](http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/)
+- [JavaScript is Sexy "call" / "bind" methods](http://javascriptissexy.com/javascript-apply-call-and-bind-methods-are-essential-for-javascript-professionals/)
 
 ***Python***
 
@@ -100,6 +98,22 @@ Now that we're our Django app has been properly set up to include our static fil
 ***Design***
 
 * [design theory by tutsplus](http://webdesign.tutsplus.com/categories/design-theory)
+
+***How the Internet Works***
+
+* [how dns works comic](https://howdns.works/episodes/)
+
+***HTML and CSS***
+
+* [What is Normal Document Flow](http://webdesign.tutsplus.com/articles/quick-tip-utilizing-normal-document-flow--webdesign-8199)
+* [rem vs em?](https://j.eremy.net/confused-about-rem-and-em/)
+* [What does auto really mean?](http://stackoverflow.com/questions/4471850/what-is-the-meaning-of-auto-value-in-a-css-property)
+* [Positioning from vanseodesign](http://vanseodesign.com/css/css-positioning/)
+* [Learn Layout DOT COM](http://learnlayout.com/)
+* [CSS DINER EXERCISE TUTORIAL](http://flukeout.github.io/)
+
+
+
 
 
 ---
