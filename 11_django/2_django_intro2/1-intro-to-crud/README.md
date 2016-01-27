@@ -13,8 +13,9 @@
 
 ***Model your database***
 
-- Make a todo model that holds a todo `exercise`, `created_at`, and `completed` for a todo with the appropriate model fields.
-- Make your migrations, migrate your db, and run your server.
+- Make a todo model in `todos/models.py` that has the fields `task`, `created_at`, and `completed` using the appropriate model fields.
+- Like yesterday your model should inherit from `models.Model`
+- Once you have defined your model make your migrations, migrate your db, and run your server.
 * Remember all the steps about making apps and models before you decide to make and migrate items
 
 ***Organize your URL routes***
@@ -50,19 +51,20 @@ urlpatterns =[
 	
 * Your form on `index.html` should look something like this:
 ```html
-<form action="urltemplatetag" method="POST">
+<form action="{% url 'todos:create' %}" method="POST">
 	{% csrf_token %}
-	<input name="name" type="text">
+	<input name="task" type="text">
 	...
 </form>
 ```
-* Keep in mind that depending on the request.method (i.e. GET or POST). Our function based view for create will either render the `todo` form if a GET request is sent as opposed to the creation of a `todo` if a POST is sent. The POST route should save the todo and redirect back to the main page.
+* Keep in mind that depending on the request.method (i.e. GET or POST) our function based view will do one of two things. When the `request.method == 'GET'` will render the html page that has the empty `todo` form and when the `request.method == 'POST'` create a new `todo`. After creating a new `todo` the create view should redirect to the main page.
 
 ***Make a READ route***
 
 * The user is now able to create new todo objects
 * We should allow them to view a list of all the todo objects
-* Create new code in to make this list viewable
+* We should also allow them to view the details of just one todo
+* Create a view, url, and html file
 	* view function
 	* html file
 	* templating in the html
@@ -72,24 +74,26 @@ urlpatterns =[
 * It should look something like this (Make sure you know what this regex is doing!): 
 
 ```py
-url(r'^(?P<todo_id>[0-9]+)/$', views.todo),
+url(r'^(?P<todo_id>[0-9]+)/$', views.all, name='all'),
 ```
 * Your `index.html` should look something like this:
 
 ```html
+<div>
 {% for todo in todos %}
 	<p>{{ todo.name }}</p>
 {% endfor %}
+</div>
 ```
 
 ***UPDATE***
 
-* Great now we want our users to update any of their todo objects
+* Great now we want to  users to be able to update any of their todo objects
 * We want them to view the detailed information inside of a form, and update that information
 * Below is an example of what that form may look like:
  
 ```html
-<form name="todos" action="/update" method="POST">
+<form name="todos" action="{% url 'todos:update' %}" method="POST">
 	{% csrf_token %}
 	<input name="name" type="text" value="{{todo.name}}">
 	...
@@ -100,4 +104,4 @@ url(r'^(?P<todo_id>[0-9]+)/$', views.todo),
 
 ***DELETE***
 
-* Finally, make a route that deletes a `todo` from the database. You don't really need a new page for this - just a route and a redirect. Put the link on the `todo` objects' individual page.
+* Finally, make a route that deletes a `todo` from the database. You don't really need a new page for this - just a route and a redirect. Remember `DELETE` is an operation that manipulates the database and should only accept `POST` requests.
