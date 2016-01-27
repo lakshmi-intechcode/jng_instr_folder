@@ -31,6 +31,11 @@ urlpatterns = [
 ```
 * The url function can be broken down into the following parameters
 	* `url( <pattern>, <view function>, name="<url alias>")`
+* The first two parameters are required
+	* The url pattern
+	* The function we are looking for in the `views.py`
+	* The third parameter is a keyword argument using `"name"`
+		* name allows us to target this specific urlpattern later on in our app
 * Now we'll have to chang what the `projects/urls.py` file will say
 
 ```
@@ -46,6 +51,9 @@ urlpatterns =[
 * include allows us to connect to all the urlpatterns in a specific app, it will take in two arguments
 	* the first argument will be the app url location
 	* the second argument is what will be the `namespace` that will indicate those application urls are being targeted
+* The todos/urls.py file is pure Python code and is a simple mapping between URL patterns (regular expressions) to Django Views (Functions/Classes). Separating our urls into project/urls and app/urls keeps our app modular. 
+
+
 
 
 ***Why go through all this trouble***

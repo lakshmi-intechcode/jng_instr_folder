@@ -1,93 +1,103 @@
-Intro to CRUD
-=============
+# Django CRUD Practice
 
-In this challenge we're going to be building a classic **CRUD** app which simply lists some companies. In case you forgot, **CRUD** stands for: **C**reate - **R**ead - **U**pdate - **D**elete. These are the fundamental database functions that occur through most, if not all, web applications.
+##### Description
 
+* This application will be a reenactment of the `todos` exercise you did earlier on in the course.
+* It is intended to help you practice building CRUD applications
+* Check out the resources below if you need some help
+	- [Django Model Fields](https://docs.djangoproject.com/en/1.8/ref/models/fields/)
+	- [Django URL Dispatcher](https://docs.djangoproject.com/en/1.8/topics/http/urls/ )
+	- [HTTP Methods for Restful Services](http://www.restapitutorial.com/lessons/httpmethods.html)
 
-#### Resources:
-- [Django Model Fields](https://docs.djangoproject.com/en/stable/ref/models/fields/)
-- [Django URL Dispatcher](https://docs.djangoproject.com/en/stable/topics/http/urls/ )
-- [HTTP Methods for Restful Services](http://www.restapitutorial.com/lessons/httpmethods.html)
-- [Anatomy of a URL](http://doepud.co.uk/blog/anatomy-of-a-url)
-- [REST](http://www.andrewhavens.com/posts/20/beginners-guide-to-creating-a-rest-api/)
+##### Objectives
 
-#### The Database Model
+***Model your database***
 
-- Make a Company model that holds a company `name`, `phone number`, and `email address` for a company with the appropriate model fields.
-- Make sure to include your Postgres settings in `settings.py` and to create the db.
+- Make a todo model that holds a todo `exercise`, `created_at`, and `completed` for a todo with the appropriate model fields.
 - Make your migrations, migrate your db, and run your server.
+* Remember all the steps about making apps and models before you decide to make and migrate items
 
-#### URLS/Routes
+***Organize your URL routes***
 
 Check out our **two** `urls.py` files: 
-- `project/urls.py` routes all requests to `/companies` 
-- `urls.py` file in the companies app. 
+- `project/urls.py` routes all requests to `/todos` 
+- `todos/urls.py` file in the todos app. 
 
-A clean, elegant URL scheme is an important detail in a high-quality Web application. Django lets you design URLs however you want, with no framework limitations. This module is pure Python code and is a simple mapping between URL patterns (simple regular expressions) to Python functions (your views). This separation allows our app(s) be entirely modular; we can take this app out of this project and put it in another one with minimal work.
+* Yesterday we placed all of our urls in the `project/urls.py` file
+* Today we will practice organizing our urls further but making them specific to our apps
+* Here are some of the examples from the lecture. Feel free to open up the lecture notes for more in depth bullets:
+* `todos/urls.py`
 
-#### Static Files (i.e. CSS, JS, Images, etc.)
-Also take a look at the [static folder](https://docs.djangoproject.com/en/stable/howto/static-files/) and the link to the CSS file inside in our template. If you want to include images, CSS, Javascript files, etc. You will need to change your `settings.py` file to include your defined static folder in the `STATICFILES_DIRS` list:
-```python
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-    '/var/www/static/',
+```
+urlpatterns = [
+	url(r'^create$', views.create, name="create"),
 ]
 ```
-`os.path.join(BASE_DIR, "static")` joins your defined static folder with the base directory and adds it to the staticfiles_dir list.  
+* `project/urls.py` 
 
-Now that our Django app has been properly set up to include our static files and our inital `Company` model, let's begin creating our URls! You will need the following routes configured in your apps' `URLs.py` file:
-   
-    - companies/create/
-    - companies/<company_id>/
-    - companies/<company_id>/update/
-    - companies/<company_id>/delete/
+```
+from django.conf.urls import include, url
 
+urlpatterns =[
+	url(r'^todos/', include("todos.urls", namespace="todos")),
+]
+```
 
-#### Create
+***Make a CREATE route***
 
-Make a new route, `/create`, that has a form and will insert a new company into the database.
-Your form on `index.html` should look something like this:
+* Make a new route in your `todos/urls.py` file. 
+	* It will be a create route (like above) and lead to a create view
+	
+* Your form on `index.html` should look something like this:
 ```html
-<form name="companies" action="/create" method="POST">
+<form action="urltemplatetag" method="POST">
 	{% csrf_token %}
 	<input name="name" type="text">
 	...
 </form>
 ```
-Keep in mind that depending on the request.method (i.e. GET or POST). Our function based view for create will either render the `Company` form if a GET request is sent as opposed to the creation of a `Company` if a POST is sent. The POST route should save the company and redirect back to the main page.
+* Keep in mind that depending on the request.method (i.e. GET or POST). Our function based view for create will either render the `todo` form if a GET request is sent as opposed to the creation of a `todo` if a POST is sent. The POST route should save the todo and redirect back to the main page.
 
-#### Read
-Now that you're able to create new `Company` objects. We will need to be able to render a given `Company` objects' on it's own page as well as a list of ALL `Company` objects. To do this, you'll need to write code in the respective template and the view function to show a list of all the companies. Make every company a link to a new page that displays their information. Go back to [Django docs on URLs](https://docs.djangoproject.com/en/stable/topics/http/urls/#named-groups) and read about Named Groups.You will need to use these in order to do your database look up for a `Company`.
+***Make a READ route***
 
-It should look something like this (Make sure you know what this regex is doing!): 
+* The user is now able to create new todo objects
+* We should allow them to view a list of all the todo objects
+* Create new code in to make this list viewable
+	* view function
+	* html file
+	* templating in the html
+	* use Django's ORM
+* Once you have the list populating how can we make every todo link to a new page that will display only that specific information
+* Visit the [Django docs on URLs](https://docs.djangoproject.com/en/dev/topics/http/urls/#named-groups) and read about Named Groups.You will need to use these in order to do your database look up for a `todo`.
+* It should look something like this (Make sure you know what this regex is doing!): 
+
 ```py
-url(r'^(?P<company_id>[0-9]+)/$', views.company),
+url(r'^(?P<todo_id>[0-9]+)/$', views.todo),
 ```
+* Your `index.html` should look something like this:
 
-Your `index.html` should look something like this:
 ```html
-{% for company in companies %}
-	<p>{{ company.name }}</p>
+{% for todo in todos %}
+	<p>{{ todo.name }}</p>
 {% endfor %}
 ```
-#### Update
 
-Now we are going to make an update route that takes the company info and pre-populates a form with the `Company` information. You're going to want to load the `Company` information from the database, pass it to the template, and render your update form _with_ the information.
+***UPDATE***
 
-In the template, you're going to want something like:
+* Great now we want our users to update any of their todo objects
+* We want them to view the detailed information inside of a form, and update that information
+* Below is an example of what that form may look like:
+ 
 ```html
-<form name="companies" action="/update" method="POST">
+<form name="todos" action="/update" method="POST">
 	{% csrf_token %}
-	<input name="name" type="text" value="{{company.name}}">
+	<input name="name" type="text" value="{{todo.name}}">
 	...
 </form>
 ```
-On submit, update the `Company` and redirect to the `Company` objects' individual page (i.e. your READ route). Put a link to this route on the index page next to each company or on the company's individual page.
+* When a user submits this it should update the todo and redirect to the todo objects detailed view
+	* Or if you think it's better UI to link them to the list view
 
-#### Delete
+***DELETE***
 
-Finally, make a route that deletes a `Company` from the database. You don't really need a new page for this - just a route and a redirect. Put the link on the `Company` objects' individual page.
-
-#### Bonus - the Admin
-
-After you've created a few companies, follow this bit of the [Django Tutorial](https://docs.djangoproject.com/en/stable/intro/tutorial02/) and connect to your built in admin backend. This is one of the best built-in features of Django that definitely makes your life a little easier (i.e. It does all your CRUD ;) ). Play around and take a look at its functionality.
+* Finally, make a route that deletes a `todo` from the database. You don't really need a new page for this - just a route and a redirect. Put the link on the `todo` objects' individual page.
