@@ -1,32 +1,39 @@
-Club Maker
-==========
+# MOAR ORM THANGS!!!
 
-You've been commissioned to build software to manage student clubs on a college campus.
+##### Description
 
-#### The Relationships
+* We're going to revisit the good old college days
+* Remember when you could party all night and wake up in the morning with no hangover? 
+* Remember when you could pack on as much food on your plate at the buffet style cafeteria and only gain five pounds?
+* WELL NOW YOU'RE BACK
+* Because you've been hired to build software to manage student clubs on a college campus.
 
-Design the schema in SQL designer, then in the Django ORM.
+##### Objectives
 
+***Your Relationships (In Django...)***
+
+* Design the schema in SQL designer, then in the Django ORM.
+
+```
 A student can have memberships to many clubs  
 A club can have many students  
 A student can have many interests  
 A club can have many interests  
 A student can have a title for each club they belong in  
+```
 
-#### Making Queries
+***Making Queries***
 
-Create queries to show that your database has all of these relationships.
+* Create queries to show that your database has all of these relationships.
+* Show all the students that belong to a given club, along with their titles.
+* Show all of the students that have a given interest.
+* Given a student, find the clubs that match their interests.
 
-Show all the students that belong to a given club, along with their titles.
+***NOTE***
 
-Show all of the students that have a given interest.
+* Remember if you are having trouble seeing the relationships in the shell use the `__str__` method in your tables. It'll help with easier reading
 
-Given a student, find the clubs that match their interests.
+##### SAME OLD RESOURCES
 
-If you are having trouble seeing the relationships while you're in shell, think about adding a `__str__` method to each of your tables, so that you get easier to read feedback.
-
-Resources
----------
-
-[Django's ORM Docs](https://docs.djangoproject.com/en/dev/topics/db/models/)  
-[Many to many example](https://docs.djangoproject.com/en/dev/topics/db/examples/many_to_many/)
+* [Django's ORM Docs](https://docs.djangoproject.com/en/dev/topics/db/models/)  
+* [Many to many example](https://docs.djangoproject.com/en/dev/topics/db/examples/many_to_many/)
