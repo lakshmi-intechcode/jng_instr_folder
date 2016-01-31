@@ -16,25 +16,50 @@
 
 ##### Part 1 - Static Files
 
-* Django static files are the CSS, JS, images, and the like that you will be incorporating into your project
-* Take a look at the [static folder documentation](https://docs.djangoproject.com/en/1.8/howto/static-files/)
-* If you want to include images, CSS, Javascript files, etc. You will need to change your `settings.py` file to include your defined static folder in the `STATICFILES_DIRS` tuple
+* Static File notes have been in your parking lot but we'll go over them briefly
+* `Static Files` are your
+	* images
+	* CSS stylesheets
+	* JavaScript files
+* Here are the Django docs for how to set them up [static folder documentation](https://docs.djangoproject.com/en/1.8/howto/static-files/)
+* Your `settings.py` file will have to be changed to include the static files
+* Put the following code at the very bottom of your `settings.py` file under `STATIC_URL`
 
-```python
+```
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"), //This joins your defined static folder with the base directory and adds it to the staticfiles_dir tuple
+    os.path.join(BASE_DIR, "static"), 
     '/var/www/static/',
 )
 ```
+* os.path.join and Base_dir allow our application to be more dynamic with compatibility between different operating systems. 
+	* A path on Linux may be different than Mac
+* We are telling django to combine your static folder with the base directory
+* Now we can incorporate our css stylesheets into our base html
 
-* If we do it this way we can configure our urls in the `urls.py` file to look something like this: (This example takes into account an app with a todo model)   
-    * todos/create/
-    * todos/<todo_id>/
-    - todos/<todo_id>/update/
-    - todos/<todo_id>/delete/
+***STEPS***
+
+* Make a folder called `static` inside your project.
+* Make a `style.css` file inside that `static` folder
+* Open the css file and put in some CSS. `h1{color:red;}`
+* Go into your base.html file and put the following
+
+```
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="{% static "css/base.css" %}">
+	<meta charset="UTF-8">
+	<title>{% block head_title %}TRY DJ 1.9{% endblock head_title%}</title>
+</head>
+```
+* Now your h1 tags should appear red
 
 
 ##### Part 2 - Class Based Views
+
+
 
 ##### Part 3 - Two Apps
 
