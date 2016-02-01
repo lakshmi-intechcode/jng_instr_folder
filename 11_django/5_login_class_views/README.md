@@ -59,6 +59,66 @@ STATICFILES_DIRS = (
 
 ##### Part 2 - Class Based Views
 
+* Lets talk about how you may begin to write/refactor your code to incorporate Class Based Views
+
+***urls.py***
+
+* Your urls.py file will not change much
+* You will still need to import your views 
+
+```
+from .views import (
+	Post_Home,
+	Post_Detail
+)
+```
+* Notice they are capitalized, we are importing classes now\
+	* The first letter when defining a class is Capitalized
+* The url patters will follow the same format
+	* url("regex url endpoint", view targeted, name="template value")
+
+```
+urlpatterns = [
+	url(r'^$', Posts_List.as_view(), name='list'),
+	url(r'^(?P<id>\d+)/$', Posts_Detail.as_view(), name='detail'),
+]
+```
+* Notice the `as_view()` method here. Since we are dealing with classes instead of functions, the `as_view()` is a built in method which will allow us to call the classes when the endpoint is hit
+
+***views.py***
+
+* You will need to import views from django
+
+```
+from django.views.generic import View
+```
+* The most basic view, our home view, will look very similar to the function based way of doing things
+
+```
+class Posts_List(View):
+	def get(self, req):
+		whiskey_list = Post.objects.all()
+		context = {
+			"whiskey_list": whiskey_list,
+		}
+		return render(req, "posts/list.html", context)
+```
+* Our detail view will look a little bit different
+
+```
+class Posts_Detail(View):
+
+	def get(self, req, **kwargs):
+		whiskey = get_object_or_404(Post, id=kwargs['id'])
+		context = {
+			"whiskey":whiskey
+		}
+		return render(req, "posts/detail.html", context)
+```
+
+***FIFO TIME***
+
+* For your assignment tonight how might you incorporate these forms into these new class based views.
 
 
 ##### Part 3 - Two Apps
