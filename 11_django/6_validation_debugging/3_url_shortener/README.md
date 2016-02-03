@@ -17,9 +17,9 @@
     
 ***DB and Models***
 
-Create a model called Url that will have the following fields:
-- `url`: which will hold the physical URL to our webpage. 
-- `shortened`: This field can be either an integer or string that will be *unique* for each url. (Don't use the primary key, we don't want to expose that to the user. Be creative!)
+* Create a model called Url that will have the following fields:
+	- `url`: which will hold the physical URL to our webpage. 
+	- `shortened`: This field can be either an integer or string that will be *unique* for each url. (Don't use the primary key, we don't want to expose that to the user. Be creative!)
 
 ***ModelForm and Views***
 
