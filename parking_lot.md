@@ -8,7 +8,7 @@ The information in this markdown is intended to expand on your questions we were
 
 ## Lecture Parking Lot
 
-##### Open your file into the Python REPL
+#### Open your file into the Python REPL
 
 * Using `-i` to run your file. If you have a python file that you normally run with `python3 file.py` you can use `-i` with it. This will open the interactive pyton3 repl with your file. 
 * Below is an example where I made a file with a function to print a string. 
@@ -30,13 +30,13 @@ def hello():
 >>> 'HELLO WORLD'
 ```
 
-##### WHAT IS THE MAP.MIN FILE IN BOOTSTRAP
+#### WHAT IS THE MAP.MIN FILE IN BOOTSTRAP
 
 * In class we talked about the bootstrap map.min file
 	* It is something that allows people to use bootstrap with css preprocessor such as LESS and SASS
 * For the purposes of this class we don't have to go in depth about this topic
 
-##### DJANGO STATIC FILES
+#### DJANGO STATIC FILES
 
 * `Static Files` are your:
 	* images
@@ -89,7 +89,7 @@ STATICFILES_DIRS = (
 
 ---
 
-### Resources
+## Resources
 
 ***Some Online Resources***
 
@@ -151,7 +151,7 @@ STATICFILES_DIRS = (
 
 ---
 
-### Schedule 
+## Schedule 
 
 | Weeks | Day 1                                                                 | Day 2                                                                              | Day 3                                                                   | Day 4                                        | Day 5                                    | Weekend Assignments                   |
 |-------|-----------------------------------------------------------------------|------------------------------------------------------------------------------------|-------------------------------------------------------------------------|----------------------------------------------|------------------------------------------|---------------------------------------|
@@ -168,16 +168,16 @@ STATICFILES_DIRS = (
 
 ---
 
-### How to find out if a number is divisible by another number (Found on Reddits YSK)
+## How to find out if a number is divisible by another number (Found on Reddits YSK)
 
-##### Obvious:
+#### Obvious:
 
 * 1 - Always.
 * 2 - If the number is even.
 * 5 - If the number ends in 5 or 0.
 * 10 - If the numbers ends in 0.
 
-##### Less Obvious:
+#### Less Obvious:
 
 * 3 - Add all of the digits in the number. If the result is divisible by 3, then so is the original number. (Note that this rule can be repeated with the result if you still don't know.)
 * 4 - If the last 2 digits of the number are divisible by 4, then so is the entire number. If you don't know then halve the last 2 digits twice. If you still have a whole number then it is divisible by 4.
@@ -185,7 +185,7 @@ STATICFILES_DIRS = (
 * 8 - If the last 3 digits of the number are divisible by 8, then so is the entire number. If you don't know then halve the last 3 digits three times. If you still have a whole number then it is divisible by 8.
 * 9 - Add all of the digits in the number. If the result is divisible by 9, then so is the original number. (Note that this rule can be repeated with the result if you still don't know.)
 
-##### Obscure:
+#### Obscure:
 
 * 7 - Remove the last digit from the number. Take the number formed by the remaining digits and subtract by 2x the removed digit. If the result is divisible by 7, then so is the original number.
 * Example (889): 88-(9x2) = 88-18 = 70
