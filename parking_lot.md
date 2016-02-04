@@ -8,47 +8,74 @@ The information in this markdown is intended to expand on your questions we were
 
 ## Lecture Parking Lot
 
-* Using `-i` to run your file. If you have a python file that you normally run with `python3 file.py` you can use `-i` with it. This will open the interactive pyton3 repl with your file. Below is an example where I made a file with a function to print a string. I do not invoke that function inside of the file
+##### Open your file into the Python REPL
+
+* Using `-i` to run your file. If you have a python file that you normally run with `python3 file.py` you can use `-i` with it. This will open the interactive pyton3 repl with your file. 
+* Below is an example where I made a file with a function to print a string. 
+* I do not invoke that function inside of the file
+* Make a file called `hello.py`
 
 ```
-//inside your terminal make a python file
-touch hello.py
-
-//inside hello.py
-
 def hello():
 	print("HELLO WORLD")
-	
-//Do not invoke it
-//Back inside of your terminal
+```
+* Now save it and go back to the terminal
+* Run the following command to open the file in the REPL
+	* `python3 -i hello.py`
+* Now you can do what you want with the file in the REPL. 
+* Let's invoke the function
 
-python3 -i hello.py
-
+```
 >>> hello()
 >>> 'HELLO WORLD'
 ```
+
+##### WHAT IS THE MAP.MIN FILE IN BOOTSTRAP
+
 * In class we talked about the bootstrap map.min file
 	* It is something that allows people to use bootstrap with css preprocessor such as LESS and SASS
+* For the purposes of this class we don't have to go in depth about this topic
 
-***Django Static Files***
+##### DJANGO STATIC FILES
 
-* Django static files are the CSS, JS, images, and the like that you will be incorporating into your project
-* Take a look at the [static folder documentation](https://docs.djangoproject.com/en/1.8/howto/static-files/)
-* If you want to include images, CSS, Javascript files, etc. You will need to change your `settings.py` file to include your defined static folder in the `STATICFILES_DIRS` tuple
+* `Static Files` are your:
+	* images
+	* CSS Stylesheets
+	* JavaScript Files
+* [static folder documentation](https://docs.djangoproject.com/en/1.8/howto/static-files/)
+* Your `settings.py` file will have to be changed to include the static files
+* Put the following code at the very bottom of your `settings.py` file under `STATIC_URL`
 
-```python
+```
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"), //This joins your defined static folder with the base directory and adds it to the staticfiles_dir tuple
+    os.path.join(BASE_DIR, "static"), 
     '/var/www/static/',
 )
 ```
+* os.path.join and Base_dir allow our application to be more dynamic with compatibility between different operating systems. 
+	* A path on Linux may be different than Mac
+* We are telling django to combine your static folder with the base directory
+* Now we can incorporate our css stylesheets into our base html
 
-* If we do it this way we can configure our urls in the `urls.py` file to look something like this: (This example takes into account an app with a todo model)   
-    * todos/create/
-    * todos/<todo_id>/
-    - todos/<todo_id>/update/
-    - todos/<todo_id>/delete/
+***STEPS***
 
+* Make a folder called `static` inside your project.
+* Make a `style.css` file inside that `static` folder
+* Open the css file and put in some CSS. `h1{color:red;}`
+* Go into your base.html file and put the following
+
+```
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="{% static "css/base.css" %}">
+	<meta charset="UTF-8">
+	<title>{% block head_title %}TRY DJ 1.9{% endblock head_title%}</title>
+</head>
+```
+* Now your h1 tags should appear red
 
 ---
 
@@ -110,27 +137,32 @@ STATICFILES_DIRS = (
 * [What does auto really mean?](http://stackoverflow.com/questions/4471850/what-is-the-meaning-of-auto-value-in-a-css-property)
 * [Positioning from vanseodesign](http://vanseodesign.com/css/css-positioning/)
 * [Learn Layout DOT COM](http://learnlayout.com/)
-* [CSS DINER EXERCISE TUTORIAL](http://flukeout.github.io/)
+* [CSS Diner Exercise Tutorial](http://flukeout.github.io/)
 
+***Django***
 
+* [Stack OverFlow Answer has some Videos for Class Based Views](http://stackoverflow.com/questions/17414622/django-a-good-tutorial-for-class-based-views)
 
+***Bash Commands***
+
+* [Quick read about what is curl](https://quickleft.com/blog/command-line-tutorials-curl/)
+- [Stack Overflow example of curl in use](http://superuser.com/questions/149329/what-is-the-curl-command-line-syntax-to-do-a-post-request)
 
 
 ---
 
 ### Schedule 
 
-| Weeks | Day 1                                                          | Day 2                                        | Day 3                                      | Day 4                              | Day 5                                    | Weekend Assignments      |
-|-------|----------------------------------------------------------------|----------------------------------------------|--------------------------------------------|------------------------------------|------------------------------------------|--------------------------|
-| 1     | Python  Fundamentals  One                                      | Python Fundamentals Two                      | Intro To Object Oriented Programming       | More OOPS and Inheritance          | Review                                   |                          |
-| 2     | Binary Search Linear Search Linked List                        | Bubble Sort Insertion Sort Stacks and Queues | SQL Intro SQL CRUD MVC Intro Views /Models | SQL / MVC Models SQL Conn Createdb | Binary Search Tree Merge Sort Quick Sort | Xmas Break RPG Blackjack |
-| 3     | SQL Relational DB SQL Foreign Keys                             | SQL Relational DB SQL Joins                  | OMDB API                                   | Markit API                         | API                                      | Trader to Bank           |
-| 4     | Advanced Python Generators List Comprehensions Args and Kwargs | Baby ORM Read                                | Baby ORM  Full CRUD                        | Baby ORM  Full CRUD                | Assessment                               |                          |
-|       |                                                                |                                              |                                            |                                    |                                          |                          |
-|       |                                                                |                                              |                                            |                                    |                                          |                          |
-|       |                                                                |                                              |                                            |                                    |                                          |                          |
-|       |                                                                |                                              |                                            |                                    |                                          |                          |
-
+| Weeks | Day 1                                                                 | Day 2                                                                              | Day 3                                                                   | Day 4                                        | Day 5                                    | Weekend Assignments                   |
+|-------|-----------------------------------------------------------------------|------------------------------------------------------------------------------------|-------------------------------------------------------------------------|----------------------------------------------|------------------------------------------|---------------------------------------|
+| 1     | Python  Fundamentals  One                                             | Python Fundamentals Two                                                            | Intro To Object Oriented Programming                                    | More OOPS and Inheritance                    | Review                                   |                                       |
+| 2     | Binary Search Linear Search Linked List                               | Bubble Sort Insertion Sort Stacks and Queues                                       | SQL Intro SQL CRUD MVC Intro Views /Models                              | SQL / MVC Models SQL Conn Createdb           | Binary Search Tree Merge Sort Quick Sort | Xmas Break RPG Blackjack              |
+| 3     | SQL Relational DB SQL Foreign Keys                                    | SQL Relational DB SQL Joins                                                        | OMDB API                                                                | Markit API                                   | API                                      | Trader to Bank                        |
+| 4     | Advanced Python Generators List Comprehensions Args and Kwargs        | Baby ORM Read                                                                      | Baby ORM  Full CRUD                                                     | Baby ORM  Full CRUD                          | Assessment                               | Pre Phase 2 Readings                  |
+| 5     | Intro to  HTML vs HTML 5 CSS JS Syntax Diff                           | JS Scope Callbacks Closures Higher Order Functions DOM  DOM Events                 | jQuery Intro CDNs jQuery DOM                                            | CSS Positioning JavaScript THIS  Tic Tac Toe | Tic Tac Toe                              | Tic Tac Toe                           |
+| 6     |  CSS Media Queries CSS Pseudo ClassesCSS Grids CSS Reset vs Normalize | Django Intro Pip Function Based Views HTML Forms Request Response Cycle Django ORM | URL Namespace Django Models Django Requests                             | Django Model Forms                           | WEEKEND PROMPT  UserLess Blog            | UserLess Blog                         |
+| 7     | Django User Sessions Class Based Views                                | Homework Day                                                                       | Django Custom Validation Django Default Validators Debugging Assignment | Django as an API                             | AJAX                                     | Todo Api with AJAX  Hacker News Clone |
+| 8     | Django and OAuth                                                      | Review                                                                             | Review                                                                  | Review                                       | Assessment                               |                                       |
 
 
 
