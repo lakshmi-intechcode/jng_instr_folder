@@ -57,7 +57,6 @@ You should be able to use and test these in your browser. All errors due to user
 ```     
 curl -X POST "http://127.0.0.1:8000/todos/" -d "token=81a8d4a4cf0b9c65&todo=buy beer"
 ```
-
 * Create an endpoint that saves a new todo to the database for the given user's token.
 * Create an endpoint that marks a given todo complete for the given user.
 * Create an endpoint that updates a given todo for the given user.
