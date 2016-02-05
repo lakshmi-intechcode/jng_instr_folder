@@ -1,15 +1,29 @@
-Todos API with Ajax
-===================
+# Todos API with AJAX
 
-Now that we've got the AJAX basics down, let's consume the API we wrote yesterday with a single page application.
+##### Description
 
-If you did not finish the API, now is the time.
+* Time to make use of that awesome Todos API you wrote yesterday
+* Lets combine that with our lesson today and build a Single Page CRUD application
+* This application will never reload or redirect. (Your back button and refresh button will not work the same as server side rendered applications)
 
-#### The Basics
+##### Objectives
 
-While we are handling it slightly differently, at the end of the day this is still a CRUD app. All we are doing is Creating, Reading, Updating and Deleting Todos. You have faced this simple problem before, let's focus on implementation.
+* This will be using strictly an HTML, CSS, and JS file
+* Inside your HTML include the following
+	* jQuery
+	
+* make ajax request
+* if token comes back stores as a cookie
+* use cookie to authenticate future request
 
-This is a single page application. That means that the page will never reload and never redirect. We're going to use jQuery and Ajax to get from the server, post to the server, and update the HTML on the page when appropriate.
+bonus, updating features?
+
+
+refactor the request, jquery 
+
+if request is ajax 
+
+
 
 #### Structure
 

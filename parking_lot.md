@@ -113,6 +113,9 @@ STATICFILES_DIRS = (
 * [JavaScript is Sexy Scope and Hoisting](http://javascriptissexy.com/javascript-variable-scope-and-hoisting-explained/)
 * [JavaScript is Sexy "this"](http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/)
 - [JavaScript is Sexy "call" / "bind" methods](http://javascriptissexy.com/javascript-apply-call-and-bind-methods-are-essential-for-javascript-professionals/)
+* [AJAX Blog Explain](http://www.seguetech.com/blog/2013/03/12/what-is-ajax-and-where-is-it-used-in-technology)
+* [AJAX on Tutorials Point (eh okay reading)](http://www.tutorialspoint.com/ajax/index.htm)
+* [AJAX on jQuery.com, click through the links on the bottom](https://learn.jquery.com/ajax/)
 
 ***Python***
 

@@ -61,7 +61,6 @@ console.log("ELLO WARLD")
 * Let's make a GET request to the OMDB api. 
 * Back to our go to movie. Grab the endpoint for top gun
 * Now that its connected let's try this code in the JS file
-* 
 
 ```
 console.log("ELLO WARLD")
@@ -89,13 +88,67 @@ console.log("ELLO WARLD")
   request.send();
 ```
 
+***What the hell did we just do?***
+
+* `request.open` - this takes three arguments. 
+	* `method` - first argument. What type of HTTP verb are we using?
+	* `url` - second argument. What is the endpoint we are hitting
+	* `async` - third argument. Is this call expected to be asynchronous
+* When that request loads run the function
+* Control flow statement to tell us if there is an error or not
+
+##### Part 3 - jQuery AJAX
+
+* What we just saw was how AJAX requests are made in Vanilla JavaScript 
+
+***Side Note***
+
+* You should know how to do this or at least that it exists, there are many code challenges I know of that ask for things to be done in only Vanilla JS. 
+
+***Back to the lesson***
+
+* WRAP IT IN CASH
+* jQuery gives us several methods where we can shorten everything we did up top to one command. 
+
+```
+$(document).ready(function(){
+  console.log("ELLO WARLD")
+
+  $.ajax({
+    method: "GET",
+    url:"http://www.omdbapi.com/?t=top+gun&y=&plot=short&r=json",
+    success: function(result){
+      console.log(result);
+    }
+  })  
+})
+```
+
+##### Part 5 - JSONP 
+
+* How does AJAX work with forms?
+* What about all those CSRF stuff from earlier in our course
+* JSONP stands for "JSON with Padding" 
+* It is used to 
+
+
+##### Part 6 - Django vs jQuery request(serialization)
+
+
+* This will check for ajax request or a curl request
+
+```
+if is_ajax():
+	content = request.POST/GET
+else: 
+	get from body
+```
 
 
 
 
 
 
-##### Part 2 - Returning JSON
 
 
 
