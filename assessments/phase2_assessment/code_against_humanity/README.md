@@ -1,51 +1,77 @@
-Phase 2 Assessment - Code Against Humanity!
---------------------------------------------
+# Phase 2 - Code Against Humanity!
 
-Congratulations on making it to this point! You're just one final challenge away from moving onto Phase 3, your final project, and the rest of your technology career.
+#### Description
 
-If you have any questions regarding the assignment, please ask! If you have any questions regarding Python, Django, Javascript, now is not the time.
+* Congratulations on making it to the end of phase 2. There's just one more hurdle you have to hop over (hopefully with ease). After that you're off to your final project and then the start of an amazing technology career.
+* We're going to code our own version of [Cards Against Humanity](https://cardsagainsthumanity.com/). 
 
-We're going to code a VERY simple web version of [Cards Against Humanity](https://cardsagainsthumanity.com/).  This is a fun one - work quickly and make it happen.
+#### Rules of Cards Against Humanity
 
-In case you've never played the game, the rules are simple. A group of three or more people can play. One player selects a "Black Card", which contains a question or a fill-in-the-blank. Here are some example Black Cards:
+* In case you have never played the game here are the rules
+* A group of three or more people can play
+* One player (The Judge) will select a "Black Card" which will contain a "fill in the blank" section
+* Here is an example of a black card
 
-        What gives me uncontrollable gas?
-        The class field trip was completely ruined by __________.
+```
+________ gives me uncontrollable gas.
 
-The other players select "White Cards" to fill in the answer. Whoever picks the funniest answer wins the round. Some example White Cards:
+OR
 
-        Sniffing Glue
-        A defective condom.
-        Dick Cheney
+The class field trip was completely ruined by _________.
+```
+* The other players will give one white card which represents their "answer" to the blank portion of the black card. 
+* The Judge will select whichever white card they think is the funniest response to the black card they drew. 
+* Some examples of white cards are
 
-Get the idea? You can look at the website if you still don't get it.
+```
+Sniffing Glue
+Dick Cheney
+Taco Bell
+```
 
-####Your Challenge
+#### Objective 1
 
-Using Django, we're going to seed a database full of Black Cards and White Cards. 
+* Using Django, we're going to seed a database full of Black Cards and White Cards. 
+        * [Here is a textfile containing blackcards](http://www.cardsagainsthumanity.com/bcards.txt)
+        * [Here is textfile containing whitecards](http://www.cardsagainsthumanity.com/wcards.txt)
+* This is a very simple version of Cards Against Humanity
+* There will be five "players" that will populate a random white card each
+* "The Judge" will be the user who clicks which white card goes with their black card. 
+* Whichever card the user clicks, that "player" will be awarded a point
 
-[Here is a textfile containing blackcards](http://www.cardsagainsthumanity.com/bcards.txt)
+#### Objective 2 
 
-[Here is textfile containing whitecards](http://www.cardsagainsthumanity.com/wcards.txt)
+* You will need three routes in this Project
+        * "GET /" will be our main page.
+        * "GET /blackcards" will return a JSON of a random Black Card from the database.
+        * "GET /whitecards" will return a user a JSON response of 5 random white cards from the database.
+* Your main page should have a button that makes an AJAX GET request to /blackcards that displays the ONE black card on the page. 
+        * There will only ever be ONE black card on the page at a time. 
+* There should be another button that makes an AJAX GET request to /whitecards that displays FIVE white cards on the page
+        * There will only ever be FIVE white cards on the page at the same time.
+* The user (judge) will click on which white card they believe is the funniest to go with the black card
+        * All the cards on the screen will go away
+        * The only thing that should show is the combined text of both the white card and the black card
+        * The "player" that white card belonged to should be awarded a point
+* The user now has the option to continue playing by clicking the black card and white cards buttons
 
-We're going to have three routes on our Django Project.
+#### HINTS
 
- * "GET /" will be our main page.
- * "GET /blackcards" will return a JSON of a random Black Card in the database.
- * "GET /whitecards" will return a user a JSON response of 5 random white cards in the database.
+* You will need to use Mustache Templates
+* This will all be done on ONE Django project
+* Seed the database of the project
+* Have a template that will make the GET REQUEST to the endpoints
+* Will you assign each white card their own button or better yet, make the cards clickable!
 
-Your main page should have a button that makes an AJAX GET request to /blackcards that displays the returned Black Card on the page. There should only ever be 1 Black Card on the page, and it should always be in the same place.
+#### GOOD LUCK!
 
-Your main page should also have a button that makes an AJAX GET request to /whitecards that displays the returned White Cards on the page. There should only ever be 5 White Cards on the page, and they should always be in the same place.
+* Remember this is an open book assessment
+* Feel free to refer back to your notes, we had many exercises with similar procedures
+* Good luck!
 
-You should probably use Mustache for the card templates.
+#### BONUS
 
-Once you have that working, style your White and Black cards. They should look as close as possible to what they actual cards look like - [see them here](http://s3.amazonaws.com/cah/CAH_MainGame.pdf)
-
-That font is Helvetica Bold 15pt. That's not a free font - try a lookalike like [Droid Sans](https://www.google.com/fonts#UsePlace:use/Collection:Droid+Sans) or [Open Sans](https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans). Follow the directions on that page to link the font in your site. 
-
-Don't worry about the logo on the bottom of the cards - but DO worry about the black / white borders, card size / shape, and anything else you think makes your web implementation look like them.
-
-When you complete that, write atleast 3 tests for each of your Django routes.
-
-Finally, if you have time left, make the white cards clickable. When you click the card, it should vaguely highlight it. The full Black Card + White Card sentence should display somewhere on the page for maximum funny.
+* Style your cards to make them look like the actual cards
+* Once you have that working, style your White and Black cards. They should look as close as possible to what they actual cards look like - [see them here](http://s3.amazonaws.com/cah/CAH_MainGame.pdf)
+* That font is Helvetica Bold 15pt. That's not a free font - try a lookalike like [Droid Sans](https://www.google.com/fonts#UsePlace:use/Collection:Droid+Sans) or [Open Sans](https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans). Follow the directions on that page to link the font in your site. 
+* Don't worry about the logo on the bottom of the cards - but DO worry about the black / white borders, card size / shape, and anything else you think makes your web implementation look like them.
