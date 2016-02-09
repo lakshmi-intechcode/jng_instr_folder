@@ -151,6 +151,11 @@ STATICFILES_DIRS = (
 * [Quick read about what is curl](https://quickleft.com/blog/command-line-tutorials-curl/)
 - [Stack Overflow example of curl in use](http://superuser.com/questions/149329/what-is-the-curl-command-line-syntax-to-do-a-post-request)
 
+***OAuth Resources***
+
+- [Check out OAuth on wikipedia for a more "technical" explanation](https://en.wikipedia.org/wiki/OAuth)
+- [Here's a less "technical" explanation for OAuth](http://hueniverse.com/oauth/guide/terminology/)
+- [Here's a list of OAuth Providers](https://en.wikipedia.org/wiki/List_of_OAuth_providers)
 
 ---
 
