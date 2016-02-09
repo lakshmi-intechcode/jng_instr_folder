@@ -22,7 +22,7 @@
 * Think about applications/websites that ask you to sign in with your Google Email, or Facebook, or Twitter account instead of having their own
 * What they are saying is "I trust Googles / Facebook / Twitter services to verify you are who you say you are"
 * [Check out OAuth on wikipedia for a more "technical" explanation](https://en.wikipedia.org/wiki/OAuth)
-* [Here's a less "technical" explanation for OAuth](http://hueniverse.com/oauth/guide/terminology/)
+* [(MUST READ) Here's a less "technical" explanation for OAuth](http://hueniverse.com/oauth/guide/terminology/)
 * [Here's a list of OAuth Providers](https://en.wikipedia.org/wiki/List_of_OAuth_providers)
 
 ***A Visual for OAuth***
