@@ -1,16 +1,19 @@
-Phase 2 Assessment
-================
+# Phase 2 Assessment
+
+#### Description
+
+* You're almost at the finish line! 
+* Your assessment today will be to build a SINGLE PAGE CRUD event management application. 
+* I have provided the user stories below along with some hints. 
 
 
-For your assessment today we'll be building our own event management application. The requirements for this assignment are in the form of [user stories](https://en.wikipedia.org/wiki/User_story). There is a lot of work here. DO NOT FREAK OUT. You will be assessed on the quality of your work, not the quantity. Plan what is needed to provide the experience for each User Story and execute it. Execute each user story sequentially from top to bottom.
+#### Objectives
 
-
-Good luck and feel free to ask questions for clarity.
-
-
-### Event Management 
-
-Your program will contain users and events. Users can attend many events and an event can be attended by many users. Events are created by the user and thus belongs to the user. A user can create multiple events.
+* Your program will contain users and events
+* Users can attend many events 
+* Events can be attended by many users
+* A user can create an event. That event will belong to the user
+* A user can create multiple events
 
 
 ### User Stories:
