@@ -2,7 +2,7 @@
 
 #close {
   position: absolute;
-  right: 0;
+  right: 3%;
   top: 5%;
 }
 
@@ -33,14 +33,16 @@
 }
 
 .modal-header {
-  border-radius: 50px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
   background-color: white;
   width: 100%;
   text-align: center;
 }
 
 .modal-body {
-  border-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
   width: 100%;
   background-color: white;
 }
@@ -58,5 +60,5 @@ img {
   width:100%;
 }
 
-h3 {
+.heading {
   display: inline-block;

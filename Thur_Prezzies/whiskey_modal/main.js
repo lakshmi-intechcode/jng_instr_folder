@@ -14,7 +14,7 @@ var modal_func = function(w){
 	var describe = whiskeys[w].describe;
 	var image = whiskeys[w].image;
 
-	$("h3").html(heading);
+	$(".heading").html(heading);
   $(".describe").html(describe)
   $("img").attr("src", image)
   $(".modal").toggle();
