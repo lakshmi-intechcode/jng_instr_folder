@@ -18,16 +18,20 @@
 ##### Part 1 - What is OAuth?
 
 * OAuth stands for Open standard for Authentication. 
-* In this scenario we will be having a third party validate a users authentication for us. 
+* It allows us to have a third party validate a users authentication for us. 
 * Think about applications/websites that ask you to sign in with your Google Email, or Facebook, or Twitter account instead of having their own
-* What they are saying is "I trust Googles / Facebook / Twitter services to verify you are who you say you are"
-* [Check out OAuth on wikipedia for a more "technical" explanation](https://en.wikipedia.org/wiki/OAuth)
-* [(MUST READ) Here's a less "technical" explanation for OAuth](http://hueniverse.com/oauth/guide/terminology/)
+* These applications are essentially saying "I trust Googles / Facebook / Twitter services to verify the user is who they say they are"
+* [(MUST READ) Here's a great explanation for OAuth](http://hueniverse.com/oauth/guide/terminology/)
+* [OAuth Wiki (technical and boring)](https://en.wikipedia.org/wiki/OAuth)
 * [Here's a list of OAuth Providers](https://en.wikipedia.org/wiki/List_of_OAuth_providers)
 
 ***A Visual for OAuth***
 
 ![OAuth](https://developers.google.com/accounts/images/webflow.png)
+
+* The user will hit your application and be prompted to login through their google account
+* If they are verified your App will get back a token. This will be in place of the users Username and Password. 
+* You can now use this token to allow the user to call the Google API
 
 ##### Part 2 - Extra Extra functionality
 
