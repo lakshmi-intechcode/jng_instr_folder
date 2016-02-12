@@ -8,6 +8,8 @@ $("#close").on("click", function() {
   $(".modal").toggle();
 });
 
+
+
 var modal_func = function(w){
 	console.log(whiskeys[w])
 	var heading = whiskeys[w].heading;
