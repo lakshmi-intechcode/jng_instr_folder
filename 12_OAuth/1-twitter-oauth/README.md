@@ -9,6 +9,24 @@
 ***SETTING UP***
 
 * Go to the [Twitter Developer Page](https://dev.twitter.com) and make a developer account.
+	* Under the developers tab click on "documentation"
+	* Check out the Twitter API if and when you have time
+	* For now visit the `OAuth` tab
+	* Now click `Overview`
+	* At this point you should be on a screen that suggests a route for Obtaining Access Tokens.
+	* Click on the "Sign in with Twitter" link: They have great step by step documentation on how to implement this
+		* [This is where you should end up](https://dev.twitter.com/web/sign-in/implementing)
+* You can make an account when creating an application
+* [https://apps.twitter.com/app/new](https://apps.twitter.com/app/new)
+
+***NOTE***
+
+* It is highly suggestted you browse the docs for Twitters OAuth and API
+* It may seem confusing at first but trust me when I tell you this documentation is way better than the norm
+
+
+***Continue***
+
 * Complete the application to get the keys and the access tokens.
 * Create a new Django project and configure everything as you normally would
 * Your callback url endpoint should be the below

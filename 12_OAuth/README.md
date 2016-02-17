@@ -36,10 +36,24 @@
 ##### Part 2 - Extra Extra functionality
 
 * A positive of OAuth is, if you are a smaller application you may trust these other larger companies to verify users. Their security will most likely be better than your own
+* We are able to do this using two types of tokens. `Request Tokens` and `Access Tokens`
+* `Request Tokens` is on the user facing side of the app, and is made when the user requests authorization
+* `Access Tokens` - These are security credentials for a login session
+	* It is used to identify a user, and their privileges
+	* Think of this as the token between your server and the third party vendor
+	* Your app will be using a users access token to give them abilities to talk to the service they OAuthed from
+* Check out this paragraph from the [hueniverse blog](http://hueniverse.com/2008/10/03/beginners-guide-to-oauth-part-iii-security-architecture/)
+
+```
+OAuth includes two kind of Tokens: Request Token and Access Token. Each Token has a very specific role in the OAuth delegation workflow. While mostly an artifact of how the OAuth specification evolved, the two-Token design offers some usability and security features which made it worthwhile to stay in the specification. OAuth operates on two channels: a front-channel which is used to engage the User and request authorization, and a back-channel used by the Consumer to directly interact with the Service Provider. By limiting the Access Token to the back-channel, the Token itself remains concealed from the User. This allows the Access Token to carry special meanings and to have a larger size than the front-channel Request Token which is exposed to the User when requesting authorization, and in some cases needs to be manually entered (mobile device or set-top box).
+
+The request signing workflow treats all Tokens the same and the workflow is identical. The two Tokens are specific to the authorization workflow, not the signature workflow which uses the Tokens equally. This does not mean the two Token types are interchangeable, just that they provide the same security function when signing requests.
+```
 * Allowing `tokens` from third party sources can also allow us the functionality of those resources. 
 * For example we may be allowed to:
 	* Link our users to their tweets on twitter
 	* Link our users to google maps api
+
 
 ##### Part 3 - Combining OAuth 
 
