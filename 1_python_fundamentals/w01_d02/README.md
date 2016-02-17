@@ -101,11 +101,17 @@ tmnt_colors[Raph]
 
 * Hopefully throughout your exercises yesterday you were able to find out about Python's built in functions. 
 * Some of these may have proven useful to you
+	##### Bulitins
 	* `len()`
 	* `range()`
-	* `split()`
-	* `pop()`
-	* `append()`
+	##### String Instance Method 
+	* `.split()`
+	* `.join()`
+	* `.format()`
+	* `.strip()`
+	##### List Instance Method 
+	* `.pop()`
+	* `.append()`
 * These built in functions are bits of code that somebody wrote for us to use. They are out of the box and are ready to be used the moment you make a python file
 * Modules are files that do not come out of the box with python3
 * We can import these modules for use
@@ -144,8 +150,6 @@ clock = datetime.time(10, 20, 56)
 
 print clock.hour 
 print clock.minute
-
-
 
 this_day = datetime.date.today()
 
