@@ -103,12 +103,12 @@ tmnt_colors[Raph]
 * Some of these may have proven useful to you
 	##### Bulitins
 	* `len()`
-	* `range()`
+	* `range()`  
 	##### String Instance Method 
 	* `.split()`
 	* `.join()`
 	* `.format()`
-	* `.strip()`
+	* `.strip()`  
 	##### List Instance Method 
 	* `.pop()`
 	* `.append()`
