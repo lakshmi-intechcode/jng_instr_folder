@@ -100,18 +100,24 @@ tmnt_colors[Raph]
 #### Part 4 - Built in Functions / Built in Methods / Modules
 
 * Hopefully throughout your exercises yesterday you were able to find out about Python's built in functions. 
-* Some of these may have proven useful to you
-	##### Bulitins
-	* `len()`
-	* `range()`  
-	##### String Instance Method 
-	* `.split()`
-	* `.join()`
-	* `.format()`
-	* `.strip()`  
-	##### List Instance Method 
-	* `.pop()`
-	* `.append()`
+* Some of these may have proven useful to you  
+
+##### Bulitins
+* `len()`
+* `range()`  
+
+##### String Instance Method 
+* `.split()`
+* `.join()`
+* `.format()`
+* `.strip()`
+
+##### List Instance Method 
+* `.pop()`
+* `.append()`
+
+
+
 * These built in functions are bits of code that somebody wrote for us to use. They are out of the box and are ready to be used the moment you make a python file
 * Modules are files that do not come out of the box with python3
 * We can import these modules for use
