@@ -91,7 +91,7 @@ STATICFILES_DIRS = (
 
 ## Resources
 
-***Some Online Resources***
+***Online Resources***
 
 * [Trello Project Manager Web App](https://trello.com/)
 
@@ -103,6 +103,7 @@ STATICFILES_DIRS = (
 ***REST / CRUD / MVC***
 
 * [HTTP Requests](http://www.tutorialspoint.com/http/http_requests.htm)
+* [REST API Tutorial](http://www.restapitutorial.com/lessons/restfulresourcenaming.html)
 * [Beginners Guide to Creating a REST API by Andrew Havens](http://www.andrewhavens.com/posts/20/beginners-guide-to-creating-a-rest-api/)
 * [Designing a RESTful API with Python and Flask by Miguel Grinberg](http://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask)
 * [URI Wiki](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)
@@ -141,6 +142,7 @@ STATICFILES_DIRS = (
 * [Positioning from vanseodesign](http://vanseodesign.com/css/css-positioning/)
 * [Learn Layout DOT COM](http://learnlayout.com/)
 * [CSS Diner Exercise Tutorial](http://flukeout.github.io/)
+* [CSS Pro Tips](https://github.com/AllThingsSmitty/css-protips)
 
 ***Django***
 
@@ -154,25 +156,23 @@ STATICFILES_DIRS = (
 ***OAuth Resources***
 
 - [Check out OAuth on wikipedia for a more "technical" explanation](https://en.wikipedia.org/wiki/OAuth)
-- [Here's a less "technical" explanation for OAuth](http://hueniverse.com/oauth/guide/terminology/)
 - [Here's a list of OAuth Providers](https://en.wikipedia.org/wiki/List_of_OAuth_providers)
 
 ---
 
 ## Schedule 
 
-| Weeks | Day 1                                                                 | Day 2                                                                              | Day 3                                                                   | Day 4                                        | Day 5                                    | Weekend Assignments                   |
-|-------|-----------------------------------------------------------------------|------------------------------------------------------------------------------------|-------------------------------------------------------------------------|----------------------------------------------|------------------------------------------|---------------------------------------|
-| 1     | Python  Fundamentals  One                                             | Python Fundamentals Two                                                            | Intro To Object Oriented Programming                                    | More OOPS and Inheritance                    | Review                                   |                                       |
-| 2     | Binary Search Linear Search Linked List                               | Bubble Sort Insertion Sort Stacks and Queues                                       | SQL Intro SQL CRUD MVC Intro Views /Models                              | SQL / MVC Models SQL Conn Createdb           | Binary Search Tree Merge Sort Quick Sort | Xmas Break RPG Blackjack              |
-| 3     | SQL Relational DB SQL Foreign Keys                                    | SQL Relational DB SQL Joins                                                        | OMDB API                                                                | Markit API                                   | API                                      | Trader to Bank                        |
-| 4     | Advanced Python Generators List Comprehensions Args and Kwargs        | Baby ORM Read                                                                      | Baby ORM  Full CRUD                                                     | Baby ORM  Full CRUD                          | Assessment                               | Pre Phase 2 Readings                  |
-| 5     | Intro to  HTML vs HTML 5 CSS JS Syntax Diff                           | JS Scope Callbacks Closures Higher Order Functions DOM  DOM Events                 | jQuery Intro CDNs jQuery DOM                                            | CSS Positioning JavaScript THIS  Tic Tac Toe | Tic Tac Toe                              | Tic Tac Toe                           |
-| 6     |  CSS Media Queries CSS Pseudo ClassesCSS Grids CSS Reset vs Normalize | Django Intro Pip Function Based Views HTML Forms Request Response Cycle Django ORM | URL Namespace Django Models Django Requests                             | Django Model Forms                           | WEEKEND PROMPT  UserLess Blog            | UserLess Blog                         |
-| 7     | Django User Sessions Class Based Views                                | Homework Day                                                                       | Django Custom Validation Django Default Validators Debugging Assignment | Django as an API                             | AJAX                                     | Todo Api with AJAX  Hacker News Clone |
-| 8     | Django and OAuth                                                      | Review                                                                             | Review                                                                  | Review                                       | Assessment                               |                                       |
 
-
+| Weeks | Day 1                                                                 | Day 2                                                                              | Day 3                                                                   | Day 4                                        | Day 5                                    | Weekend Assignments                     |
+|-------|-----------------------------------------------------------------------|------------------------------------------------------------------------------------|-------------------------------------------------------------------------|----------------------------------------------|------------------------------------------|-----------------------------------------|
+| 1     | Python  Fundamentals  One                                             | Python Fundamentals Two                                                            | Intro To Object Oriented Programming                                    | More OOPS and Inheritance                    | Review                                   |                                         |
+| 2     | Binary Search Linear Search Linked List                               | Bubble Sort Insertion Sort Stacks and Queues                                       | SQL Intro SQL CRUD MVC Intro Views /Models                              | SQL / MVC Models SQL Conn Createdb           | Binary Search Tree Merge Sort Quick Sort | Xmas Break RPG Blackjack                |
+| 3     | SQL Relational DB SQL Foreign Keys                                    | SQL Relational DB SQL Joins                                                        | OMDB API                                                                | Markit API                                   | API                                      | Trader to Bank                          |
+| 4     | Advanced Python Generators List Comprehensions Args and Kwargs        | Baby ORM Read                                                                      | Baby ORM  Full CRUD                                                     | Baby ORM  Full CRUD                          | Assessment                               | Pre Phase 2 Readings                    |
+| 5     | Intro to  HTML vs HTML 5 CSS JS Syntax Diff                           | JS Scope Callbacks Closures Higher Order Functions DOM  DOM Events                 | jQuery Intro CDNs jQuery DOM                                            | CSS Positioning JavaScript THIS  Tic Tac Toe | Tic Tac Toe                              | Tic Tac Toe                             |
+| 6     |  CSS Media Queries CSS Pseudo ClassesCSS Grids CSS Reset vs Normalize | Django Intro Pip Function Based Views HTML Forms Request Response Cycle Django ORM | URL Namespace Django Models Django Requests                             | Django Model Forms                           | WEEKEND PROMPT  UserLess Blog            | UserLess Blog                           |
+| 7     | Django User Sessions Class Based Views                                | Homework Day                                                                       | Django Custom Validation Django Default Validators Debugging Assignment | Django as an API                             | AJAX                                     | Todo API  Todo Front End  Consuming API |
+| 8     | Hacker News                                                           | Hacker News                                                                        | Hacker News                                                             | Review                                       | Assessment                               | OAuth                                   |
 
 ---
 
