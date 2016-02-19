@@ -1,24 +1,44 @@
 # Teaching Notes
 
-* Lesson Plans
-* Learning Objectives
-	* Something that can be measured
-	* No bullshit words such as "students will understand, students will learn"
-	* Should be something tangible
-		* "Students will be able to draw out an ERD"
-		* "Students will be able to utilize a for loop and while loop"
-* Context
-	* Why are we learning what we are learning today? What is the purpose of today's lesson?
-	* "We are learning about file I/O because passing data around is the core of what happens online. Whether it is happening only on our laptop, or through the browser, or a chat application. We are moving data around"
-* Lessons	
-	* Break it up into parts
-	* You do, then they do
-		* This can be difficult for such a short lecture
-	* Try for very light and easy "Five Minute Exercises"
-		* The goal is to get the students engaged, while keeping their minds on track with the lesson plan at hand
-	* Engagement / Checks for understanding
-		* Working together to write on the white board
-		* Fist of Five
-		* Cupcakes / Bananas
-* Never talk for an hour or more straight without having some form of activity/break in between
-* Stay on task
+### Making a Lesson Plan
+
+##### Learning Objectives
+
+* Learning Objectives are items that can be measured/demonstrated
+* We `DO NOT` use subjective crap such as:
+	* `students will understand`
+	* `students will learn`
+* LO's can be shown:
+	* `Students will be able to draw out an ERD using schema designer`
+	* `Students will be able to utilize a for loop and a while loop`
+
+##### Context
+
+* Why are we learning this? 
+* Why is this important?
+* What is the purpose of todays lesson?
+* Example:
+	* `We are learning about file I/O because it is an introduction to passing data back and forth between files. All of programming revolves around passing data to and from different places.`
+
+##### Lessons
+
+* Break up your lessons into different parts
+* Make sure these parts `scaffold` one on top of the other
+* Try to input very light "Five Minute Exercises" throughout your lessons
+* This will help to keep students engaged and paying attention to the lesson at hand
+* Utilize the `I do, You do` style of teaching
+
+### Teaching Practices
+
+* Engagement / Checks for Understanding
+	* Work together on the white board
+	* Fist of Five
+	* Cupcakes / Bananas
+* Never talk for an hour or more straight without having some form of activity / break in between
+* Stay on track of the lesson plan. Do not go off topic. If a student ask a question that does not relate to the Learning Objectives shut it down (respectfully)
+	* You can utilize a `Parking Lot` for this
+		* Make a markdown and fill it with questions from the classroom that you did not know the answer to or did not want the answer to.
+		* Example:
+			* "Why doesn't this work with blah blah"
+			* "Thats a great question, let's parking lot that for now so we can stay on task. I'll put something in the parking lot later today about it."
+
