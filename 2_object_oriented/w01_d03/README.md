@@ -32,7 +32,7 @@
 
 #### Part 3 - Classes
 
-* A class holds many methods that an object can respond to. 
+* A class holds many methods that an object can respond to.
 * They are defined with the word `class`
 * They are always capitalized
 * They are just blueprints for us to use later
@@ -45,15 +45,15 @@ class Car:
 	"""
 	We are making a car class
 	"""
-	
+
 	def __init__(self, make, model, year):
 		self.make = make
 		self.model = model
 		self.year = year
-		
+
 	def hello(self):
 		print("You have started your car, it is a {year} {make} {model}".format(year = self.year, make = self.make, model = self.model))
-		
+
 my_car = Car(make = "Bugatti", model = "Veyron", year = 2015)
 
 my_car.hello()
@@ -70,8 +70,8 @@ my_car.hello()
 
 #### Part 4 - Classes Terminology
 
-* `Instantiate` - when we instantiate a class we are creating a new instance of that class. 
-* The`Car` class is a blueprint. We instantiate it by creating a variable with the Car class. 
+* `Instantiate` - when we instantiate a class we are creating a new instance of that class.
+* The`Car` class is a blueprint. We instantiate it by creating a variable with the Car class.
 * This variable is now an `instance` of that care class
 * We can use the class over and over again, if we had multiple cars, or in the example of your previous exercise, multiple movies.
 
@@ -91,7 +91,7 @@ my_car.hello()
 #### Part 6 - Scope
 
 * Scope works inside out
-* The methods and variables that are local will have access to those outside of it, however, the outside does not have access to the inside. 
+* The methods and variables that are local will have access to those outside of it, however, the outside does not have access to the inside.
 * Think about Russian Nesting Dolls
 * `return` is what allows us to move values and variables between two different things
 
@@ -100,19 +100,6 @@ my_car.hello()
 
 * triple quotes doc string used to comment your code and help others read your code
 
+#### Resources
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* [Tutorials Point explanation of classes and objects](http://www.tutorialspoint.com/python/python_classes_objects.htm)

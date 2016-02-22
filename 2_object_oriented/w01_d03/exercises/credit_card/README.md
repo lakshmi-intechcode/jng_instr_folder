@@ -1,13 +1,14 @@
 #Credit Card Validator
 ---
 
+## Description
 Using the [Luhn Algorithm](http://en.wikipedia.org/wiki/Luhn_algorithm), also known as "modulus 10", we will be determining the validity of a given credit card number.
 
 For now, we are just editing the included python file. You will find the skeleton of the `CreditCard` class inside.
 
-###The Class
+#### Challenge
 
-We want our class to have its three main properties set on [instantiation](http://en.wikipedia.org/wiki/Instance_(computer_science)) - card_number, card_type, and valid. Look at the code, you'll see this already there.
+We want our class to have its three main properties set on [instantiation](http://en.wikipedia.org/wiki/Instance_(computer_science)) - `card_number`, `card_type`, and `valid`. Look at the code in `credit-card.py`, you'll see this already there.
 
 If the card number given passes the Luhn algorithm, valid should be true and cardType should be set to 'VISA', 'AMEX', etc. If it does not pass, valid should be false and cardType should be set to "INVALID"
 
@@ -20,19 +21,19 @@ This way, we can do this:
     myCard.card_number ## '347650202246884'
 ```
 
-There are three instance methods. You may perform these methods in the order you see fit.
+There are three instance methods, `determine_card_type`, `check_length`, and `validate`. You may perform these methods in the order you see fit.
 
 `determine_card_type` should check whether or not the credit card has valid starting numbers and return the card type.
 
-Visa must start with 4  
-Mastercard must start with 51, 52, 53, 54 or 55  
-AMEX must start with 34 or 37  
-Discover must start with 6011  
+Visa must start with 4
+Mastercard must start with 51, 52, 53, 54 or 55
+AMEX must start with 34 or 37
+Discover must start with 6011
 
 `check_length` should check whether or not a credit card number is a valid length.
 
-Visa, MC and Discover have 16 digits  
-AMEX has 15  
+Visa, MC and Discover have 16 digits
+AMEX has 15
 
 `validate` should run the Luhn Algorithm and return true or false.
 
@@ -56,13 +57,13 @@ Now take the sum of those numbers and modulo 10.
 
 If the result is 0, the credit card number is valid.
 
-###Tests
+### Tests
 
 Make sure your code passes all the assert tests.
 
 Write your own assert tests to test any other possible cases where your code might fail.
 
-###Goals
+### Hints
 
 Keep your code super clean and [DRY](http://en.wikipedia.org/wiki/Don't_repeat_yourself).
 

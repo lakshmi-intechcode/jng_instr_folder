@@ -1,23 +1,23 @@
 class CreditCard:
-	def __init__(self, card_number):
-  		self.card_number = "the card number"
-  		self.card_type = "a string"
-  		self.valid = "a boolean"
+    def __init__(self, card_number):
+        self.card_number = "the card number"
+        self.card_type = "a string"
+        self.valid = "a boolean"
 
-#Create and add your method called `determine_card_type` to the CreditCard class here:
-	def determine_card_type(self):
-		pass
+# Create and add your method called `determine_card_type` to the CreditCard class here:
+    def determine_card_type(self):
+        pass
 
-#Create and add your method called `check_length` to the CreditCard class here:
-	def check_length(self):
-		pass
+# Create and add your method called `check_length` to the CreditCard class here:
+    def check_length(self):
+        pass
 
-#Create and add your method called 'validate' to the CreditCard class here:
-	def validate(self):
-		pass
+# Create and add your method called 'validate' to the CreditCard class here:
+    def validate(self):
+        pass
 
 
-#do not modify assert statements
+# do not modify assert statements
 
 cc = CreditCard('9999999999999999')
 
