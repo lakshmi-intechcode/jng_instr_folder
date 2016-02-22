@@ -88,9 +88,8 @@ jason = {
 ##### Inheritance and Scope
 
 ***NOTES***
-* Check out this stackoverflow answer for class methods vs instance methods. 
 
-[http://stackoverflow.com/questions/17134653/difference-between-class-and-instance-methods](http://stackoverflow.com/questions/17134653/difference-between-class-and-instance-methods)
+* Check out this [stackoverflow answer for class methods vs instance methods.](http://stackoverflow.com/questions/17134653/difference-between-class-and-instance-methods)
 
 
 
