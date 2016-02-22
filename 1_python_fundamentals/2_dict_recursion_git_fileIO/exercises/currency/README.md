@@ -1,10 +1,9 @@
 # Show Me The Money
 ---
 
-##### Objective 1
+##### Challenge
 * Write a function that takes in a float as an argument
-* This function should return the number of American coins and bills needed to represent that float. (Round to the nearest penny) 
-	* As an exmaple, if the float is `12.33`, the result would be `1 $10`, `2 $1 bills`, `1 quarter`, `1 nickel` and `3 pennies`. 
+* This function should return the number of American coins and bills needed to represent that float. (Round to the nearest penny)
 
 Use the following as denominations for your currencies:
 
@@ -25,3 +24,17 @@ Use the following as denominations for your currencies:
 ```
 def currency_converter(amount):
 ```
+
+#####Example input/output
+```
+[input]
+currency_converter(12.33)
+
+[output]
+1 $10
+2 $1
+1 quarter
+1 nickel
+3 penny
+```
+* Don't worry about making the denomination words plural. For example, `3 penny` is OK and doesn't need to be `3 pennies`.

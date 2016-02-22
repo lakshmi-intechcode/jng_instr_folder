@@ -1,10 +1,11 @@
 Age Calculator
 ===============
-##### DESCRIPTION
+#### Challenge
 ---
-Create a program that will take user input and tell them their age in months, days, hours, and minutes.
+Your job is to create a Python program file that contains two functions, `age_to_time` and `birthday_to_time`.
 
-###### Part 1
+
+###### Part 1 - `age_to_time`
 Your first function, ```age_to_time```, should take the persons age in years and return it in months, days, hours, and minutes.
 
 ##### PUBLIC INTERFACE
@@ -19,7 +20,7 @@ How old are you? 18
 months : 216, days : 6480, hours : 155520, and minutes : 388800
 ```
 
-###### Part 2
+###### Part 2 - `birthday_to_time`
 Add a function to your program that takes the user's birthday as input in `YYYY-MM-DD` format and tells them their age in months, days, hours and minutes in the same fashion.
 
 ##### PUBLIC INTERFACE

@@ -4,12 +4,8 @@
 * matrix-sort
 * birthday
 * tower of hanoi
-
-
-#### Bonus
-
 * currency
-* Command Line Tutorial
+* [Command Line Tutorial](http://cli.learncodethehardway.org/book/)
 
 #### Notes
 

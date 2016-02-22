@@ -18,15 +18,15 @@
 * You can only grab the top disk from one of the stacks to place it on another stack
 * No larger disk can be placed on top of a smaller disk
 
-##### Objectives
+##### Challenge
 
 * Write a function that solves the Tower of Hanoi no matter how many disks are passed in.
-* It should take in four parameters, print the number of steps, and what each step is doing.
-
+* It should take in four parameters, as shown in the example below. 
 ```
 def tower_move(disks, start, finish, middle)
 ```
 
+* Your function should perform the moves necessary to rearrange the tower, and it should return the total number of steps required to solve the puzzle.
 * With three disk, the puzzle can be solved in seven moves. 
-* This exercise will revolve around `recursion`
-	* (Think about invoking a function in itself)
+* Hint: this exercise will involve `recursion`
+    * (Think about invoking a function in itself)
