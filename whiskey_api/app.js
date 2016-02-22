@@ -40,7 +40,11 @@ app.get('/whiskeys/search/:name', function(req,res){
 		if(err){
 			throw err
 		} else {
-			res.json(row)
+			if (JSON.stringify(row) === "[]"){
+				res.send("Sorry that whiskey does not exist");
+			} else {
+				res.json(row)
+			}
 		}
 	})
 });
@@ -53,10 +57,15 @@ var singleID = function(req, res){
 		if (err){
 			throw err
 		} else {
-			res.json(row)
+			if (row === undefined){
+				res.send("There is no whiskey with that ID")
+			} else{
+				res.json(row)	
+			}
 		}
 	})
 }
+
 //GET requests for a single whiskey
 app.get('/whiskeys/:id', singleID);
 app.get('/whiskeys/:id/update', singleID);
@@ -70,18 +79,20 @@ app.post('/whiskeys/create', function(req,res){
 
 	var name = mexp.titleCase(rName);
 	var type = mexp.titleCase(rType);
-	var price = rPrice;
+	var price = mexp.priceChecker(rPrice);
 
-	//if there is a curse word, run a function to replace it with a cute word, 
-	//place the cute word into the sql command
-	//curse word checker should run on with a split function on spacebar
-
-	db.run("INSERT INTO whiskey (name, type, price) VALUES (?, ?, ?)", name, type, price, function(err){
-		if(err){
-			throw err;
-		}
-	})
-	res.send("You have created "+ name + " in our database")
+	if (isNaN(price) === true){
+		res.send("You entered an invalid price, please make sure to enter an integer");
+	} else {
+		db.run("INSERT INTO whiskey (name, type, price) VALUES (?, ?, ?)", name, type, price, function(err){
+			if(err){
+				// throw err;
+				res.send(name + " already exists")
+			} else {
+				res.send("You have created "+ name + " in our database")
+			}
+		})
+	}
 });
 
 //POST requests for updating whiskey
@@ -89,18 +100,23 @@ app.put('/whiskeys/:id/update', function(req,res){
 	var wID = req.params.id;
 	var rName = req.body.name;
 	var rType = req.body.type;
-	var price = req.body.price;
+	var rPrice = req.body.price;
 
 	var name = mexp.titleCase(rName);
 	var type = mexp.titleCase(rType);
+	var price = mexp.priceChecker(rPrice);
 
-	db.run("UPDATE whiskey SET name=?, type=?, price=? WHERE id=?",name, type, price, wID, function(err){
-		if(err){
-			throw err
-		} else {
-			res.send("We have updated the database with " + name)
-		}
-	})
+	if (isNaN(price)===true){
+		res.send("You entered an invalid price, please make sure to enter an integer");
+	} else {
+		db.run("UPDATE whiskey SET name=?, type=?, price=? WHERE id=?",name, type, price, wID, function(err){
+			if(err){
+				throw err
+			} else {
+				res.send("We have updated the database with " + name)
+			}
+		})
+	}
 });
 
 //DELETE Whiskey
@@ -111,7 +127,11 @@ app.delete('/whiskeys/:id/delete', function(req, res){
 		if (err){
 			throw err
 		} else {
-			res.send("Whiskey has been deleted from the database")
+			if (row === undefined){
+				res.send("There is no whiskey with that ID")
+			} else{
+				res.send("Whiskey has been deleted from the database")
+			}
 		}
 	})
 });
