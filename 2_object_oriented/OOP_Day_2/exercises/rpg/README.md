@@ -9,6 +9,7 @@
 	* `Monsters`
 		* child classes of `Goblin`, `Ogre`, `Dragon`
 	* `Places of Travel`
+* Checkout the `example_rpg.py` file in the root of this repository for an example, if you want.
 * Below is an example of what the terminal interface can look like. 
 
 
