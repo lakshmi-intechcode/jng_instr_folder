@@ -1,4 +1,4 @@
-# Git and Github
+# Git, Github, and Your SSH Connection
 _____________________
 
 ## Introduction
@@ -116,5 +116,16 @@ _____________________
 12. Push up YOUR branch `git push origin branch_name`
 13. Now if you check the repository on github that branch should appear in the drop down menu. 
 
+## SSH
 
+* I mentioned `ssh` several times in the lesson above
+* SSH stands for secure shell and basically allows two programs to securely connect to each other
+* In this case we are putting an ssh key onto our github account so Github knows that specific device is okay. 
+* This way we don't have to put in our login credentials / authenticate every time we pull or push to a github repo
+* To add an ssh key to your github account [follow these directions](https://help.github.com/articles/generating-an-ssh-key/)
+* There are four main steps
+	* Checking if you have a ssh key
+	* Generating a new ssh key and adding it to the ssh-agent
+	* Add the ssh key to your github account
+	* Testing the SSH connection
 
