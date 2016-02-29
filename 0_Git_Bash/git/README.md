@@ -1,5 +1,21 @@
 # Git, Github, and Your SSH Connection
-_____________________
+
+## Learning Objectives
+
+***Students Will Be Able To...***
+
+* Set up your SSH key on Github
+* Use Git commands
+* Push and Pull repositories on Github
+
+---
+## Context
+
+* Git is the language for programming collaboration and version control
+
+---
+
+## Lessons
 
 ## Introduction
 
