@@ -19,14 +19,14 @@
 * Now we're going to start getting data from somewhere else using APIs
 * API stands for Application Programming Interface
 * Almost everything is an API 
-* For the purposes of this course, and industry talk, people are usually talking about a HTTP API.
+* For the purposes of this course, and industry talk, when programmers talk about APIs they are usually talking about an HTTP API.
 * You can think of these as a database somebody else put together that you can pull information from. 
 
 ##### Part 2 - REST / CRUD / HTTP VERBS
 
 ***Five Min Exercise***
 
-* Do some research on the following
+* Do some research on the following three topics. We will come back together as a group and discuss them.
 	* REST
 	* RESTful API
 	* HTTP VERBS / CRUD	
@@ -34,7 +34,7 @@
 ---
 
 * REST stands for Representational State Transfer
-* This is NOT an actually programming keyword. It is a term to describe "best practices" when creating HTTP APIs
+* This is NOT an actual programming keyword. It is a term to describe "best practices" when creating HTTP APIs
 * The four most common actions when dealing with an API are the CRUD actions
 
 |    | CRUD   | HTTP Method |
@@ -70,8 +70,8 @@ CONNECT
 pip3 install requests
 ```
 * Now we have the requests library
-* remember `pip3` is our package manager for Python3
-* Let's see a list of all our python 3 modules
+* remember `pip3` is our package manager for `Python3`. DO NOT USE REGULAR `pip`
+* Let's see a list of all our python3 modules
 
 ```
 pip3 freeze
@@ -104,9 +104,21 @@ print(requests.get("http://spell-buddy.herokuapp.com/api/spells?name=magic%20mis
 * Endpoints are a webservice that points us to specific part of an API
 * Many API's will have multiple endpoints and you have to target the right one to grab the data you want
 
+##### Part 5 - Examples of some sites that are using APIs
+
+* Google API - [http://www.nycdessertmap.com/](http://jeffweather.herokuapp.com/)
+* Weather underground API - [http://jeffweather.herokuapp.com/](http://jeffweather.herokuapp.com/)
+
+***Wait a minute, we didn't really cover REST?***
+
+* For now we can think about it as best practices for creating APIs to serve data. 
+* We'll learn more about REST when we start building APIs later on in the course
+
 ##### Resources
 
 * [Tutorial Point for HTTP Request](http://www.tutorialspoint.com/http/http_requests.htm)
 * [Andrew Havens Beginners Guide to Creating a REST API](http://www.andrewhavens.com/posts/20/beginners-guide-to-creating-a-rest-api/)
 * [Miguel Grinberg Design a RESTful API with Python and Flask](http://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask)
+* [User stories](https://www.mountaingoatsoftware.com/agile/user-stories)
+* [Pseudocode](http://programmers.stackexchange.com/questions/136292/what-is-pseudocode)
 
