@@ -35,12 +35,12 @@
 * All callbacks are closures but not all closures are callbacks
 * Callbacks are also known as "Higher Order Functions" but for the purpose of this course we will be sticking with the term "Callbacks"
 * A callback is a function that has been created and defined but NOT invoked.
-* Instead it is sitting around waiting to be "called back" but some sort of event such as a click event, or the invocation of another function. 
+* Instead it is sitting around waiting to be "called back" by some sort of event such as a click event, or the invocation of another function. 
 * See the calculator example from class below
 
 ```
 var add = function(a,b){
-	return(a+myNum)
+	return(a+b)
 };
 
 var sub = function(a,b){
@@ -53,12 +53,12 @@ var multi = function(a,b){
 
 var calculator = function(a,b,callback){
 	var myNum= 234
-	var sum = callback(a,myNum)
+	var newVal = callback(a,b)
 	
-	console.log(sum)
+	return newVal
 };
 
-calculator(7,8,add)
+console.log(calculator(7,8,add))
 ```
 
 
@@ -84,7 +84,7 @@ calculator(7,8,add)
   * `node.appendChild`
   * `node.removeChild`
   * `node.remove`
-* Edition
+* Editing
   * `node.setAttribute`
 
 
@@ -109,10 +109,11 @@ calculator(7,8,add)
 * How can we make a click event in vanilla JS?
 * JavaScript comes with an `addEventListener` method
 	* You may see the method called `onClick` but we will not be using that
-	* Try to stay to addEventListener
+	* Try to stay with addEventListener
 * `addEventListener()` - is attached to a targeted element and takes in two arguments
-	* First argument is an event, usually a "click" event wrapped in a string
-	* Other events are
+	* First argument is an event passed in as a string
+	* Some events are:
+		* click
 		* mouseover
 		* mouseout
 	* The second argument is a block of code that will be run when the event is starts	
@@ -131,6 +132,10 @@ header.addEventListener("click", namedFunc);
 // })
 ```	
 
+***NOTE***
+
+* the first example that is an example of a `Named Callback`
+* the second example that is commented out shows us an `Anonymous Callback`
 
 	
 	
