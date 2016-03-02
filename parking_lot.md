@@ -91,6 +91,10 @@ STATICFILES_DIRS = (
 
 ## Resources
 
+***Git / Github***
+
+* [Github Ignoring Files](https://help.github.com/articles/ignoring-files/)
+
 ***Online Resources***
 
 * [Trello Project Manager Web App](https://trello.com/)
@@ -107,6 +111,7 @@ STATICFILES_DIRS = (
 * [Beginners Guide to Creating a REST API by Andrew Havens](http://www.andrewhavens.com/posts/20/beginners-guide-to-creating-a-rest-api/)
 * [Designing a RESTful API with Python and Flask by Miguel Grinberg](http://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask)
 * [URI Wiki](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)
+* [REST Wiki](https://en.wikipedia.org/wiki/Representational_state_transfer#Uniform_interface)
 
 ***JavaScript***
 
