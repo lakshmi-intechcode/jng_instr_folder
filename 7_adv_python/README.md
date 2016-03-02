@@ -5,13 +5,13 @@
 
 * Use List Comprehensions with a imported csv file
 * Use Python Generators to look through a iterable
-* Use Kwargs inside of a Python method to print out unknown amount of arguments
+* Use Kwargs as a Python parameter to print out unknown amount of arguments
 * Use Ternary Operators in place of if/else
 
 ---
 ### Context
 
-* We're going to get into some deeper Python understanding. This will help your code for the upcoming assignments
+* We're going to get into some deeper Python understanding. This will help you code  the upcoming assignments
 
 ---
 ### Lesson
@@ -38,7 +38,7 @@ expression1 if condition else expression2
 	* print "I Like Turtles" if a variable "turtle" was set to True
 	* print "Standing is good for you" if a variable "healthy" is yes
 
-##### Part 1 - List Comprehensions
+##### Part 2 - List Comprehensions
 
 * Python comes with the ability to give us a list with one line of code
 * List Comprehensions allow us to build a list of values by filtering through an iterable. 
@@ -74,7 +74,7 @@ def vowels(str):
 ```
 
 
-##### Part 2 - Generators - Controllers - Class Methods
+##### Part 3 - Generators - Controllers - Class Methods
 
 ***Five Min Exercise*** 
 
@@ -124,7 +124,7 @@ def rand_num(a,b):
 rand_num(34, 98)
 ```
 
-##### Part 3 - Args and Kwargs
+##### Part 4 - Args and Kwargs
 
 * Python Args and Kwargs allow us to pass in an undefined/unknown number of arguments in a method/function
 	* Remember when the function is created we can set "parameters" to it
@@ -155,19 +155,21 @@ people("Ice Cube", "Easy-E", "Dr. Dre", "MC Ren")
 
 * Kwargs stand for Keyword Arguments. They act almost the same as Args
 * If you had a named argument with a key, you can use kwargs
-* They are some funky Python syntax. I have not seen kwargs used in another language other than Python. Nonetheless it can be useful in some use cases. 
-* `**kwargs` allow us to pass in an unknown amount of arguments to a method using a KEYWORD
+* They are some funky Python syntax. I have not seen kwargs used in another language other than Python. Nonetheless it can be very useful in some use cases. 
+* `**kwargs` allow us to pass in an unknown amount of arguments to a method as long as they are key:value pairs. Hence why we call them "keyword arguments" 
 
 ```
-kwargs = {"first_name":"Volder", "last_name": "Mort"}
+names = {"first_name":"Volder", "last_name": "Mort"}
 
 def hello(**kwargs):
 	if len(kwargs) > 0:
 		for key,value in kwargs.items():
 			print("Your {x} is {y}".format(x = key, y = value))
 
-hello(**kwargs)
+hello(**names)
 ```
+
+* Also, checkout .keys(), .values(), and .items() methods for dictionaries if you haven't seen them yet!
 
 ***Five Min Exercise***
 
