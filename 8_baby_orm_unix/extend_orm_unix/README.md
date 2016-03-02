@@ -16,6 +16,7 @@
 ##### Part 1 - Syntax to create a Model with kwargs
 
 * Let's say we want to pass a variable number of inputs to our class's `__init__` function. Here's some syntax to do that:
+
 ```
 class Model:
     def __init__(self, **kwargs):
@@ -23,12 +24,14 @@ class Model:
             setattr(self, i, kwargs[i])
 ```
 * Now, later on, we want to make a User model that inherits from the Model class. Something like this:
+
 ```
 class Users(Model):
     pass
 ```
 * We've used `pass` here so that our `Users` class will just inherit from the `Model` class.
 * Now I can use my `Users` class to make a new object:
+
 ```
 user = Users(name='Timmy', id=45, house='tree')
 ```
@@ -73,7 +76,7 @@ argecho.py
 kant.xml
 ```
 * What this example is meant to demonstrate is that sys.argv allows us to access the `command-line arguments` that a user passes to our program.
-* `sys.argv` will contain a list of all the words that are typed after the name of the program.
+* `sys.argv` will read these words and return them as values inside a list
 
 ##### Part 3 - Introduction to today's challenges:
 
