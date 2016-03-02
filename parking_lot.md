@@ -128,6 +128,7 @@ STATICFILES_DIRS = (
 * [Python Tips Args and Kwargs](http://pythontips.com/2013/08/04/args-and-kwargs-in-python-explained/)
 * [Python File IO Tutorials Point](http://www.tutorialspoint.com/python/python_files_io.htm)
 * [What are Generators](https://www.jeffknupp.com/blog/2013/04/07/improve-your-python-yield-and-generators-explained/)
+* [Python @classmethods and @staticmethods](http://stackoverflow.com/questions/12179271/python-classmethod-and-staticmethod-for-beginner)
 * [Why Class Methods Stack OverFlow 1](http://stackoverflow.com/questions/10586787/when-should-i-use-classmethod-and-when-def-methodself)
 * [Why Class Methods Stack OverFlow 2](http://stackoverflow.com/questions/38238/what-are-class-methods-in-python-for)
 

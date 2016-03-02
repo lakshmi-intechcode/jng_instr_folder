@@ -1,6 +1,6 @@
 # Baby ORM
 
-* Today you will be building your own ORM. Or at least part of it. 
+* Today you will be building your own ORM. Or at least part of it.
 * Check out the [ORM Wiki](http://en.wikipedia.org/wiki/Object-relational_mapping)
 * This will give you a behind the scenes look to what the Django ORM will be doing for you later in the course
 
@@ -10,16 +10,16 @@
 * Take a look at the orm_class.py file we included
 * You will need to use `**kwargs` for some of these methods
 * You will also need the `setattr()` function. Check out the [documentation](https://docs.python.org/3/library/functions.html#setattr)
-	* Instead of having a value be self.something we want to set it to name.something 
+	* Instead of having a value be self.something we want to set it to name.something
 
 ##### Objective 2
 
 * Complete the `all()` method
 * This method should return all rows in the database whose name matches the class
-* The rows should be instances of the class, not just sqlite3's return value. 
+* The rows should be instances of the class, not just sqlite3's return value.
 * A user can enter anything they want so how will we target the correct class/table
 * Test your answers with the provided `babyorm.db`
-* You might be asking why do we need to target the class name. Well what if we have multiple tables? Every table has their own class. 
+* You might be asking why do we need to target the class name. Well what if we have multiple tables? Every table has their own class.
 
 ##### Objective 3
 

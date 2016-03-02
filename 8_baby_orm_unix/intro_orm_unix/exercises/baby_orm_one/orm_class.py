@@ -1,25 +1,27 @@
 import sqlite3
 
+
 class Model:
-	def __init__(self):
-		pass
+    def __init__(self):
+        pass
 
-	@classmethod
-	def all(self):
-		pass
+    @classmethod
+    def all(cls):
+        pass
 
-	@classmethod
-	def get(self):
-		pass
+    @classmethod
+    def get(cls):
+        pass
 
-	@classmethod
-	def filter(self):
-		pass
+    @classmethod
+    def filter(cls):
+        pass
 
 
-###don't touch the code for these
+# don't touch the code for these
 class Users(Model):
-	pass
+    pass
+
 
 class Stocks(Model):
-	pass
+    pass
