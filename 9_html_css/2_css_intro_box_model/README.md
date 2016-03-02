@@ -29,14 +29,14 @@
 * All elements will have default positioning properties. (differ depending on browser)
 * This is what we know as the `Box Model`
 * There are four layers to the box model
-	* Content - wraps the actual content 
+	* Content - wraps the actual content
 	* Padding - layer after content
 	* Border - layer after padding
 	* Margin - outermost layer
 
 ##### Part 3 - Chrome Inspector
 
-* Check out [example.com](www.example.com)
+* Check out [www.example.com](http://www.example.com/)
 * Open up the Chrome Inspector
 * Hover over all the layers of the various elements and check out the box model
 
@@ -48,23 +48,23 @@
 	* color = red
 	* text-align = center
 * Target the paragraph element, and add the following properties
-	* text-indent = 50px 
+	* text-indent = 50px
 	* font-size = 1.2em
 
 ##### Part 4 - Hooking Up CSS
 
-* There are three seperate ways to connect CSS to your html file. 
+* There are three seperate ways to connect CSS to your html file.
 
 ***Inline***
 
-* Sometimes you maye see your elements look like below
-	
+* Sometimes you may see your elements look like below. 
+
 ```
 	<h1 style="color:red; font-size:70px"> Your website header</h1>
 ```
-* Inline styling was something done during the old days of the web when HTML pages were static and didn't have much in terms of content/user interaction
+* Inline styling was something done during the "old" days of the web when HTML pages were static and didn't have much in terms of content/user interaction
 * DO NOT use Inline styling. I will throw you out of my class!
-	
+
 ***Internal Style Sheet***
 
 * You are also able to apply CSS styling directly in your html file
@@ -80,7 +80,7 @@
 		</style>
 	</head>
 ```
-* This is much better than Inline but I STILL DO NOT use this. 
+* This is much better than Inline but I STILL DO NOT like this.
 * Remember we are programmers and we apply separation of code for organizational purposes
 
 ***External Style Sheet***
@@ -94,13 +94,13 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 ```
-* `style.css` is the css file name in the same directory. If it is located elsewhere or named something else you would change this accordingly
+* `style.css` is the css file name in the same directory. If it is located elsewhere or named something else you would change this accordingly. e.g. `href=public/stylesheets/style.css`
 
 ##### Part 5 - Specificity - How To Target Elements
 
-* Great so we know how to hook up CSS files, but now we have to actually apply CSS properties. 
+* Great so we know how to hook up CSS files, but now we have to actually apply CSS properties.
 * CSS stands for Cascading Style Sheets - Keyword here is `Cascading`
-* CSS Styles and Properties are defined in a specific sequence. 
+* CSS Styles and Properties are defined in a specific sequence.
 * It depends on two things
 	* How we connected our CSS: `Inline` vs `Internal` vs `External`
 	* What selector we used: `ID` vs `Class` vs `Element`
@@ -108,44 +108,16 @@
 * Selectors allow us to target a single or a group of html elements
 * There are three types of Selectors
 	* ID - uses the pound sign, or as some of you may know it as, a hashtag `#`
-	* Class - uses the period `.` 
+	* Class - uses the period `.`
 	* Element - uses the elements tag name itself
 * Specificity Rules
 	* If two elements are targeted by two different selectors the properties that have a higher hierarchy/specificity wins
 	* If two elements are targeted by selectors that have the same hierarchy the one that comes later wins.
 		* Remember `Cascading!!!`
-		
+
 
 ##### HOMEWORK
 
-* Homework tonight for CSS is a little different. 
+* Homework tonight for CSS is a little different.
 * There are no prompts. Your goal is to complete the exercises at the below website
 * [CSS Diner](http://flukeout.github.io/)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

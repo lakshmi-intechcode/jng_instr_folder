@@ -5,7 +5,7 @@
 
 * Declare a variable in JavaScript
 * Iterate through JS data structures
-* Store JS data types in Objects 
+* Store JS data types in Objects
 * Use Control Flow in JS
 * Use JS Process.Argv
 
@@ -19,9 +19,9 @@
 
 ##### Part 1 - A brief history. Why is this important?
 
-* It's not, well not the history at least. JavaScript is used as the main front end language for web development, and is not growing in popularity as a backend language. 
-* JavaScript was created in 10 days in 1995. 
-* It was use to build the front end of websites, how they looked, and what users can do with them. 
+* It's not, well not the history at least. JavaScript is used as the main front end language for web development, and is now growing in popularity as a backend language.
+* JavaScript was created in 10 days in 1995 by Brendan Eich.
+* It was use to build the front end of websites, how they looked, and what users can do with them.
 * It was not until recently JavaScript could be used as a backend language
 * This occured with the emergence of Node JS. A runtime environment that allows programmers to build server-side applications in JavaScript
 * This has gained traction as it is convenient to build a full web application, the front and back, in the same language
@@ -30,7 +30,10 @@
 ##### Part 2 - Node REPL
 
 * We will be installing Node JS to use it's REPL environment in the terminal
-* This is the same as the Python environment except it takes Node syntax
+* You can try either of these places for instructions to install Node:
+	* [http://blog.teamtreehouse.com/install-node-js-npm-mac](http://blog.teamtreehouse.com/install-node-js-npm-mac)
+	* [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+* This is the same as the Python REPL environment except it takes Node syntax
 
 ##### Part 3 - JS Syntax / Data Types / Data Structures
 
@@ -44,7 +47,6 @@
 	* Lists
 	* Dictionaries
 	* Strings
-
 * JavaScript has many of the similar items but their syntax and the way we interact with them is very different
 
 ***Variables / Assignment / Comparison***
@@ -52,17 +54,17 @@
 * Defining variables in JS
 	*  `var` is placed in front of the variable name
 	* DO NOT assign/create variables without using the word `var`, you will enter items into the global scope.
-	* variables do not start with a number or special character
+	* Variables do not start with a number or special character
 	* All things in JS are written in camelCase
 * `Assignment is ONE EQUAL SIGN =`
 * `Comparisons are THREE EQUAL SIGNS ===`
 	* Two Equal signs as a comparator in JS exists but we NEVER USE IT!!!
 	* It will check for value but not data type, it's essentially useless.
 * We complete all our JS lines of code with semi colons
-	
+
 ***Booleans***
 
-* Same thing as Python. 
+* Same thing as Python.
 * Takes in the factors of True or False
 
 ***Numbers***
@@ -145,7 +147,7 @@ var deadpool = "Wade Wilson";
 if (deadpool === "James Howlett"){
 	console.log("Hey you're Wolverine");
 } else if (deadpool === "Wade Wilson"){
-	console.log("Here are your chimichangas");	
+	console.log("Here are your chimichangas");
 } else {
 	console.log("You're not a super hero!")
 };
@@ -177,13 +179,15 @@ for (var i = 0; i < animals.length+1; i++){
 ```
 * Instead of a `for in` loop like Python we have the use of setting out own variable
 * `var i = 0` is creating a variable called i that will start at zero
-* `i < animals.length+1` - as long as this returns True the code in between the curly brackets will run 
+* `i < animals.length+1` - as long as this returns True the code in between the curly brackets will run
 * `i++` this will increment i after every loop iteration
 * The for loop in JavaScript is much more dynamic because we can utilize i to grab different values for comparison.
-	* e.g. 
+	* e.g.
 		* increment by 2 to grab every other value
 		* compare the value at the current index to a value at the previous index
-		
+
+---
+
 * While loops are almost the same as Python but with all the usual JavaScript syntax
 
 ```
@@ -221,11 +225,12 @@ var turtles = {
 	"Micaelangelo":"Orange"
 };
 ```
+* How can we grab keys? Help us Google!!!
 
 ##### Part 5 - Process.ArgV
 
-* This is the same idea as what we did with Python. 
-* When we want to enter a value the usual syntax is 
+* This is the same idea as what we did with Pythons sys.argv.
+* When we want to enter a value the usual syntax is
 
 ```
 var userInput = process.argv[2]
@@ -233,14 +238,3 @@ var userInput = process.argv[2]
 * Why is it two?
 * Process.argv takes your command line arguments and returns them as an array
 * The item at index zero will be "node" and the item at index one will be the file name
-
-
-
-
-
-
-
-
-
-
-
