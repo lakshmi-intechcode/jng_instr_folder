@@ -122,6 +122,7 @@ STATICFILES_DIRS = (
 * [AJAX Blog Explain](http://www.seguetech.com/blog/2013/03/12/what-is-ajax-and-where-is-it-used-in-technology)
 * [AJAX on Tutorials Point (eh okay reading)](http://www.tutorialspoint.com/ajax/index.htm)
 * [AJAX on jQuery.com, click through the links on the bottom](https://learn.jquery.com/ajax/)
+* [Why Name jQuery Objects with $](http://stackoverflow.com/questions/3360858/why-use-in-the-name-of-javascript-variables)
 
 ***Python***
 
