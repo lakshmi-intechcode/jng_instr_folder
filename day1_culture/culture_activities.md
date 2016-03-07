@@ -14,10 +14,7 @@
 	* Third Favorite Movie
 * Two lies and a truth
 
-
-
 ### The Bootcamp Experience
-
 
 ##### Schedule
 
@@ -35,7 +32,16 @@
 ### Their Learning Experience
 
 * Driving a Car vs building a car
-* Comfort Zone vs being uncomfortable
+	* How many of you knew how to build a car before driving a car? 
+	* A lot of the time we'll be using things that will just "work" 
+	* Our goal is to abstract the topics that may not be a priority
+	* Three months is a short time and we're trying to make your learning experience as efficient as possible
+* Comfort Zone vs Panic Zone
+	* Speaking of efficient learning we also want you to stay in the "Learning Zone"
+	* Yes this is a bootcamp and it is immersive. 
+	* Our goal is to make you graduate with the equivalent to 1-2 years experience in the industry
+	* With that being said it is immersive and can be stressful at some time. 
+	* Our goal is to push you but not to a point where you are in the "Panic Zone"
 * Take care of each other
 * Take care of yourself
 

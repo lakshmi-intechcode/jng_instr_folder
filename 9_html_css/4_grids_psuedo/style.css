@@ -53,10 +53,10 @@ button:hover{
 }
 
 #flashbox{
-	transition: all .5s ease .05s;
-	-moz-transition: all .5s ease .05s;
-	-webkit-transition: all .5s ease .05s;
-	-o-transition: all .5s ease .05s;
+	transition: margin-left .5s ease .05s;
+	-moz-transition: margin-left .5s ease .05s;
+	-webkit-transition: margin-left .5s ease .05s;
+	-o-transition: margin-left .5s ease .05s;
 }
 
 #flashbox:hover{
@@ -69,6 +69,7 @@ button:hover{
 	-webkit-transition: all 5s ease .05s;
 	-o-transition: all  5s ease .05s;
 }
+
 #casperbox{
 	position: absolute;
 	right: 100px;
