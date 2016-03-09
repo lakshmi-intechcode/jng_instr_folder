@@ -1,4 +1,4 @@
-# Writing your Resume and Cover Letter
+# Writing your Resume
 
 #### Introduction
 
@@ -12,7 +12,7 @@
 ***Typos MATTER!***
 
 * Your resume must be consistent
-* If you end all your sentences with periods do not miss one
+* Put periods on all your sentences or none of them. There is no middle ground
 * Everything must be written the same way. If you write JS as "JavaScript" it should be written like that everywhere
 	* DO NOT have one bullet say "PostgreSQL" and another say "PSQL"
 	* This also goes for dates, font sizes, font styles, bold, underlined, and especially tenses
@@ -26,10 +26,10 @@
 
 ***Sentence and Phrasing***
 
-* When discussing your accomplishments remember that it's not always programmers reading your resume
+* When discussing your accomplishments remember that it's not always a programmer reading your resume
 * It could be a person from Human Resources or even a tech recruiter looking for some buzzwords
-* Make sure to explain your accomplishments to as many audiences as possible
-* Write your resume using this patter
+* Make sure to explain your accomplishments in a way that appeals to as many audiences as possible
+* Write your resume using this pattern
 	* `Verb -> Accomplishment -> Technologies` 
 * You can then follow with more information about that project
 
@@ -43,6 +43,7 @@
 * Implemented a survey process to target At-Risk students using the CRM tool Hobsons Retain.
 * Increased the rate of instructor responses for the survey.
 * Increased retention among freshmen and sophomore students by 20 percent.
+* Decreased the time between distribution of the survey to following up with students.
 ```
 
 ---
@@ -50,13 +51,13 @@
 * Your experiences carry more weight than your education
 	* UNLESS you are just getting out of school, or have no experience yet.
 	* Or you went to a very prestigious institution
-* They should always include
+* Your experiences should always include
 	* Your title 
 	* The dates you were there. (can be month/year, doesn't need to include the day)
 	* Company name
 	* Location 
 	* Your responsibilities and accomplishments
-		* Try to make this part as relevant as possible
+		* Try to make this part as relevant as possible to the job you are applying to
 * Speak more to your results and quantify them wherever you can. USE NUMBERS!!!
 * Accomplishments holds more value than what your responsibilities were
 
@@ -68,6 +69,7 @@
 	* LinkedIn
 	* Email
 	* Phone
+	* Portfolio Page
 * `Skill Section`
 	* There should be a clear section for you to list your skills
 	* You should put the most relevant skills to that specific job at the top
@@ -75,9 +77,12 @@
 		* `If it wants python move your python skills to the top of the section`
 * `Work History / Experiences`
 	* This should be towards the top of the page
-	* Your projects should be included in the experiences/work history
+	* Your projects should be included in the Experience section
 	* Include your Immersive Experience at Byte
 * `Education`
+	* Does not need to be elaborated on UNLESS 
+		* You are just out of school
+		* Went to a prestigious institution
 
 #### Action Verbs
 
@@ -92,7 +97,8 @@
 * Hired.com
 * Liquid Talent
 * Angel.co
-* 
+* Dice
+
 
 
 
