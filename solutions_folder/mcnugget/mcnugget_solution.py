@@ -22,7 +22,7 @@ while success < 6:
 			print("Every number after {} will be mcnugget numbers".format(count-6))
 			break
 	else:
-		print(" is not mcnugget".format(count))
+		print("{} is not mcnugget".format(count))
 		success = 0
 	count +=1
 

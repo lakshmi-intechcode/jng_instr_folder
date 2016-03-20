@@ -1,6 +1,6 @@
 import math
 
-def currency_converter(amount):
+def my_money(amount):
 	denominations = [.01, .05, .1, .25, 1, 5, 10, 20, 50, 100]
 	current_bill = 0
 	bill_amount = 0
@@ -14,4 +14,5 @@ def currency_converter(amount):
 
 	return wallet
 
-print(my_money(23.45))
+print(my_money(837.45))
+
