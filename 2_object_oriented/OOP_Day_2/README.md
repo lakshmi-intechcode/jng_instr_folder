@@ -75,6 +75,16 @@ lucy.speak()
 * Brought up in class: If all pets have a name and an age we can put it in the parents `init` method
     * To utilize the parent `init` method we could call it inside of the child's `init` method and pass the values through to the parent
 
+***NOTE***
+
+* In the above example, class Pet can be written like so:
+
+```
+class Pet(object):
+```
+* You may be familiar with this syntax if you did tutorials in python 2
+* What this means is that `ALL` classes will be inheriting from the `Object` class
+
 ***Five Min Exercise***
 
 * Make a parent class called `Vehicle`
@@ -84,14 +94,20 @@ lucy.speak()
 * Each child should also have access to variables inside of the parent class
 
 #### Part 3 - Best Practices
+
+***Pseudo Code***
+
 * Pseudo code and commenting
     * Checkout jeff's real life code here: [https://github.com/jeffthemaximum/django-and-apis/blob/master/acronym/helpers.py](https://github.com/jeffthemaximum/django-and-apis/blob/master/acronym/helpers.py)
     * What do you notice on lines 29-31
     * What do you notice about the `format_words` function on line 35-71?
 
+***PUDB***
+
+* Install this using `pip3 install pudb`
+* Run a file using pudb with `python3 -m pudb.run filename.py`
 * PUDB
     * You **must** debug systematically.
-    * Jeff will demo how to use this in class.
     * Here's an online tutorial: [http://heather.cs.ucdavis.edu/~matloff/pudb.html](http://heather.cs.ucdavis.edu/~matloff/pudb.html)
 
 #### Other best practices
@@ -104,8 +120,16 @@ lucy.speak()
 		* `python3 -i my_file.py`
 
 #### More complicated OOP concepts to checkout
- - Class methods vs. Static methods
- - Look at the following code:
+ 
+ * Class methods vs. Static methods
+ 	* [Python Methods and How They Work](https://julien.danjou.info/blog/2013/guide-python-static-class-abstract-methods)
+
+```
+class Blah:
+	
+```	
+ 
+ * Look at the following code:
  
 ```
  class Base(object):
@@ -123,8 +147,10 @@ class ChildB(Base):
 ChildA()
 ChildB()
 ```
-* What's the difference? Research here: [http://stackoverflow.com/questions/576169/understanding-python-super-with-init-methods](http://stackoverflow.com/questions/576169/understanding-python-super-with-init-methods)
+* What's the difference? Research here: 
+	* [http://stackoverflow.com/questions/576169/understanding-python-super-with-init-methods](http://stackoverflow.com/questions/576169/understanding-python-super-with-init-methods)
 * `Class.__init__` vs. `def __init__` vs. super
-    - see here: [http://learnpythonthehardway.org/book/ex44.html](http://learnpythonthehardway.org/book/ex44.html)
+	* [http://learnpythonthehardway.org/book/ex44.html](http://learnpythonthehardway.org/book/ex44.html)
+    * [http://stackoverflow.com/questions/1173992/what-is-a-basic-example-of-single-inheritance-using-the-super-keyword-in-pytho](http://stackoverflow.com/questions/1173992/what-is-a-basic-example-of-single-inheritance-using-the-super-keyword-in-pytho)
 - Checkout this usage of Super --> [http://i.imgur.com/SOniuXb.png](http://i.imgur.com/SOniuXb.png)
 	
