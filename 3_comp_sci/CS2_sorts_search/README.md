@@ -3,7 +3,7 @@
 ### Learning Objectives 
 ***Students Will Be Able To...***
 
-* Reverse a string without using the `reverse` method
+* Diagram the Binary Search and Linear Search concepts
 * Pseudo Code the two sorting algorithms
 
 ---
@@ -48,6 +48,20 @@
 
 
 ![](https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif)
+
+#### Part 4 - Benchmarking
+
+* Benchmarking your code means to grab the execution time of your code
+* Writing a benchmark function must have certain parameters
+	* The function you want to benchmark
+	* The amount of times you want it to run
+* Your benchmark function should return the total amount of time it took to run.
+* You can utilize the `timeit library` for this function.
+	* You may also use the `datetime library` we studied earlier as well.  
+
+***HINT***
+
+* You might find an example of how to use `timeit` in the example code we did for Big O Notation
 
 #### REQUIRED reading and watching
 
