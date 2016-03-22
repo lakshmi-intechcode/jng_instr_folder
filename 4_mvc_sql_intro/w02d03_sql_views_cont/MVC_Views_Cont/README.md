@@ -32,5 +32,26 @@
 
 ![](https://s3.amazonaws.com/nettuts/613_mvc/diagram.jpg)
 
+#### Part 2 - Views
+
+* Your views class/classes represent the information the user sees
+* This is where your `input` and `print` methods will go
+* The goal of your views methods will be to take arguments from the database to show to the user. `(Remember we can pass information between methods by invoking them with arguments)`
+* Little to no logic should go in the views. It's main goal is to show the end user data and take in user input
+
+#### Part 3 - Controllers
+
+* This is where your main logic will go
+* In the example of your RPG terminal game you may put your `class Game` or `class Quest` inside this file. 
+
+#### Part 4 - Models 
+
+* Models will be a python file where we will make our SQL calls
+* Connecting our Models to SQL is something we will touch upon tomorrow
+
+***Note***
+
+* All these files will be able to access each other by using Python `imports`
+
 #### Required Reading
 [https://study.cs50.net/mvc](https://study.cs50.net/mvc)
