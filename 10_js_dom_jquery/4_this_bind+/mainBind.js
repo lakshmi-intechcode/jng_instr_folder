@@ -28,14 +28,26 @@ $(document).ready(function(){
 	// This will work. 
 	// Why do you think this will still run?
 	// From what we did in the earlier example when invoking "this" the button object should be passed to the callback
-	$("button").on("click", function(){
-		console.log(this)
-		xMen.clicker()
-	})
+	// $("button").on("click", function(){
+	// 	console.log(this)
+	// 	xMen.clicker()
+	// })
 
 	// This will throw you an error
 	// $("button").on("click", xMen.clicker)
 
 	// We need to bind what we want to call
-	// $("button").on("click", xMen.clicker.bind(xMen))
+	$("button").on("click", xMen.clicker.bind(xMen))
 })
+
+
+
+
+
+
+
+
+
+
+
+

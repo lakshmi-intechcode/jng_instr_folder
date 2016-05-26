@@ -3,7 +3,7 @@ $(document).ready(function(){
 	// // example 1
 
 	// $("button").on("click", function(){
-	// 	debugger;
+	// 	// debugger;
 	// 	console.log(this)
 	// 	//What will it look like if I use the below example instead?
 		
