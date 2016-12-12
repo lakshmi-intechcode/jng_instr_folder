@@ -1,207 +1,134 @@
 # Parking Lot
 
-## Description
+### Class Notes
 
-The information in this markdown is intended to expand on your questions we were not able to cover during lecture periods. It will also include best practices on how to approach programming. 
+##### Methods - 
 
----
+***Here is a list of some methods we have used in class. Look in the python docs for more details***
 
-## Lecture Parking Lot
+* `append` - add a value to the back of a list
+* `split` - split a string and turn it into a list of values
+* `join` - join the values of a list together and turn it into a string
+* `len` - get the length of an iterable
+* `str` - turn a data type into a string
+* `int` - turn a data type into a integer
+* `pop` - remove a value from a list
+* `keys` - returns a list of all keys in a dictionary
+* `values` - returns a list of all values in a dictionary
+* `items` - returns a list where each index represents a key and value
 
-#### Open your file into the Python REPL
+##### String Concatenation
 
-* Using `-i` to run your file. If you have a python file that you normally run with `python3 file.py` you can use `-i` with it. This will open the interactive pyton3 repl with your file. 
-* Below is an example where I made a file with a function to print a string. 
-* I do not invoke that function inside of the file
-* Make a file called `hello.py`
-
-```
-def hello():
-	print("HELLO WORLD")
-```
-* Now save it and go back to the terminal
-* Run the following command to open the file in the REPL
-	* `python3 -i hello.py`
-* Now you can do what you want with the file in the REPL. 
-* Let's invoke the function
+* There are various ways to combine strings. 
+* My favorite way is to use the curly brackets so you can specify where each value will be injected into the string without having to worry about the positions you pass those values to the format method.
 
 ```
->>> hello()
->>> 'HELLO WORLD'
+name = "Jason"
+money = "10.45"
+
+print("Hi " + name + " you owe me $" + money + " for lunch")
+print("Hi %s you owe me $%s for lunch".format(name, money))
+print("Hi {x} you owe me ${y} for lunch".format(x=name, y=money))
 ```
 
-#### WHAT IS THE MAP.MIN FILE IN BOOTSTRAP
+### Python REPL
 
-* In class we talked about the bootstrap map.min file
-	* It is something that allows people to use bootstrap with css preprocessor such as LESS and SASS
-* For the purposes of this class we don't have to go in depth about this topic
+* You can open the Python REPL in your terminal by just typing `python3`
+* OR if you want to open a specific file in the Python REPL type `python3 -i file.py`
+* To exit your REPL press "ctrl+d" or type "quit()"
+* If you type `dir()` and pass a value into the parenthesis the REPL will return to you all the methods that value has access to
+* You can also type `help()` and search for definitions of various vocabulary words and methods of different Python objects
 
-#### DJANGO STATIC FILES
 
-* `Static Files` are your:
-	* images
-	* CSS Stylesheets
-	* JavaScript Files
-* [static folder documentation](https://docs.djangoproject.com/en/1.8/howto/static-files/)
-* Your `settings.py` file will have to be changed to include the static files
-* Put the following code at the very bottom of your `settings.py` file under `STATIC_URL`
+### Keyboard Shortcuts
+	
+* cmd+tab === navigate between different programs
+* cmd+` === navigate between windows of the same program 
 
-```
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"), 
-    '/var/www/static/',
-)
-```
-* os.path.join and Base_dir allow our application to be more dynamic with compatibility between different operating systems. 
-	* A path on Linux may be different than Mac
-* We are telling django to combine your static folder with the base directory
-* Now we can incorporate our css stylesheets into our base html
+### Sublime Text Shortcuts
 
-***STEPS***
+* cmd+d === highlight the next occurance of the same word
+* cmd+/ === comment in/out
+* cmd+shift+(any directional arrow) === highlights all text to the top/right/bottom/left
 
-* Make a folder called `static` inside your project.
-* Make a `style.css` file inside that `static` folder
-* Open the css file and put in some CSS. `h1{color:red;}`
-* Go into your base.html file and put the following
+### Emmet Shortcuts
+
+* `!+tab` if you do this in html it will produce the boilerplate HTML file for you
+* use a tab to complete your element
 
 ```
-{% load staticfiles %}
+h1 + tab === <h1></h1>
+``` 
+* use an arrow to indicate nested element
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<link rel="stylesheet" href="{% static "css/base.css" %}">
-	<meta charset="UTF-8">
-	<title>{% block head_title %}TRY DJ 1.9{% endblock head_title%}</title>
-</head>
 ```
-* Now your h1 tags should appear red
+div > h1 + tab === <div><h1></h1></div>
+```
+* use a * to indicate you want repeats of that element
 
----
+```
+ul>li*3 + tab ===
 
-## Jason's Best Practices
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+```
 
-* `Version Control` - Always push working code to github. Do not wait until you have "completed" the exercise. Version Control is meant to SAVE your progress. You wouldn't write a novel on microsoft word and only save it when the novel is done. 
-* `Pseudo Code` - Think about your application before you start to code anything. Pseudo code what your objects will look like. Also make sure to write as many user stories as possible, and build out a detailed ERD if you are utilizing a database
-* `DO NOT copy old code from a previous assignment.` If you want to use an old assignment for reference that's fine, but type out EVERYTHING. Repeat, Practice, Memorize.
-* `DO NOT use code you don't understand.` If you decide to copy something you found through your research such as Stack Overflow answers, make sure you understand every letter of that code before using it. 
-* `Doc Strings` - Use doc strings to comment out your code. They can also be viewed in the terminal when you `dir()` and `help()` your file. Doc strings can also be used to type out formatted print statements so there's no need to use string commands such as `\n`
+* give an element an id or a class
 
----
-
-## Resources
-
-***Git / Github***
-
-* [Github Ignoring Files](https://help.github.com/articles/ignoring-files/)
-
-***Online Resources***
-
-* [Trello Project Manager Web App](https://trello.com/)
-
-***Database***
-
-* [Database Normalization Wiki](https://en.wikipedia.org/wiki/Database_normalization)
-* [Database SQl Index](http://www.programmerinterview.com/index.php/database-sql/what-is-an-index/)
-
-***REST / CRUD / MVC***
-
-* [HTTP Requests](http://www.tutorialspoint.com/http/http_requests.htm)
-* [REST API Tutorial](http://www.restapitutorial.com/lessons/restfulresourcenaming.html)
-* [Beginners Guide to Creating a REST API by Andrew Havens](http://www.andrewhavens.com/posts/20/beginners-guide-to-creating-a-rest-api/)
-* [Designing a RESTful API with Python and Flask by Miguel Grinberg](http://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask)
-* [URI Wiki](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)
-* [REST Wiki](https://en.wikipedia.org/wiki/Representational_state_transfer#Uniform_interface)
-
-***JavaScript***
-
-* [JavaScript is Sexy Callback Functions](http://javascriptissexy.com/understand-javascript-callback-functions-and-use-them/)
-* [JavaScript is Sexy Scope and Hoisting](http://javascriptissexy.com/javascript-variable-scope-and-hoisting-explained/)
-* [JavaScript is Sexy "this"](http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/)
-- [JavaScript is Sexy "call" / "bind" methods](http://javascriptissexy.com/javascript-apply-call-and-bind-methods-are-essential-for-javascript-professionals/)
-* [AJAX Blog Explain](http://www.seguetech.com/blog/2013/03/12/what-is-ajax-and-where-is-it-used-in-technology)
-* [AJAX on Tutorials Point (eh okay reading)](http://www.tutorialspoint.com/ajax/index.htm)
-* [AJAX on jQuery.com, click through the links on the bottom](https://learn.jquery.com/ajax/)
-* [Why Name jQuery Objects with $](http://stackoverflow.com/questions/3360858/why-use-in-the-name-of-javascript-variables)
-
-***Python***
-
-* [Python Tips Args and Kwargs](http://pythontips.com/2013/08/04/args-and-kwargs-in-python-explained/)
-* [Python File IO Tutorials Point](http://www.tutorialspoint.com/python/python_files_io.htm)
-* [What are Generators](https://www.jeffknupp.com/blog/2013/04/07/improve-your-python-yield-and-generators-explained/)
-* [Python @classmethods and @staticmethods](http://stackoverflow.com/questions/12179271/python-classmethod-and-staticmethod-for-beginner)
-* [Why Class Methods Stack OverFlow 1](http://stackoverflow.com/questions/10586787/when-should-i-use-classmethod-and-when-def-methodself)
-* [Why Class Methods Stack OverFlow 2](http://stackoverflow.com/questions/38238/what-are-class-methods-in-python-for)
-
-***Design***
-
-* [design theory by tutsplus](http://webdesign.tutsplus.com/categories/design-theory)
-
-***How the Internet Works***
-
-* [how dns works comic](https://howdns.works/episodes/)
-
-***HTML and CSS***
-
-* [What is Normal Document Flow](http://webdesign.tutsplus.com/articles/quick-tip-utilizing-normal-document-flow--webdesign-8199)
-* [rem vs em?](https://j.eremy.net/confused-about-rem-and-em/)
-* [What does auto really mean?](http://stackoverflow.com/questions/4471850/what-is-the-meaning-of-auto-value-in-a-css-property)
-* [Positioning from vanseodesign](http://vanseodesign.com/css/css-positioning/)
-* [Learn Layout DOT COM](http://learnlayout.com/)
-* [CSS Diner Exercise Tutorial](http://flukeout.github.io/)
-* [CSS Pro Tips](https://github.com/AllThingsSmitty/css-protips)
-
-***Django***
-
-* [Stack OverFlow Answer has some Videos for Class Based Views](http://stackoverflow.com/questions/17414622/django-a-good-tutorial-for-class-based-views)
-
-***Bash Commands***
-
-* [Quick read about what is curl](https://quickleft.com/blog/command-line-tutorials-curl/)
-- [Stack Overflow example of curl in use](http://superuser.com/questions/149329/what-is-the-curl-command-line-syntax-to-do-a-post-request)
-
-***OAuth Resources***
-
-- [Check out OAuth on wikipedia for a more "technical" explanation](https://en.wikipedia.org/wiki/OAuth)
-- [Here's a list of OAuth Providers](https://en.wikipedia.org/wiki/List_of_OAuth_providers)
-
----
-
-## Schedule 
+```
+div.blah + tab === <div class="blah"></div>
+```
 
 
-| Weeks | Day 1                                                                 | Day 2                                                                              | Day 3                                                                   | Day 4                                        | Day 5                                    | Weekend Assignments                     |
-|-------|-----------------------------------------------------------------------|------------------------------------------------------------------------------------|-------------------------------------------------------------------------|----------------------------------------------|------------------------------------------|-----------------------------------------|
-| 1     | Python  Fundamentals  One                                             | Python Fundamentals Two                                                            | Intro To Object Oriented Programming                                    | More OOPS and Inheritance                    | Review                                   |                                         |
-| 2     | Binary Search Linear Search Linked List                               | Bubble Sort Insertion Sort Stacks and Queues                                       | SQL Intro SQL CRUD MVC Intro Views /Models                              | SQL / MVC Models SQL Conn Createdb           | Binary Search Tree Merge Sort Quick Sort | Xmas Break RPG Blackjack                |
-| 3     | SQL Relational DB SQL Foreign Keys                                    | SQL Relational DB SQL Joins                                                        | OMDB API                                                                | Markit API                                   | API                                      | Trader to Bank                          |
-| 4     | Advanced Python Generators List Comprehensions Args and Kwargs        | Baby ORM Read                                                                      | Baby ORM  Full CRUD                                                     | Baby ORM  Full CRUD                          | Assessment                               | Pre Phase 2 Readings                    |
-| 5     | Intro to  HTML vs HTML 5 CSS JS Syntax Diff                           | JS Scope Callbacks Closures Higher Order Functions DOM  DOM Events                 | jQuery Intro CDNs jQuery DOM                                            | CSS Positioning JavaScript THIS  Tic Tac Toe | Tic Tac Toe                              | Tic Tac Toe                             |
-| 6     |  CSS Media Queries CSS Pseudo ClassesCSS Grids CSS Reset vs Normalize | Django Intro Pip Function Based Views HTML Forms Request Response Cycle Django ORM | URL Namespace Django Models Django Requests                             | Django Model Forms                           | WEEKEND PROMPT  UserLess Blog            | UserLess Blog                           |
-| 7     | Django User Sessions Class Based Views                                | Homework Day                                                                       | Django Custom Validation Django Default Validators Debugging Assignment | Django as an API                             | AJAX                                     | Todo API  Todo Front End  Consuming API |
-| 8     | Hacker News                                                           | Hacker News                                                                        | Hacker News                                                             | Review                                       | Assessment                               | OAuth                                   |
 
----
+### Resources
 
-## How to find out if a number is divisible by another number (Found on Reddits YSK)
+* [http://caniuse.com/](http://caniuse.com/) - site that shows you what elements, css, and js is allowed in what browser versions
+* [https://coolors.co/](https://coolors.co/) - A color scheme generator. Helps you decide on colors for a website and the like
+* Emmet - A sublime text package for faster HTML coding
+* Color Picker - A sublime text package that allows for you to pick hex colors
+* [https://www.youtube.com/watch?v=8aGhZQkoFbQ](https://www.youtube.com/watch?v=8aGhZQkoFbQ) - What The Heck Is The Event Loop Anyway JSConf EU 2014
+* [https://color.adobe.com/create/color-wheel/](https://color.adobe.com/create/color-wheel/) - adobe color picker. similar to color picker package for sublime.
+* [https://philipwalton.github.io/solved-by-flexbox/](https://philipwalton.github.io/solved-by-flexbox/) - A resource for using flexbox
+* [https://www.canva.com/font-combinations/](https://www.canva.com/font-combinations/) - help with fonts
+* [http://typecast.com/blog/a-more-modern-scale-for-web-typography](http://typecast.com/blog/a-more-modern-scale-for-web-typography) - more help with fonts
 
-#### Obvious:
 
-* 1 - Always.
-* 2 - If the number is even.
-* 5 - If the number ends in 5 or 0.
-* 10 - If the numbers ends in 0.
+### Best Practices
 
-#### Less Obvious:
+* Keep your workspace clean. Keep your tabs in sublime and google chrome to a minimum
 
-* 3 - Add all of the digits in the number. If the result is divisible by 3, then so is the original number. (Note that this rule can be repeated with the result if you still don't know.)
-* 4 - If the last 2 digits of the number are divisible by 4, then so is the entire number. If you don't know then halve the last 2 digits twice. If you still have a whole number then it is divisible by 4.
-* 6 - If the number passes the '2' rule and the '3' rule, then, yes.
-* 8 - If the last 3 digits of the number are divisible by 8, then so is the entire number. If you don't know then halve the last 3 digits three times. If you still have a whole number then it is divisible by 8.
-* 9 - Add all of the digits in the number. If the result is divisible by 9, then so is the original number. (Note that this rule can be repeated with the result if you still don't know.)
+### Food Places
 
-#### Obscure:
-
-* 7 - Remove the last digit from the number. Take the number formed by the remaining digits and subtract by 2x the removed digit. If the result is divisible by 7, then so is the original number.
-* Example (889): 88-(9x2) = 88-18 = 70
-=> 889 is divisible by 7.
+* Chipotle - 
+	* Madison Ave, btw 40th and 39th str
+* Dig Inn - 
+	* Madison Ave, btw 40th and 39th str
+* Pret A Manger - Ready to go salads and wraps
+	* Madison Ave, 39th str
+* Cafe Zaiya - Japanese Cafe
+	* 41st street between Madison and 5th
+* Sunrise Mart - Japanese Cafe and Grocery Store
+	* 41st street between Madison and 5th
+* Mcdonalds - Doo Doo
+	* Madison and 40th street
+* Num Pang - Viet Sandwiches
+	* 41st street between Lexington and 3rd
+* Choza - Taqueria
+	* 41st street between Park and Madison (Next Door)
+* Shake Shack - American
+	* 40th street and 3rd avenue
+* Norikoh - Japanese
+	* 39th street, between Madison and 5th ave
+* Nirvana - Indian Buffet
+	* Lexington between 40th and 39th street
+* Hunan Manor - Chinese
+	* Lexington between 40th and 39th street
+* Rhong-Tiam - Thai
+	* 39th street and Lexington
+* Essen - American 
+	* Madison Avenue between 41st and 40th
+	
