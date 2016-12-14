@@ -1,18 +1,45 @@
-MatPlotLib and babyORM
-======================
+# MatPlotLib
 
-This README will change.
+---
 
-The first exercise should be something you already know: build SQL
-tables modeling Many-to-One and Many-to-Many relationships. Do it
-first; it's there so I can be sure you're ready for the assessment.
+### Learning Objectives
+***Students will be able to...***
 
-The second exercise utilizes MatPlotLib to build graphs from data
-using Pandas. Like yesterday's Pandas exercises, you'll find it easier
-than you predicted.
+* Import the `matplotlib` library
+* Import a text file
+* Make a DataFrame
+* Filter through a DataFrame
 
-Later today I'll introduce babyORM, which will be your greatest
-challenge yet, involving many new concepts that fall into the
-category of "Advanced Python".
+---
+### Context 
 
-Your ticket pays for the whole seat but you only need the edge...
+* The missing limb of pandas
+
+---
+### Lessons
+
+##### Part 1 - What is MatPlotLib
+
+* Before we do anything lets install the library
+
+```
+pip3 install matplotlib
+```
+* This is a python 2D plotting library
+* It will take your data and create images with that information
+* You can start looking at the docs here
+	* [MatPlotLib Documentation](http://matplotlib.org/)
+	* [Pandas Visualization](http://pandas.pydata.org/pandas-docs/version/0.13.1/visualization.html)
+
+##### Examples
+
+* import pandas and matplotlib
+
+```
+import pandas as pd
+import matplotlib.pyplot as plt
+```
+* `pd.DataFrame` has a [`.plot()`](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.plot.html) method to generate a graph from its data.
+* A Plot object has the method `get_figure`, which returns a Figure. 
+* A Figure can be saved to a file with the method [`.savefig()`](http://matplotlib.org/api/figure_api.html#matplotlib.figure.Figure.savefig)
+* (`.savefig()` takes the arguments `*args` and `**kwargs`. You don't have to understand them yet, but be sure to notice them because you'll see them again very soon.
