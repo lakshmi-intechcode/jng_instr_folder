@@ -22,7 +22,7 @@
 * JavaScript is the only language that can interact with the DOM (elements in the browser) and because of how annoying the DOM can be, JS is the victim of a lot of unjust hatred
 * No matter what language you are going to build your server in, whether it's PHP, Ruby, Python, or even NodeJS, you will still need JavaScript to talk to the browser.
 * JavaScript was created in 10 days in 1995 by Brendan Eich.
-* It was use to build the front end of websites, how they looked, and how users could interact with them. 
+* It is used to build the front end of websites, how they looked, and how users could interact with them. 
 * It was not until recently JavaScript could be used as a backend language
 * This occured with the emergence of Node JS. A runtime environment that allows programmers to build server-side applications in JavaScript
 * This has gained traction as it is convenient to build a full web application, the front and back, in the same language
@@ -95,7 +95,6 @@ var bam = {
 
 bam.sayName()
 ```
-
 
 ***Strings***
 

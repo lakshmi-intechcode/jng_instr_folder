@@ -88,13 +88,15 @@
 
 * So what is HTML5?
 * HTML5 is a set of standards that represents the best implementation of HTML.
-* HTML5 allows for easier collaboration between browsers and users
-* They do this using Semantic Tags
+* HTML5 allows for easier collaboration between browsers AND users
+* They do this using `Semantic Tags`
 
 ***What are Semantic Tags?***
 
+* HTML5 comes with Semantic Tags which are more descriptive tags for our HTML markup.
 * Semantic tags allow us to provide more information in our HTML markup without changing the structure of the page
-* Some browsers may display these elements a little different
+	* If you had a large HTML file you might want to wrap elements in semantic tags rather than using `div` a million times.
+* All browsers will display HTML elements slightly different. Semantic tags are also used to help make these elements appear as close as possible cross browser.
 * Semantic tags are great for the browser, and the user themselves to know what is going on
 * Here are some examples of semantic tags
 

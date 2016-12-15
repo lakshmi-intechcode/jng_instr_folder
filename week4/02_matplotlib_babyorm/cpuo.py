@@ -14,6 +14,7 @@ plt.ylabel('Iron Man')
 plt.xlabel('Ant Man')
 
 plot_cpuo_3 = df_cpuo.plot(title='Third Charm', kind='line')
+
 # pass in [xmin, xmax, ymin, ymax]
 plot_cpuo_3.axis([0,5,0,20])
 
@@ -31,3 +32,5 @@ fig_cpuo_2.savefig('cpuo-bar.png')
 
 fig_cpuo_3 = plot_cpuo_3.get_figure()
 fig_cpuo_3.savefig('cpuo-line.png')
+
+

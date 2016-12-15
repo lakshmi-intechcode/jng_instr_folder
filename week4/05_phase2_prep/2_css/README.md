@@ -37,8 +37,11 @@
 ##### Part 3 - Chrome Inspector
 
 * Check out [www.example.com](http://www.example.com/)
-* Open up the inspector. `Do this by right clicking on the page and clicking on inspector`
+* Open up the inspector. `Do this by right clicking on the page and clicking on inspect`
 * Hover over all the layers of the various elements and check out the box model
+* Check out the example in the folder under `inspector.png`
+* You can also use the inspector to play around with styling the page. 
+* All edits you make in the styles portion of the inspector will be gone on refresh
 
 ***Five Min Exercise***
 
@@ -119,5 +122,18 @@
 	* `ID`
 	* `Class`
 	* `TagName`
+* These selectors are just `attributes` we can attach to HTML elements
+
+```
+	<h1 id="myHeader"> Hello World<h1>
+	
+	<ul>
+		<li class="listItem">This</li>
+		<li class="listItem">Is</li>
+		<li class="listItem">A</li>
+		<li class="listItem">List</li>
+	</ul>
+```
+
 	
 ##### Take a look at the example `index.html` and `style.css` to see how this can be incorporated.

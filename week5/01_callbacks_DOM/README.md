@@ -57,14 +57,37 @@
 	* Variables and Functions belong either to a local(also known as lexical) scope, enclosing scope, or a global scope.
 * Variables declared in a function are in the local scope.
 * Variables in the global scope are accessible anywhere.
-* If you have nested functions variables in an outer function are accessible in an inner function. These are called closures.
+* If you `DO NOT` declare variables in JS with the `var` keyword that variable will be declared in the global scope. 
+
+***REMEMBER WE WANT TO KEEP OUR GLOBAL SCOPE CLEAN***
 
 ##### Part 2 - Closures / Callbacks / Higher Order Functions 
 
-* Let's take into account variables and functions as parameters. 
-* All callbacks are closures but not all closures are callbacks.
-* Callbacks are also known as "Higher Order Functions" but for the purpose of this course we will be sticking with the term "Callbacks".
+**Closures**
+
+* Closure - a function nested inside of another function where. The inner function will have access to the variables from the outer function. The outer function cannot access the variables from the inner function
+
+```
+var first = function(){
+	var x = 10
+	
+	var nestedFunc = function(){
+		var y = 20
+		
+		console.log(x+y) 
+	}
+	
+	console.log(x+y)
+}
+```
+* the console.log inside of `nestedFunc` will give you 30. 
+* The console.log at the bottom is not inside the closure. It belongs to `first` and does not have access to the variable y inside of `nestedFunc`
+
+**Callbacks**
+
 * A callback is a function that has been created and defined but NOT invoked.
+* Callbacks are also known as "Higher Order Functions" but for the purpose of this course we will be sticking with the term "Callbacks".
+* All callbacks are closures but not all closures are callbacks.
 * Instead it is sitting around waiting to be "called back" by some sort of event such as a click event, or the invocation of another function. 
 * See the calculator example from class below.
 
@@ -107,6 +130,8 @@ console.log(calculator(7,8,add))
   * `document.getElementById`
   * `document.getElementsByClassName`
   * `document.getElementsByTagName`
+  * `document.querySelector`
+  * `document.querySelectorAll`
 * Addition and Removal
   * `document.createElement`
   * `document.createTextNode`
@@ -116,16 +141,15 @@ console.log(calculator(7,8,add))
 * Editing
   * `node.setAttribute`
 
-
 ##### Part 2 - Using DOM Methods
 
-* Let's put what we researched to use.
-* Pull up the whiskey code from yesterday.
-* Link the main.js file.
-	* Why did I put the script tag at the bottom of the html.
-* Things to do:
+* Make two files. `index.html` and `main.js`
+* Hook up your `main.js` file to your `index.html` file with a `script` tag at the bottom of the HTML
+	* Why did I put the script tag at the bottom of the html?
+* Whether you grab an element that already exist on the page or create a brand new element, all of these are just objects that you can store to a variable
+* Try doing some of the things below using the JavaScript document methods you just researched.
 	* Target specific element by id
-	* Target elements by class 
+	* Target elements by class
 	* Target elements by tag
 	* Create a div
 	* Give div content
@@ -145,7 +169,7 @@ console.log(calculator(7,8,add))
 		* click
 		* mouseover
 		* mouseout
-	* The second argument is a block of code that will be run when the event is starts.	
+	* The second argument is a block of code that will be run when the event is starts.
 	
 ```
 var header = document.getElementById("myHeader")
@@ -160,6 +184,11 @@ header.addEventListener("click", namedFunc);
 // 	alert("Does this work?")
 // })
 ```	
+* In this example we have a element on the `html` page with an ID of `myHeader`
+* We target that `DOM element` and store it to the `var header`
+* Now we create a function that will call a JS method `alert` when invoked
+* `alert` is a built in method that will pop up a box on the page
+* Now we target the variable that stores that element, and attach an event listener to it
 
 ***NOTE***
 
