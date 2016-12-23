@@ -49,9 +49,9 @@
 ---
 ### Lesson
 
-##### Part 1 - Moar JavaScript Concepts
+##### Part 1 - JS Scope
 
-* JavaScript allows us to program in an Object Oriented Way or in a Functional way. 
+* JavaScript allows us to program in an Object Oriented Way or in a Functional way.
 * What is scope and how does it look in JavaScript? 
 	* Scope is where data exists and is accessible from. 
 	* Variables and Functions belong either to a local(also known as lexical) scope, enclosing scope, or a global scope.
