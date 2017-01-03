@@ -63,19 +63,54 @@
 
 // console.log(movie)
 
-const movies = [
-	"The Man From Nowhere",
-	"The Usual Suspects",
-	"District 9",
-	"John Wick",
-	"The Raid",
-	"Good Will Hunting"
-]
+// const movies = [
+// 	"The Man From Nowhere",
+// 	"The Usual Suspects",
+// 	"District 9",
+// 	"John Wick",
+// 	"The Raid",
+// 	"Good Will Hunting"
+// ]
 
-for (let i = 0; i<movies.length; ++i){
-	let temp = movies[i];
-	console.log(temp);
+// for (let i = 0; i<movies.length; ++i){
+// 	let temp = movies[i];
+// 	console.log(temp);
+// }
+
+
+const favThings = {
+	movies : ["John Wick", "The Usual Suspects", "The Raid", "Good Will Hunting"],
+	tvShows : ["Scrubs", "True Detective", "Game of Thrones", "The Black Donnellys"],
+	footballTeam : "New Orleans Saints",
+	ufcFighter : "George St. Pierre"
 }
+
+const breakItDown = (obj) =>{
+	const {movies, tvShows, footballTeam, ufcFighter} = obj;
+
+	console.log(movies);
+	console.log(tvShows);
+	console.log(footballTeam);
+	console.log(ufcFighter);
+}
+
+breakItDown(favThings);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

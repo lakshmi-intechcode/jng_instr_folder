@@ -61,6 +61,34 @@
 
 ***REMEMBER WE WANT TO KEEP OUR GLOBAL SCOPE CLEAN***
 
+* JavaScript Scope works in the "Functional Scope" (As opposed to block level scope)
+
+```
+var blah = function(){
+	var x = 10;
+	
+	if (x === 20){
+		var y = 20
+	} else {
+		var z = 30
+	}
+	
+	console.log(x)
+	console.log(y)
+	console.log(z)
+}
+```
+* What will appear for the three console logs?
+
+***Hoisting***
+
+* The above example is an example of how variables will be "hoisted" to the top of their scope
+* Since JavaScript works with "Functional Scope" it will all go to the top of their function, even if they are wrapped in some kind of curly bracket.
+
+***NOTE***
+
+* ES6 / es2015 tries to limit this a little bit. We can touch upon that later. 
+
 ##### Part 2 - Closures / Callbacks / Higher Order Functions 
 
 **Closures**

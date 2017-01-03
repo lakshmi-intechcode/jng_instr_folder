@@ -216,31 +216,29 @@ for (let i = 0; i<movies.length; ++i){
 }
 ```
 
+#### Part 3 - Arrow Functions
 
+* Bind, call, apply, arrow functions
+* what is `this`
 
-#### Topics to write about
-
-* Const
-* Let
-* Var
-* Hoisting
-	* function level scope
-	* block level scope
-* Objects declaring key value with one word
+#### Part 4 - Destructuring an Object
 
 ```
-const blah = this.querySelector('[name=blah]');
-
-const something = {
-	blah: blah,
-	name: "Jason"
+const favThings = {
+	movies : ["John Wick", "The Usual Suspects", "The Raid", "Good Will Hunting"],
+	tvShows : ["Scrubs", "True Detective", "Game of Thrones", "The Black Donnellys"],
+	footballTeam : "New Orleans Saints",
+	ufcFighter : "George St. Pierre"
 }
 
-const something = {
-	blah,
-	name: "Jason"
+const breakItDown = (obj) =>{
+	const {movies, tvShows, footballTeam, ufcFighter} = obj;
+
+	console.log(movies);
+	console.log(tvShows);
+	console.log(footballTeam);
+	console.log(ufcFighter);
 }
+
+breakItDown(favThings);
 ```
-* Arrow functions
-* binding This with arrow functions
-* Destructuring
