@@ -72,7 +72,6 @@ var blah = function(){
 	} else {
 		var z = 30
 	}
-	
 	console.log(x)
 	console.log(y)
 	console.log(z)
@@ -80,14 +79,24 @@ var blah = function(){
 ```
 * What will appear for the three console logs?
 
+```
+10
+undefined
+30
+```
+
+* Why didn't we get an error? 
+
 ***Hoisting***
 
 * The above example is an example of how variables will be "hoisted" to the top of their scope
 * Since JavaScript works with "Functional Scope" it will all go to the top of their function, even if they are wrapped in some kind of curly bracket.
 
-***NOTE***
+***NOTES***
 
-* ES6 / es2015 tries to limit this a little bit. We can touch upon that later. 
+* `undefined` is a JavaScript primitive data type. 
+* The Five JavaScript Primitives are `Number`, `String`, `Boolean`, `Undefined`, `Null`
+* ES6 / es2015 tries to limit hoisting a little bit by changing the way scope works. We can touch upon that later. 
 
 ##### Part 2 - Closures / Callbacks / Higher Order Functions 
 
@@ -142,6 +151,35 @@ var calculator = function(a,b,callback){
 console.log(calculator(7,8,add))
 ```
 
+***Five Min Exercise***
+
+* Take the for loop below
+* Adding a `setTimeout` function INSIDE of the for loop, make it console.log the numbers after two seconds
+ 
+```
+var myLoop = function(num){
+	for (var i = 0; i<5; i++){
+		console.log(i)
+	}
+}
+```
+
+***Answer***
+
+```
+var myLoop = function(num){
+	for (var i = 0; i<num; i++){
+		var printing = function(n){
+			setTimeout(function(){
+				console.log(n)
+			}, 2000)
+		}
+		printing(i)
+	}	
+}
+
+myLoop(5)
+```
 
 ##### Part 3 - What is the DOM?
 
