@@ -160,7 +160,76 @@ var $listItems = $("ul li");
 
 ----------
 
-##### Part 5 - capturing events, adding elements, removing elements, editing elements.
+##### Part 5 - Event Delegation
+
+* Lets take a look at the example code
+
+```
+	var $z = $('li')
+
+	$.each($z, function(x,y){
+		y.addEventListener('click',function(){
+			alert("BLAH")
+		})
+	})
+```
+* The above code tells us that any "list item" element that is clicked should alert "BLAH"
+* Now lets add some more functionality
+
+```
+	var $add = $('#blah');
+	var $addTo = $('#list');
+
+	$add.click(function(){
+		console.log("this working")
+		var $li = $('<li></li>')
+		$li.text("I AM NEW")
+		$addTo.append($li)
+	})
+```
+* The above code says any time the user clicks the element with an id of "blah" we will create a new list item and append it to the element with an id of "list"
+* Go ahead and try this out
+* Great we're getting new list items,
+* Wait a second, why are my new list items not clickable and showing an alert with "BLAH"?
+* This is because when that first piece of code runs it grabs all the "li's" and adds the event listener to those elements.
+* Since the li's that are being created weren't around when the first code runs, then will not have the event listener.
+
+***SOLUTION 1***
+
+* we can edit the second piece of code to have add a event listener to each list item when they are created
+* It may look something like this
+
+```
+	var $add = $('#blah');
+	var $addTo = $('#list');
+
+	$add.click(function(){
+		console.log("this working")
+		var $li = $('<li></li>')
+		$li.text("I AM NEW")
+		$li.click(function(){
+			alert("BLAH")
+		})
+		$addTo.append($li)
+	})
+```
+* This works but we don't want to keep adding and removing event listeners to each element. 
+
+***SOLUTION 2***
+
+* Instead of adding an event listener to every list item, what if we just added ONE event listener to the parent element, the unordered list
+
+```
+	$addTo.click(function(event){
+		console.log(event)
+		console.log(event.target)
+	})
+```
+* You can then store the event.target in a variable to use however you want inside of that callback function
+
+----------
+
+##### Part 6 - capturing events, adding elements, removing elements, editing elements.
 
 * Yesterday's Star Wars exercise had you do four main things with JavaScript:
 	1. Capture events
