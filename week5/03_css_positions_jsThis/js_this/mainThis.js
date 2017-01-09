@@ -6,7 +6,7 @@ $(document).ready(function(){
 	// 	// debugger;
 	// 	console.log(this)
 	// 	//What will it look like if I use the below example instead?
-	// 	// console.log($(this))
+	// 	console.log($(this))
 	// })
 
 	// // example 2
@@ -34,5 +34,15 @@ $(document).ready(function(){
 
 	// console.log(bugatti)
 	// console.log(bugatti.color)
+
+	var turtle = {
+    name: "Raph",
+    color: "Red",
+    sayColor: function(){
+        console.log(this.color)
+	  }
+	}
+	turtle.sayColor();
+
 
 });

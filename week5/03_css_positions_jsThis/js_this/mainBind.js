@@ -38,5 +38,5 @@ $(document).ready(function(){
 	// $("button").on("click", xMen.clicker)
 
 	// We need to bind what we want to call
-	$("button").on("click", xMen.clicker.bind(xMen))
+	// $("button").on("click", xMen.clicker.bind(xMen))
 })

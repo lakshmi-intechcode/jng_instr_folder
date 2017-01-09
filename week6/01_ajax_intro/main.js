@@ -3,6 +3,7 @@
 // console.log("ELLO WARLD")
 
 //   var xhr = new XMLHttpRequest();
+
 //   xhr.open('GET', 'http://www.omdbapi.com/?t=top+gun&y=&plot=short&r=json', true);
 
 //   xhr.onload = function() {

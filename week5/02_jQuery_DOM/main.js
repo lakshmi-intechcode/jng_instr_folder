@@ -5,6 +5,10 @@ $(document).ready(function(){
 	$("body").append("<h1>HELLO WORLD</h1>")
     // $('li#change_me').text('hello, world')
 
+	// var $listItems = $("#list>li"); 
+
+	// $listItems.css("color", "red")
+	
 	var $add = $('#blah');
 	var $addTo = $('#list');
 
@@ -15,15 +19,10 @@ $(document).ready(function(){
 		$addTo.append($li)
 	})
 
-	// var $listItems = $("#list>li"); 
-
-	// $listItems.css("color", "red")
 
 	// var $z = $('li')
 	// console.log($z)
-
 	// $.each($z,(x,y)=>{
-	
 	// 	y.addEventListener('click',()=>{
 	// 		alert("BLAH")
 	// 	})
