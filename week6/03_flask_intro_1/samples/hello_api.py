@@ -13,13 +13,14 @@ hellos = {
     'chinese' : '你好世界',
 }
 
-
 @app.route('/')
 def hello_world():
 
     language = request.args.get('language')
     print(request)
     print(request.args)
+    print(request.method)
+    
     response = hellos.get(language) or hellos['chinese']
 
     return jsonify(name=response)
