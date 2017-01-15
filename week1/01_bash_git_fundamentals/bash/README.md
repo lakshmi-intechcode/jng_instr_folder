@@ -40,7 +40,7 @@
 
 ##### Navigation
 
-* `cd` - change directory to the root directory
+* `cd` - change directory to the user home directory
 * `cd ..` - change directory to one level above current
 * `cd ../..` - change directory to two levels above current
 * `cd folder_name` - change director to specifc folder
@@ -76,7 +76,7 @@
 
 ***What is the relative path?***
 
-* A relative path is the path to a file or folder from your current location in the directory
+* A relative path is the path to a file or folder from the current working location in the directory
 * example
 * Current Directory
 
