@@ -20,9 +20,13 @@
 
 ##### Part 1 - What happens when I type Google.com into the browser and press enter?
 
+* [Github Link](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=what%20happens%20when%20you%20type%20google.com%20into%20the%20web%20browser)
+* Browser parsing text
 * Request
-* Response
+* HSTS list
 * DNS
+* HTTP / HTTPS
+* Response
 
 ##### Part 2 - PIP Package Manager
 
@@ -158,7 +162,7 @@ INSTALLED_APPS = [
 
 ***Five Min Exercise***
 
-* All three students must go to the whiteboard and draw out a table
+* All students must go to the whiteboard and draw out a table
 * Each column represents the following
 	* What CRUD stands for
 	* What does it mean in SQL
@@ -260,7 +264,7 @@ def post_home(request):
 
 ##### Part 5 - Django ORM
 
-* We built a `baby orm` in the last phase. 
+* We built a `baby orm` in phase one. 
 * Now we will be using Django's ORM
 * I'm going to show you the different orm methods in the shell
 * Open the shell 
