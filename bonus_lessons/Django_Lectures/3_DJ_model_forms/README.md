@@ -33,110 +33,23 @@
 
 ##### Part 2 - My Whiskey Blog Steps
 
-* Make your virtual env
-* start project
-* start app
-* connect your app
-* make models
-
-```
-from django.db import models
-
-class Post(models.Model):
-	brand = models.CharField(max_length = 50)
-	brand_type = models.CharField(max_length = 80)
-	description = models.TextField()
-	price = models.DecimalField(max_digits = 6, decimal_places = 2)
-
-	def __str__(self):
-		return self.brand
-		# return "{} {}".format(self.brand, self.brand_type)
-```
-* make forms file
-* make forms models
-
-```
-from django import forms
-from .models import Post
-
-class PostForm(forms.ModelForm):
-	class Meta:
-		model = Post
-		fields = [
-			"brand",
-			"brand_type",
-			"description",
-			"price",
-		]
-``` 
-* make urls
-
-```
-from django.conf.urls import url
-from django.contrib import admin
-
-from .views import(
-	posts_list,
-	posts_detail,
-	)
-
-urlpatterns = [
-	url(r'^$', posts_list, name='list'),
-	url(r'^(?P<id>\d+)/$', posts_detail, name='detail'),
-]
-```
-* make views
-
-```
-from django.shortcuts import render, get_object_or_404
-from django import forms
-from .models import Post
-from posts.forms import PostForm
-
-def posts_detail(req, id=None):
-
-	whiskey = get_object_or_404(Post, id=id)
-	mf = PostForm()
-	print(mf)
-	context = {
-		"whiskey": mf,
-	}
-	return render(req, "posts/detail_view.html", context)
-```
-
-* make templates
-
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
-
-	<form method="POST" action="">
-
-	{{ whiskey }}		
-
-	</form>
-
-</body>
-</html>
-```
-
-### Steps
-
 * Create folder. `mkdir whiskey_blog`
 * Change directory into folder. `cd whiskey_blog`
-* Create your virtual environment. `virtualenv env`
-* Start your virtual environment. `source ./env/bin/activate`
-* Install Django with pip3. `pip3 install django`
+* Set up your `Virtual Environment`
+	* Create your virtual environment. `virtualenv env`
+	* Start your virtual environment. `source ./env/bin/activate`
+	* You should see (env) at the front of your path in the terminal
+	* Install Django with pip3. `pip3 install django`
+	* Creating a Virtual environment is important to ensuring the requirements of different projects and separated. If you had a personal project running on Django 1.9, but had a group project working in Django 1.8, the virtual environments would ensure they do not mix up.
 * Create your project folder. `django-admin.py startproject project`
 * Change directory into project. `cd project`
+	* We want to stick with the naming convention of `project` so we know which directory has our `settings.py` file and which directors are `apps`
 * Create your app called posts. `python3 manage.py startapp posts`
-* Add `posts` to the installed apps of your settings file
-* Create your Post Model
+* Add `posts` to the installed apps of your `settings.py` file
+
+##### Part 3 - Post Model
+
+* Set up your Post Model
 
 ```
 from django.db import models
@@ -159,6 +72,8 @@ class Post(models.Model):
 		
 		return reverse("posts:detail", kwargs={"id":self.id})
 ```
+##### Part 4 - Set up your URL.PY FileSSSSS
+
 * Create a `urls.py` file inside the `posts` app and add the following `Function Based Views`
 
 ```
@@ -185,6 +100,20 @@ urlpatterns = [
 	url(r'^(?P<id>\d+)/delete$', posts_delete, name='delete'),
 ]
 ```
+* Your project level `urls.py` file should look like this
+
+```
+from django.conf.urls import url, include
+from django.contrib import admin
+
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+    url(r'^posts/', include("posts.urls", namespace="posts")),
+]
+
+```
+
+##### Part 5 - Setting up FUNCTION BASED VIEWS
 
 * Now create our `Function Based Views` in the `views.py` file in the `posts` app
 
@@ -239,6 +168,9 @@ def posts_delete(req, id=None):
 	return redirect('posts:list', permanent=True)
 
 ```
+
+##### Part 6 - More Updates to Settings.py
+
 * Lets update our settings file to look in the Base Directory for a static folder, a templates folder, and add the session engine
 
 ```
@@ -279,6 +211,9 @@ STATICFILES_DIRS = [
 SESSION_ENGINE = "django.contrib.sessions.backends.signed_cookies"
 
 ```
+
+##### Part 7 - Building your Template Files and Directories
+
 * Now create two directories. `static` and `templates` in the same level as your `manage.py` file
 * Inside of the base templates folder create a `base.html` file and add the following
 
@@ -416,6 +351,9 @@ h1{
 	{% endblock content %}
 
 ```
+
+##### Part 8 - Tell Django you want to use the Models to build out forms
+
 * Now lets create a file `forms.py` inside of our `posts` app
 
 ```
