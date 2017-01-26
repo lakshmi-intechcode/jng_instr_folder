@@ -35,6 +35,8 @@ What is a function? What is a method? What is the difference (if any) between a 
 
 What is scope? Why is it important? How does python inheritance work?
 
+Is python a static or dynamic language? Weakly or strongly typed? Why is this important. What are the benefits of a static language?
+
 ## Python 
 
 Boolean Mask - What is it? Where is it used? What is it good for? 
@@ -47,7 +49,9 @@ Threading - What is multi threading? Why do we use it? Is python multi threaded 
 
 Hash Table - What is a hash table? What are the pros and cons? Why would we use a hash table over an list/array?
 
-Is python a static or dynamic language? Weakly or strongly typed? Why is this important. What are the benefits of a static language?
+Cython - What is Cython? What do people use Cython for? Why is numpy so fast? What are major differences between C and Python? In terms of software development what is a JIT compiler? What are the advantages and disadvantages and how can we use the concept in python?
+
+Monkey Patching - What is Monkey patching? When would we use it?
 
 ## CSS 
 
@@ -67,15 +71,27 @@ What is 'this' in javascript?
 
 Explain the javascript event loop.
 
+What is event delegation? What is event bubbling?
+
+## Databases 
+
+What are the differences between a relational database and a non relational database? Why would we use one over the other? What is an ORM what is an ODM?
+
 ## Servers
 
 HTTP - What are HTTP Status Codes? Give examples of some of each 100,200,300,400, and 500 status codes
 
 Requests - What are request methods? Give some examples
 
+Load Balancing - What is load balancing? Why is it important?
+
 What is the difference between UDP and TCP? Why do we use one over the other?
 
 ## Misc 
+
+Big O - What is Big O notation and why is it important?
+
+What is docker? What is a virtual machine? Why do people use docker over virtual machines like VMware?
 
 Open Source Licensing - What are some different types of open source licensing? Give some examples.
 
