@@ -1,4 +1,4 @@
-# Functional JavaScript (Other Built In Methods)
+# Functional JavaScript AND MOAR!!!
 
 ### Learning Objectives
 
