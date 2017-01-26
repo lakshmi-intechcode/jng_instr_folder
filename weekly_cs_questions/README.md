@@ -13,3 +13,43 @@
 ---
 
 ### Questions
+
+## Python Fundamentals 
+
+Choose one of the built in functions from the list below. Explain what the function does, provide at least one example of the use of the function.
+
+```
+zip
+type
+sorted (bonus question: what is the difference between sort and sorted?) 
+slice
+setattr and getattr
+ord
+char
+set
+map
+iter
+```
+
+What is a function? What is a method? What is the difference (if any) between a function and a method?
+
+## Python 
+
+Boolean Mask - What is it? Where is it used? What is it good for? 
+
+Magic Methods - What is it? How are they used in Python? Give some examples.
+
+## CSS 
+
+Floats - What is it? How do you clear floats and what are the problems with floats?
+
+## JavaScript
+
+What is 'this' in javascript?
+
+## Misc 
+
+Open Source Licensing - What are some different types of open source licensing? Give some examples.
+
+
+
