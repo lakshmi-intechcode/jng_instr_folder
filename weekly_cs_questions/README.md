@@ -49,6 +49,8 @@ Threading - What is multi threading? Why do we use it? Is python multi threaded 
 
 Hash Table - What is a hash table? What are the pros and cons? Why would we use a hash table over an list/array?
 
+Sets - What is a set? Why would we use a set? What is a frozen set? What is the difference between a frozen set and a set? (show examples)
+
 Cython - What is Cython? What do people use Cython for? Why is numpy so fast? What are major differences between C and Python? In terms of software development what is a JIT compiler? What are the advantages and disadvantages and how can we use the concept in python?
 
 Monkey Patching - What is Monkey patching? When would we use it?
@@ -72,6 +74,8 @@ What is 'this' in javascript?
 Explain the javascript event loop.
 
 What is event delegation? What is event bubbling?
+
+Look at 2-3 different design patterns for javascript. Why are design patterns important? What are some of the advantages of the design patterns you chose
 
 ## Databases 
 
@@ -100,4 +104,12 @@ Pass by Value vs Pass by Reference - What does it mean when a language is pass b
 OOP - What is Object Oriented Programming? What is Functional Programming? Why would you use one over the other?
 
 Bit manipulation - What is it? How does it work?
+
+Unit Testing - What is unit testing? Why is it important? How can we implement unit testing in python? How can we implement it in javascript?
+
+Complied vs Interpreted - What is a compiled language and what is an interpreted language? What are the main differences between the two? What kind of language is javascript in this regard? What are the pros and cons of the two types of languages?
+
+Sockets - What are sockets? What are they used for? How can we use them to engage in peer to peer connections?
+
+
 
