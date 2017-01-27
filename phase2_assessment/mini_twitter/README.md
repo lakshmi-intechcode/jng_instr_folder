@@ -1,9 +1,10 @@
 # Phase 2 Assessment - Mini Twitter!
 
 * For your assessment today we'll be building our own mini version of Twitter.
-* There will be `TWO` pages. 
+* There will be `AT MOST TWO` pages. 
 	* A user login page
-	* A Tweets page 
+	* A Tweets page
+	* You can build this all as Single Page Application. 
 * The Tweets page will have AJAX calls that will get new data and utilize DOM manipulation to render them on the page. 
 * I've posted the user stories below 
 * You can build this in either Flask or Django. Whichever you feel more comfortable with. 
