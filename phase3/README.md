@@ -3,7 +3,7 @@
 ### Description 
 
 * CONGRATS SOON TO BE ALUMNI!!!!
-* You will have one month to work together and build the greatest apps THE WORLD HAS EVER SEEN
+* You will have 6-7 weeks to work together and build the greatest apps THE WORLD HAS EVER SEEN
 * You have ALMOST 100% freedom with what you want to work on for this month
 * There are a few requirements...
 
@@ -11,12 +11,14 @@
 
 ### Requirements for Phase 3 On Project Idea
 
-* You will have TWO projects
+* You will have AT LEAST TWO projects AND a portfolio page. 
 	* 2 weeks working on a group project
 	* 2 weeks working on a personal project
 	* off time building a portfolio page 
 * You are expected to be on campus every day. 
 * A TA or an Instructor will meet with you 1-3 times per week for updates on progress
+* Make sure you schedule building these projects together. What weeks will you build your group projects, what weeks will you build your solo projects. 
+* If you decide to build more projects they can be either solo or as a group
 
 ***DO NOT START CODING***
 
