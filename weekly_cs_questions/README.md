@@ -49,8 +49,6 @@ Threading - What is multi threading? Why do we use it? Is python multi threaded 
 
 Hash Table - What is a hash table? What are the pros and cons? Why would we use a hash table over an list/array?
 
-Sets - What is a set? Why would we use a set? What is a frozen set? What is the difference between a frozen set and a set? (show examples)
-
 Cython - What is Cython? What do people use Cython for? Why is numpy so fast? What are major differences between C and Python? In terms of software development what is a JIT compiler? What are the advantages and disadvantages and how can we use the concept in python?
 
 Monkey Patching - What is Monkey patching? When would we use it?
@@ -75,8 +73,6 @@ Explain the javascript event loop.
 
 What is event delegation? What is event bubbling?
 
-Look at 2-3 different design patterns for javascript. Why are design patterns important? What are some of the advantages of the design patterns you chose
-
 ## Databases 
 
 What are the differences between a relational database and a non relational database? Why would we use one over the other? What is an ORM what is an ODM?
@@ -91,9 +87,27 @@ Load Balancing - What is load balancing? Why is it important?
 
 What is the difference between UDP and TCP? Why do we use one over the other?
 
-## Misc 
+## Algorithms and Problem Solving
 
 Big O - What is Big O notation and why is it important?
+
+*Johnson Algorithm (a two-part question intended for two students):*
+
+--> Bellman-Ford: Write the algorithm in Python3 (hereafter: your solution) and prepare an explanation, of Bellman-Ford, that includes answers to the following questions:
+--> --> Who was Richard Bellman? Who was Lester Ford? Who was Edward Moore?
+--> --> What could an animated illustration of the Bellman-Ford algorithm look like? Be prepared to illustrate (vis. rep.) your solution on a whiteboard without an aide.
+--> --> When was the algorithm published?
+--> --> Where did Richard Bellman work? Where did Lester Ford work? Where did Edward Moore work? Where were they born? What secondary schools did they attend? What universities did they attend?
+--> --> Why is this algorithm important? What is its relationship to the Johnson algorithm?
+
+--> Dijkstra: Write the algorithm in Python3 (hereafter: your solution) and prepare an explanation, of Dijkstra, that includes answers to the following questions:
+--> --> Who was Edsger Dijkstra?
+--> --> What could an animated illustration of the Dijkstra algorithm look like? Be prepared to illustrate (vis. rep.) your solution on a whiteboard without an aide.
+--> --> When was the algorithm published?
+--> --> Where did Edsger Dijkstra work? Where was he born? What secondary school did he attend? Where university did he attend?
+--> --> Why is this algorithm important? What is its relationship to the Johnson algorithm?
+
+## Misc
 
 What is docker? What is a virtual machine? Why do people use docker over virtual machines like VMware?
 
@@ -104,12 +118,4 @@ Pass by Value vs Pass by Reference - What does it mean when a language is pass b
 OOP - What is Object Oriented Programming? What is Functional Programming? Why would you use one over the other?
 
 Bit manipulation - What is it? How does it work?
-
-Unit Testing - What is unit testing? Why is it important? How can we implement unit testing in python? How can we implement it in javascript?
-
-Complied vs Interpreted - What is a compiled language and what is an interpreted language? What are the main differences between the two? What kind of language is javascript in this regard? What are the pros and cons of the two types of languages?
-
-Sockets - What are sockets? What are they used for? How can we use them to engage in peer to peer connections?
-
-
 
