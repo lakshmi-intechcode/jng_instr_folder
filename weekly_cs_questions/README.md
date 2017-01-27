@@ -87,9 +87,27 @@ Load Balancing - What is load balancing? Why is it important?
 
 What is the difference between UDP and TCP? Why do we use one over the other?
 
-## Misc 
+## Algorithms and Problem Solving
 
 Big O - What is Big O notation and why is it important?
+
+*Johnson Algorithm (a two-part question intended for two students):*
+
+--> Bellman-Ford: Write the algorithm in Python3 (hereafter: your solution) and prepare an explanation, of Bellman-Ford, that includes answers to the following questions:
+--> --> Who was Richard Bellman? Who was Lester Ford? Who was Edward Moore?
+--> --> What could an animated illustration of the Bellman-Ford algorithm look like? Be prepared to illustrate (vis. rep.) your solution on a whiteboard without an aide.
+--> --> When was the algorithm published?
+--> --> Where did Richard Bellman work? Where did Lester Ford work? Where did Edward Moore work? Where were they born? What secondary schools did they attend? What universities did they attend?
+--> --> Why is this algorithm important? What is its relationship to the Johnson algorithm?
+
+--> Dijkstra: Write the algorithm in Python3 (hereafter: your solution) and prepare an explanation, of Dijkstra, that includes answers to the following questions:
+--> --> Who was Edsger Dijkstra?
+--> --> What could an animated illustration of the Dijkstra algorithm look like? Be prepared to illustrate (vis. rep.) your solution on a whiteboard without an aide.
+--> --> When was the algorithm published?
+--> --> Where did Edsger Dijkstra work? Where was he born? What secondary school did he attend? Where university did he attend?
+--> --> Why is this algorithm important? What is its relationship to the Johnson algorithm?
+
+## Misc
 
 What is docker? What is a virtual machine? Why do people use docker over virtual machines like VMware?
 
