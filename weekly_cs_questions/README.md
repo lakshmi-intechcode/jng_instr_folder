@@ -119,3 +119,5 @@ OOP - What is Object Oriented Programming? What is Functional Programming? Why w
 
 Bit manipulation - What is it? How does it work?
 
+How do game consoles, like the playstation or xbox, differ from conventional computers like laptops or desktops?
+
