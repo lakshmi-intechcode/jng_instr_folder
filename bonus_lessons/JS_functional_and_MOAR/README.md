@@ -19,7 +19,33 @@
 
 ### Lesson
 
-#### Part 0 - Functional Programming
+#### Part 0 - Imperative vs. Declarative Programming!!!
+
+* You will find many articles trying to explain Imperative vs. Declarative programming
+* Many of them will say "Imperative is How and Declarative is What"
+* All of them will give silly examples like:
+	* Imperative is going to a wedding and the hostess tells you to walk forward ten paces, make a left, walk five paces, make a right, and thats your table. 
+	* Declarative - You're at table 8.
+* In terms of programming, imperative is writing your code in such a way you are telling the computer HOW to do something. 
+* For example, writing a for loop that will multiply everything in an array by two
+
+```
+var nums = [1,2,3,4,5]
+
+for (var i = 0; i<x.length; i++){
+	console.log(nums[i]*2)
+}
+```
+* In a declarative manner we will tell our code WHAT we want done.
+
+```
+nums.map(function(number){
+	return number*2
+})
+```
+* In the second code we are using the built in `.map` function to give us back an array with all values multiplied by 2
+
+#### Part 1 - Functional Programming
 
 * We want to write code with zero side effects
 * This means our functions should return brand new objects, never mutating the original data
@@ -27,7 +53,11 @@
 * Three main methods of JavaScript that do this are `.map()`, `.filter()`, and `.reduce()`
 * `.sort()` is added in here because it is a handy function that you should learn but it is NOT A PURE FUNCTION
 
-#### Part 1 - `.map()`
+***NOTE***
+
+* Frameworks and Libraries such as Angular and React encourage programmers to write code in a functional way and a declarative way. 
+
+#### Part 2 - `.map()`
 
 * `.map()` is similar to a `forEach()` function
 * It will apply a callback to each value inside of the array
@@ -97,7 +127,7 @@ var books = [
 ]
 ```
 
-#### Part 4 - `.sort()` (NOT A PURE FUNCTION)
+#### Part 5 - `.sort()` (NOT A PURE FUNCTION)
 
 * `.sort()` will sort an array IN PLACE!!! 
 * This is NOT a pure function 

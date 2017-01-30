@@ -1,9 +1,12 @@
 // var myFunc = function(){
 // 	var a = 10;
 // 	var a = 50;	
+// 	// var b;
+
 // 	if (a === 100){
 // 		var b = 20;
 // 	}
+
 // 	c = 30;
 
 // 	console.log(a)
@@ -12,7 +15,6 @@
 
 // myFunc();
 // console.log(c);
-
 
 // const myFunc = function(){
 // 	let a = 10;
@@ -78,39 +80,43 @@
 // }
 
 
-const favThings = {
-	movies : ["John Wick", "The Usual Suspects", "The Raid", "Good Will Hunting"],
-	tvShows : ["Scrubs", "True Detective", "Game of Thrones", "The Black Donnellys"],
-	footballTeam : "New Orleans Saints",
-	ufcFighter : "George St. Pierre"
-}
-
-const breakItDown = (obj) =>{
-	const {movies, tvShows, footballTeam, ufcFighter} = obj;
-
-	console.log(movies);
-	console.log(tvShows);
-	console.log(footballTeam);
-	console.log(ufcFighter);
-}
-
-breakItDown(favThings);
+// const favThings = {
+// 	movies : ["John Wick", "The Usual Suspects", "The Raid", "Good Will Hunting"],
+// 	tvShows : ["Scrubs", "True Detective", "Game of Thrones", "The Black Donnellys"],
+// 	footballTeam : "New Orleans Saints",
+// 	ufcFighter : "George St. Pierre"
+// }
 
 
 
+// const breakItDown = (obj) =>{
+// 	const {
+// 		movies, 
+// 		tvShows, 
+// 		footballTeam, 
+// 		ufcFighter
+// 	} = obj;
+
+// 	console.log(movies);
+// 	console.log(tvShows);
+// 	console.log(footballTeam);
+// 	console.log(ufcFighter);
+// }
+
+// breakItDown(favThings);
+
+var x = document.querySelector('#clicker');
 
 
+console.log(x)
 
+// x.addEventListener('click', function(event){
+// 	console.log(this)
+// })
 
-
-
-
-
-
-
-
-
-
+x.addEventListener('click', (event)=>{
+	console.log(this)
+})
 
 
 

@@ -216,12 +216,46 @@ for (let i = 0; i<movies.length; ++i){
 }
 ```
 
-#### Part 3 - Arrow Functions
+#### Part 3 - JS String Templating
 
-* Bind, call, apply, arrow functions
-* what is `this`
+* With ES6 JavaScript now has STRING TEMPLATING!!!
+* In Python we were able to accomplish this with the `%s` or the `{}` inside of a string and pass in values
+* JavaScript now has that functionality as well
+* Instead of using quotes, wrap your string in `backticks`
+* Then write the variable you will enter into the string with `${}`
 
-#### Part 4 - Destructuring an Object
+```
+var name = "Jason"
+
+console.log(`Hello ${name}`)
+```
+
+#### Part 4 - Arrow Functions
+
+* Arrow functions allow us to write JavaScript functions that will not bind it's own `this` argument. 
+* Arrow functions are always Anonymous
+* When having nested functions you can might use the `.bind(this)` to ensure that the inner function's `this` argument has the same value as it's outer function.
+* With Arrow functions, the inner function will not apply it's own value to the `this` argument, and therefore we do not need to bind anything
+
+```
+var x = document.querySelector('#clicker');
+
+
+console.log(x)
+
+// this will return the `ul` with an id of `clicker`
+// x.addEventListener('click', function(event){
+// 	console.log(this)
+// })
+
+// this will return the encompassing Window object
+x.addEventListener('click', (event)=>{
+	console.log(this)
+})
+```
+
+
+#### Part 5 - Destructuring an Object
 
 ```
 const favThings = {

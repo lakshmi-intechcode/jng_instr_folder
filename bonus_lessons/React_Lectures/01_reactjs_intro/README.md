@@ -20,15 +20,6 @@
 * React encourages us to write declarative, functional code
 * One way data binding
 
-##### Part 2 - Imperative vs Declarative programming!!!
-
-* You will find many articles trying to explain Imperative vs. Declarative programming
-* All of them will give silly examples like:
-	* Imperative is going to a wedding and the hostess tells you to walk forward ten paces, make a left, walk five paces, make a right, and thats your table. 
-	* Declarative - You're at table 8.
-	
-* We have to use props.data.map inside our MovieComponent return. We cannot use a for loop inside of the JSX. 
-
 ##### Part 3 - Virtual DOM
 
 * React utilizes a Virtual DOM. 
