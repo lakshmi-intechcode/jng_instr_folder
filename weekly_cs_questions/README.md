@@ -33,11 +33,29 @@ iter
 
 What is a function? What is a method? What is the difference (if any) between a function and a method?
 
+What is an expression? What is a statement? What is the difference (if any) between the two?
+
 What is scope? Why is it important? How does python inheritance work?
 
 Is python a static or dynamic language? Weakly or strongly typed? Why is this important. What are the benefits of a static language?
 
+What is a class? What is an object? What is the difference between a class and an object?
+
+What are modules? Provide an example.
+
+## Python Classes
+
+What happens when you call ```__init__```?
+
+What is self? Why do all classes and methods need self?
+
+What is if __name__ == "__main__"?' What is it's purpose?
+
+What are instant methods and class methods? How are instant and class methods used and how are they different from one another?
+
 ## Python 
+
+Lamdba - What is lambda? What does it do and why do we use it?
 
 Boolean Mask - What is it? Where is it used? What is it good for? 
 
@@ -118,4 +136,8 @@ Pass by Value vs Pass by Reference - What does it mean when a language is pass b
 OOP - What is Object Oriented Programming? What is Functional Programming? Why would you use one over the other?
 
 Bit manipulation - What is it? How does it work?
+
+How do game consoles, like the playstation or xbox, differ from conventional computers like laptops or desktops?
+
+How do single-board computers, like the raspberry pi, differ from conventional computers like laptops or desktops?
 
