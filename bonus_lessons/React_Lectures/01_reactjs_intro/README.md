@@ -13,14 +13,41 @@
 
 ### Lesson
 
-##### Part 1 - What is React?
+#### Part 1 - What is React?
 
 * React is a JavaScript View Library created by Facebook
 * It allows us to write code quickly and in an organized manner
 * React encourages us to write declarative, functional code
-* One way data binding
 
-##### Part 3 - Virtual DOM
+***Note***
+
+* You should practice writing functional / declarative / ES6 code as much as possible.
+* Many React tutorials will be given in this syntax.
+* It will be much easier to follow along with them if you don't have to worry about understanding ES6 and built in Pure Functions
+
+#### Part 2 - One Way Data Binding vs Two Way Data Binding
+
+***Two Way Data Binding***
+
+* Some frameworks use Two Way Data Binding. For Example Angular 1
+* This means that there is a connection between the HTML and the component it is connected to
+* Angular users "watchers" and sets up "directives" that will keep a watch on changes in the HTML and the Component.
+* If one changes than that change will be reflected in the other.
+
+***One Way Data Binding***
+
+* React uses One Way Data Binding. 
+* The HTML does not have the ability to change the component it is connected to
+* Updates to the data can occur through event listeners
+* The DOM or the Virtual DOM is completely controlled by the logic inside of the component
+
+***NOTE***
+
+* Angular 2 has dropped two way data binding
+* [https://www.themarketingtechnologist.co/introduction-to-data-binding-in-angular-2-versus-angular-1/](https://www.themarketingtechnologist.co/introduction-to-data-binding-in-angular-2-versus-angular-1/)
+* Feel free to read that on your own time. For now lets get back to React
+
+#### Part 3 - Virtual DOM
 
 * React utilizes a Virtual DOM. 
 * Instead of manipulating the actual DOM we are just playing around with JavaScript Objects that are a representation of that DOM. 
@@ -30,7 +57,7 @@
 	* Instead of performing multiple DOM changes we are creating a copy to our needs and then making one change. 
 	* Since everything is just a JS object they are easier to remove/drop into each other. 
 
-##### Part 4 - JSX
+#### Part 4 - JSX
 
 * From [http://buildwithreact.com/tutorial/jsx](http://buildwithreact.com/tutorial/jsx)
 	* JSX is a preprocessor step that adds XML syntax to JavaScript. 
@@ -60,7 +87,7 @@ function HomeComponent(props){
 module.exports = HomeComponent;
 ```
 
-##### Part 5 - React Components
+#### Part 5 - React Components
 
 * Components are the JavaScript Objects that will represent the Virtual DOM
 * We will break these up into two types of components
@@ -72,7 +99,7 @@ module.exports = HomeComponent;
 * Components can be imported and exported anywhere within the app
 * Therefore they are extremely reusable
 
-##### Part 6 - State vs. Props
+#### Part 6 - State vs. Props
 
 * If we keep our logic in one place and the styling in another place how do the two talk to each other?
 * `State and Props` - These are the meat and potatoes of React, or if you're vegetarian, lettuce and tomatoes. 
