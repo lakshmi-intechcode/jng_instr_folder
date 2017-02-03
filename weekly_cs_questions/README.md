@@ -125,6 +125,22 @@ Big O - What is Big O notation and why is it important?
 --> --> Where did Edsger Dijkstra work? Where was he born? What secondary school did he attend? Where university did he attend?
 --> --> Why is this algorithm important? What is its relationship to the Johnson algorithm?
 
+Stack - Explain and provide an example of the average case and worst case time complexity for insertion and deletion in a stack 
+
+Queue - Explain and provide an example of the average case and worst case time complexity for insertion and deletion in a queue
+
+Hash Table - Explain and provide an example of the average case and worst case time complexity for insertion and deletion in a hash table
+
+Quick Sort - Explain and provide an example of quick sort. What is the best and worst case time complexity of quick sort? 
+
+Merge Sort - Explain and provide an example of merge sort. What is the best and worst case time complexity of merge sort?
+
+Bubble Sort - Explain and provide an example of bubble sort. What is the best and worst case time complexity of bubble sort?
+
+Insertion Sort - Explain and provide an example of insertion sort. What is the best and worst case time complexity of insertion sort?
+
+Heap Sort - Explain and provide an example of heap sort. What is the best and worst case time complexity of heap sort?
+
 ## Misc
 
 What is docker? What is a virtual machine? Why do people use docker over virtual machines like VMware?
