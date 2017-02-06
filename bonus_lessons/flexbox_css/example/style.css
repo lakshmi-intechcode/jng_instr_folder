@@ -1,0 +1,26 @@
+/*
+STARTER CODE BEGINNING
+*/
+.boxItem{
+	font-size: 5em;
+	text-align: center;
+	color: white;
+}
+
+.red{background-color: red;}
+.green{background-color: green;}
+.blue{background-color: blue;}
+.purple{background-color: purple;}
+.pink{background-color: pink;}
+
+/*
+STARTER CODE END
+*/
+
+/*
+WRITE YOUR OWN STYLING BELOW
+*/
+
+.container{
+	display: flex;
+}
