@@ -91,13 +91,13 @@
 
 ##### Part 4 - What Flexbox has to offer
 
-***display:flex***
+***display:flex (apply to container)***
 
 * Turns an element into a flex container
 * By default will enable flex content to all of it's immediate children
 * What happens when we apply `display: flex` to the div with class container?
 
-***flex-direction***
+***flex-direction (apply to container)***
 
 * This will determine the main-axis of the flex container, and in doing so the direction the flex items will appear in. 
 * The directions are
@@ -108,7 +108,7 @@
 * By default the flex direction will always be row
 * What happens when we apply row-reverse to the container class? How about column?
 
-***flex-wrap***
+***flex-wrap (apply to container)***
 
 * Items that are not told to flex wrap may not reach their full size being stuck in a container
 * Go ahead and add a large width to the `.boxItem` class. Maybe 500px to 1000px
@@ -121,7 +121,7 @@
 * Apply the `flex-wrap: wrap` property to the `.container` class while keeping the large set with on your `flex items`
 * If your flex-direction was column and you apply a flex-wrap it will not do anything. UNLESS the flex-container has a set height, and the number of flex items inside of it will exceed the height of the container
 
-***justify-content***
+***justify-content (apply to container)***
 
 * Defines the alignment along the main axis (this is the row or column of the flex-direction)
 * justify-content has five options
@@ -131,7 +131,7 @@
 	* space-between - items are distributed evenly on the main axis. first item at the start of the line and the last item on the end of the line
 	* space-around - items are evenly distributed on the main axis with equal space around them
 
-***align-items***
+***align-items (apply to container)*** 
 
 * Align Items helps us to define how the items will appear on the `cross` axis
 * It is very similar to Justify Content but along the cross axis (NOT THE MAIN AXIS)
@@ -142,16 +142,39 @@
 	* baseline - 
 	* stretch - items are stretched to fill the container
 
-***flex-grow***
-
-***align-content***
-
-***Five Minute Exercise***
+***TEN MINUTE EXERCISE!!!***
 
 * Make a `index.html` file and `style.css`
 * Link the files together
-* Create a red box with the text "Hello World" inside centered both horizontally and vertically
-* Make that red box centered horizontally and vertically with the page
+* There are two parts to this exercise
+* FIRST:
+	* Create a red box with the text "Hello World" inside centered both horizontally and vertically
+	* Make that red box centered horizontally and vertically with the page 
+* SECOND
+	* Comment out the code from the first assignment
+	* Make 10 divs, each with a different word inside
+	* Apply a font-size of 2em to each word
+	* Apply a background color to each div
+	* Make these divs spread out to the entire width of the container with even spacing in between
+* SECOND PART TWO
+	* Comment out the CSS for the second section
+	* Make the 10 divs spread out evenly from top to bottom
+
+***flex-grow (apply to item)***
+
+* Allows us to grow an item if necessary and there is space. 
+* flex-grow will take a number as it's value. By default this number is set to 1. 
+* If all items are set to flex-grow 1, they will take up the space of their container evenly
+* If one or more of those items have different and higher flex grow numbers, they will take up more of the space than the items with a lower flex-grow
+
+***align-content***
+
+
+
+***Five Minute Exercise***
+
+
+
 
 ##### Resources
 

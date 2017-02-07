@@ -2,7 +2,7 @@
 STARTER CODE BEGINNING
 */
 .boxItem{
-	font-size: 5em;
+	font-size: 3em;
 	text-align: center;
 	color: white;
 }
@@ -21,6 +21,3 @@ STARTER CODE END
 WRITE YOUR OWN STYLING BELOW
 */
 
-.container{
-	display: flex;
-}
