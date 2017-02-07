@@ -172,13 +172,6 @@
 	* Comment out the CSS for the second section
 	* Make the 10 divs spread out evenly from top to bottom
 
-***flex-grow (apply to item)***
-
-* Allows us to grow an item if necessary and there is space. 
-* flex-grow will take a number as it's value. By default this number is set to 1. 
-* If all items are set to flex-grow 1, they will take up the space of their container evenly
-* If one or more of those items have different and higher flex grow numbers, they will take up more of the space than the items with a lower flex-grow
-
 ***flex-self (apply to item)***
 
 * If there is an item that you want to have a different `align-items` property to it's peers you can apply flex self to that individual item. 
@@ -189,6 +182,40 @@
 	* center
 	* baseline
 * Go ahead and add a `align-items: flex-start` to the container and then choose one item to add `align-self: flex-end`
+
+***flex-grow (apply to item)***
+
+* Allows us to grow an item if necessary and there is space. 
+* flex-grow will take a number as it's value. By default this number is set to 1. 
+* If all items are set to flex-grow 1, they will take up the space of their container evenly
+* If one or more of those items have different and higher flex grow numbers, they will take up more of the space than the items with a lower flex-grow
+* The size of growth is based off the amount of extra room left. 
+	* Example: An item with `flex-grow:2` will take up twice as much of the extra space as `flex-grow:1`
+* flex-grow by default is set to zero
+
+***flex-shrink (apply to item)***
+
+* Allows an item to shrink if necessary
+* This will help in making your elements responsive to smaller screen sizes
+* By default flex-shrink is set to 1
+* An item with `flex-shrink:5` will shrink itself five times more than it's siblings without `flex-shrink`
+
+***flex-basis (apply to item)***
+
+* defines the default size of an element BEFORE the remaining space is distributed
+* It can be length in percent, em, px, and the like
+
+***flex (apply to item)***
+
+* What to do when there is extra room or when there is no extra room.
+* flex is a combination of `flex-grow` / `flex-shrink` / `flex-basis`
+* `flex: 1`- scale the items size up or down based off the amount of space left
+	* This is a shorthand for setting `flex-grow:1` and `flex-shrink:1`
+* If you increase the number of a specific item or items, those elements will take up a larger space on the main axis
+* Try adding `flex:2` to one of the flex items
+* We can also be more specific by adding three values to flex to represent `flex-grow` / `flex-shrink` / `flex-basis`
+* Try adding `flex: 10 5 500px` to one of the flex items
+
 
 
 ##### Resources
