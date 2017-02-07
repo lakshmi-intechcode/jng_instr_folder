@@ -172,7 +172,7 @@
 	* Comment out the CSS for the second section
 	* Make the 10 divs spread out evenly from top to bottom
 
-***flex-self (apply to item)***
+***align-self (apply to item)***
 
 * If there is an item that you want to have a different `align-items` property to it's peers you can apply flex self to that individual item. 
 * The values accepted are
@@ -216,9 +216,14 @@
 * We can also be more specific by adding three values to flex to represent `flex-grow` / `flex-shrink` / `flex-basis`
 * Try adding `flex: 10 5 500px` to one of the flex items
 
+***TEN MINUTE EXERCISE***
 
+* TIME TO DRAW
+* Open the example folder and show off the html and corresponding css files. 
+* Take two minutes to draw out what you think the html/css will show in the browser
 
 ##### Resources
 
 * [http://flexboxfroggy.com/](http://flexboxfroggy.com/)
 * [https://flexbox.io/](https://flexbox.io/)
+* [https://css-tricks.com/snippets/css/a-guide-to-flexbox/](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
