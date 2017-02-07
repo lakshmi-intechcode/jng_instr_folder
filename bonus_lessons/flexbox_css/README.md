@@ -139,8 +139,20 @@
 	* flex-start - items appear at the start of the cross axis
 	* flex-end - items appear at the end of the cross axis
 	* center - items appear center of the cross axis
-	* baseline - 
-	* stretch - items are stretched to fill the container
+	* baseline - looks at the text in your items and makes sure the bottom of the text is aligned with the main axis. This helps if your items have different sizes due to the text content
+	* stretch - items are stretched to fill the container. this is the default functionality
+
+***align-content (apply to container)***
+
+* Align content works like justify content. 
+* It will take the extra space on the cross axis (AXIS NOT FROM THE FLEX DIRECTION)
+* Takes the following values
+	* flex-start - items are packed to the beginning of the cross axis
+	* flex-end - items are packed at the end of the cross axis
+	* center - items are centered at the cross axis
+	* space-between - items are pushed to the beginning and end of the cross axis and evenly spaced in between
+	* space-around - items are evenly distributed
+	* stretch - items stretch to cover remaining space. This is the default property
 
 ***TEN MINUTE EXERCISE!!!***
 
@@ -167,13 +179,16 @@
 * If all items are set to flex-grow 1, they will take up the space of their container evenly
 * If one or more of those items have different and higher flex grow numbers, they will take up more of the space than the items with a lower flex-grow
 
-***align-content***
+***flex-self (apply to item)***
 
-
-
-***Five Minute Exercise***
-
-
+* If there is an item that you want to have a different `align-items` property to it's peers you can apply flex self to that individual item. 
+* The values accepted are
+	* auto
+	* flex-start
+	* flex-end
+	* center
+	* baseline
+* Go ahead and add a `align-items: flex-start` to the container and then choose one item to add `align-self: flex-end`
 
 
 ##### Resources
