@@ -95,6 +95,16 @@ What is event delegation? What is event bubbling?
 
 What are the differences between a relational database and a non relational database? Why would we use one over the other? What is an ORM what is an ODM?
 
+List and explain the different types of JOIN clauses in SQL (inner, left, right, full)
+
+Assuming that there are at least 10 records in the employee table, write and explain a SQL query to find the 10th highest employee salary from an Employee table. 
+
+What does UNION do? What is the difference between UNION and UNION ALL? Bonus: Write a SQL query using UNION ALL (not UNION) that uses the WHERE clause to eliminate duplicates. 
+
+What is the major difference between Truncate and Delete in SQL?When do we use truncate? When do we use delete?
+
+What is normalization? What is denormalization? Bonus: What are the different normalization forms?
+
 ## Servers
 
 HTTP - What are HTTP Status Codes? Give examples of some of each 100,200,300,400, and 500 status codes
@@ -142,6 +152,8 @@ Insertion Sort - Explain and provide an example of insertion sort. What is the b
 Heap Sort - Explain and provide an example of heap sort. What is the best and worst case time complexity of heap sort?
 
 ## Misc
+
+What are the advantages and disadvantages of using a MVC model?
 
 What is docker? What is a virtual machine? Why do people use docker over virtual machines like VMware?
 
