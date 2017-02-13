@@ -19,9 +19,11 @@
 
 ***What is HTML***
 
-* HTML - Hyper Text Markup Language.
-* HTML is a string read by your browser. It displays information in the browser window.
-* Every browser renders HTML differently
+* HTML stands for Hyper Text Markup Language.
+* HTML is a `string` read by your browser. 
+* The browser interprets this string and renders everything in the browser window.
+* Every browser renders HTML differently.
+* A `h1` tag may have different sizing and spacing on Chrome vs. Firefox vs. IE, and the like
 
 ***Is HTML Programming?***
 
@@ -29,19 +31,12 @@
 * HTML is NOT a programming language
 * It is not used to perform any logic
 * It's only purpose is to display elements in the browser
-* Think of think of this as being similar to PDFs
-
-***Emmet for Sublime***
-
-* This is one of the most popular packages for Sublime Text.
-* It allows you to make HTML boilerplate code quickly
-* You can follow the directions here to install it with Sublime: [https://github.com/sergeche/emmet-sublime](https://github.com/sergeche/emmet-sublime)
-* BEFORE YOU BEGIN USING EMMET MAKE SURE YOU UNDERSTAND HOW TO WRITE HTML CODE BY YOURSELF
+* Think of this as being similar to PDFs
 
 ***HTML TREE***
 
 * Your HTML document will consist of various `elements`
-* If you made an `index.html` file and had Emmet already installed you could run the `! tab` command and it will populate the file with HTML boilerplate. Below is what that looks like
+* These `types` of elements are indicated through the words in the `tag` in between the `<>`
 
 ```
 <!DOCTYPE html>
@@ -56,16 +51,18 @@
 </html>
 ```
 
-* `head` - The top of your document
-	* Consists mainly of elements that will connect the document to other files
+* All HTML files will have three main elements
+* `html` 
+	* tells us it's an html document
+* `head`
+	* The top of your document
+	* Consists mainly of elements that will connect the document to other files 
 	* This is where you can attach your css files
+	* Much of what goes in the head tag is not seen by the user
 * `body` - The bottom of your document
 	* Consists mainly of elements you want to display
 * Elements can be nested
 	* The outer element will be the parent and the child elements are those that are contained within
-
-##### Take a look at the `index.html` example to follow along with the rest of this Readme
-##### To view what the file looks like in the browser right click anywhere on the file when it is open, then click "Open In Browser"
 
 ***What are some HTML Tags***
 
@@ -82,13 +79,14 @@
 
 ```
 	* a tag with href
+	* img tag with src
 ```
 
 ##### Part 2 - HTML5 Intro
 
-* So what is HTML5?
 * HTML5 is a set of standards that represents the best implementation of HTML.
-* HTML5 allows for easier collaboration between browsers AND users
+* It allows us to have more similar presentation among different browsers
+* HTML5 also allows for easier collaboration between browsers AND users
 * They do this using `Semantic Tags`
 
 ***What are Semantic Tags?***
@@ -105,16 +103,41 @@
 	* section
 	* header
 	* footer
-	* nave
+	* nav
 	* aside
 ```
 
-***Two Different Element Types***
+##### Part 3 - Very Important Notes For HTML Knowledge!!!
 
 * Almost all elements default to TWO different `display` types
 * Inline Elements vs Block Elements
-* Block element - an element that cannot have anything next to it even if it does not reach the end of the page.
+* Block element
+	* An element that cannot have anything next to it even if it does not reach the full width of it's parent container
 	* e.g. `div`, `h1`
-* Inline Element - This element will be called right after/next to the element it is behind in the markup.
+* Inline Element
+	* This element will be called right after/next to the element it is behind in the html file
 	* e.g. `a href`
+	
+##### Part 4 - Common HTML Tags and their descriptions
 
+***Block Elements***
+
+* header - A semantic tag. Use this to indicate the "header" of the page
+* nav - A semantic tag. Use this to indicate the content inside belongs to a navigavtion bar
+* ul - A html tag. Stands for Unordered list. Usually has list item elements inside
+* ol - A html tag. Stands for Ordered list. Usually has list item elements inside
+* li - A html tag. Stands for list item. Usually nested inside of a UL or OL. Will have bullets or numbers depending on the type of parent
+* div - A html tag. Stands for division. Usually used to indicate a section or piece of the page
+* section - A semantic tag. Use to indicate a section of the page
+* article - A semantic tag. Use to indicate a section of the page
+* h1 - h6 - A html tag. These are heading tags. h1 is the largest, h6 is the smallest
+* p - A html tag. Paragraph tag. Stick some text in here
+
+***Inline Elements***
+
+* a - A html tag. This is a link tag. You can pass it an attributes `href` which will hold a link that the user will be sent to.
+* img - A html tag. Give this a `src` attribute that can target a image file on your computer, or through a link online
+* strong - A html tag that will bold any text inside of it. You may put this inside of text in a paragraph tag to bold a certain word or sentence
+* button - A html tag that will render a default styled button
+
+***There are many more HTML tags out there, feel free to play around with these or explore others on your own***
