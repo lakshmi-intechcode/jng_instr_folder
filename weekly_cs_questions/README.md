@@ -105,15 +105,23 @@ What is the major difference between Truncate and Delete in SQL?When do we use t
 
 What is normalization? What is denormalization? Bonus: What are the different normalization forms?
 
-## Servers
+## Web 
 
 HTTP - What are HTTP Status Codes? Give examples of some of each 100,200,300,400, and 500 status codes
+
+IP / TCP / HTTP are they connected, how do they work?
+
+HTTP2 - What's new between HTTP2 vs HTTP
+
+## Servers
 
 Requests - What are request methods? Give some examples
 
 Load Balancing - What is load balancing? Why is it important?
 
 What is the difference between UDP and TCP? Why do we use one over the other?
+
+SSH - What is SSH? How does it work? 
 
 ## Algorithms and Problem Solving
 
@@ -151,6 +159,23 @@ Insertion Sort - Explain and provide an example of insertion sort. What is the b
 
 Heap Sort - Explain and provide an example of heap sort. What is the best and worst case time complexity of heap sort?
 
+## Unix 
+
+Bash - What is bash? What’s the difference between bash, .Bashrc and .bash_profile? 
+Explain the use of “#!/bin/bash”
+
+Curl - What is curl? What is the difference between curl and Wget?
+
+Explain the following commands:
+
+```
+    * cat (what happens when cat commands are combined with redirection (> or >>))
+    * tac
+    * rev
+    * chmod/chattr
+    * man/info
+```
+
 ## Misc
 
 What are the advantages and disadvantages of using a MVC model?
@@ -168,4 +193,6 @@ Bit manipulation - What is it? How does it work?
 How do game consoles, like the playstation or xbox, differ from conventional computers like laptops or desktops?
 
 How do single-board computers, like the raspberry pi, differ from conventional computers like laptops or desktops?
+
+What is homebrew? How is homebrew implemented? List some other examples of package managers
 
