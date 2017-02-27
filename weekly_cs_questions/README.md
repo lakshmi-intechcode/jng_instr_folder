@@ -71,6 +71,13 @@ iter
 * What is Universal / Isomorphic JavaScript? 
 * What is the virtual DOM?
 * Is JavaScript single threaded or multi threaded? What does that mean? 
+* What is the history of JavaScript?
+
+## HTML / CSS
+
+* What are semantic HTML elements? How are they related to Tim Berners-Lee's vision of a "semantic web?"
+* How did the "Beijing doctrine" accelerate the standardization of-- what are now referred to as-- CSS modules? What can we learn, as full-stack developers, from the CSS Working Group's decision to progress from the monolithic specification, which is expressed in CSS2.1, to the modular nature of "CSS3?"
+* What is a "flash of unstyled content?" Describe the way a website is rendered by a browser engine.
 
 ## Databases 
 
@@ -83,7 +90,7 @@ iter
 
 ## Web 
 
-* HTTP - What are HTTP Status Codes? Give examples of some of each 100,200,300,400, and 500 status codes
+* HTTP - What are HTTP Status Codes? Give examples of some of each 100, 200, 300, 400, and 500 status codes
 * IP / TCP / HTTP are they connected, how do they work?
 * HTTP2 - What's new between HTTP2 vs HTTP
 
@@ -120,6 +127,9 @@ iter
 * Bubble Sort - Explain and provide an example of bubble sort. What is the best and worst case time complexity of bubble sort?
 * Insertion Sort - Explain and provide an example of insertion sort. What is the best and worst case time complexity of insertion sort?
 * Heap Sort - Explain and provide an example of heap sort. What is the best and worst case time complexity of heap sort?
+* Write a function that uses memoization to save calculation time for a recursive fibonacci function.
+* Write a function that will take in a number and print out 0 to that number but print every new value out in 3 second intervals. Explain both your function and the reasoning you used to solve the question.
+
 
 ## Unix 
 
@@ -149,4 +159,4 @@ iter
 * How do game consoles, like the playstation or xbox, differ from conventional computers like laptops or desktops?
 * How do single-board computers, like the raspberry pi, differ from conventional computers like laptops or desktops?
 * What is homebrew? How is homebrew implemented? List some other examples of package managers
-
+* Provide an overview of the steps for setting up a portfolio page on digital ocean.
