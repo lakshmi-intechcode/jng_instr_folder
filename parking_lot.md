@@ -27,7 +27,7 @@ name = "Jason"
 money = "10.45"
 
 print("Hi " + name + " you owe me $" + money + " for lunch")
-print("Hi %s you owe me $%s for lunch".format(name, money))
+print("Hi %s you owe me $%s for lunch"%(name, money))
 print("Hi {x} you owe me ${y} for lunch".format(x=name, y=money))
 ```
 

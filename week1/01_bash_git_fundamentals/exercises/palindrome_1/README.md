@@ -13,6 +13,7 @@ A palindrome is a word OR phrase that can be spelled the same way forwards and b
 
 * Write a function that will take in a string as an input
 * If the string is a palindrome the function will return true
+* You may use a list and any built in functions you find might help
 
 #### Example
 ```

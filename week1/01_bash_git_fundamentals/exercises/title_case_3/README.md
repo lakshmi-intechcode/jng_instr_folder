@@ -10,8 +10,8 @@
 ```
 [input]
 string = "optimus prime and the autobots assembled to fight the decepticons"
-exceptions = ['optimus', 'prime', 'autobots', 'victorious']
-titlecase(string, exceptions)
+emph = ['optimus', 'prime', 'autobots', 'victorious']
+titlecase(string, emph)
 
 [output]
 OPTIMUS PRIME and the AUTOBOTS were VICTORIOUS in the battle of the bulge

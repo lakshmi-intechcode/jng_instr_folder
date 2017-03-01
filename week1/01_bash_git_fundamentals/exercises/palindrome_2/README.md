@@ -1,4 +1,4 @@
-#  Palindromes part 2
+#  Palindromes PART DOS
 ---
 
 #### Description
@@ -14,6 +14,8 @@ A palindrome is a word OR phrase that can be spelled the same way forwards and b
 * Write a function that will take in a string as an input. That string may contain punctuation or spaces.
 * Your function will ignore all characters which aren't letters or numbers.
 * If the string is a palindrome the function will return True, else False.
+* You in this teaser try do it without the ".reverse" function. 
+* Can you do this without using list? 
 
 #### Example
 ```

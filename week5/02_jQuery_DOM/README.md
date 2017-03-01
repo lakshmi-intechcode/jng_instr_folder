@@ -174,7 +174,7 @@ var $listItems = $("ul li");
 	})
 ```
 * The above code tells us that any "list item" element that is clicked should alert "BLAH"
-* Now lets add some more functionality
+* Now lets add some more functionality (NOT inside the .each, but underneath as separate variables and functions)
 
 ```
 	var $add = $('#blah');
@@ -218,6 +218,8 @@ var $listItems = $("ul li");
 ***SOLUTION 2***
 
 * Instead of adding an event listener to every list item, what if we just added ONE event listener to the parent element, the unordered list
+* Let's comment out the `.each` example from earlier that added an event listener to every `li` item
+* Instead we're going to target just the parent container, the `ul`
 
 ```
 	$addTo.click(function(event){
