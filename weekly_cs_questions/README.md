@@ -48,6 +48,8 @@ iter
 * Hash Table - What is a hash table? What are the pros and cons? Why would we use a hash table over an list/array?
 * Cython - What is Cython? What do people use Cython for? Why is numpy so fast? What are major differences between C and Python? In terms of software development what is a JIT compiler? What are the advantages and disadvantages and how can we use the concept in python?
 * Monkey Patching - What is Monkey patching? When would we use it?
+* Is Python called-by-value or call-by-reference? (Also known as pass by value vs pass by reference) Explain.
+* How do you avoid cyclical imports in Python? How can you do this without using imports in functions?
 
 ## CSS 
 
@@ -94,6 +96,13 @@ iter
 * IP / TCP / HTTP are they connected, how do they work?
 * HTTP2 - What's new between HTTP2 vs HTTP
 
+## Django/Flask 
+
+* How does middlwares work in Django? Provide an example and explanation 
+* What's the difference between select_related and prefetch_related in Django? When do we use one over the other? 
+* What is a Thread-Local object in Flask? Provide an example
+* What is Flask Sijax? How do you use it? 
+
 ## Servers
 
 * Requests - What are request methods? Give some examples
@@ -129,6 +138,20 @@ iter
 * Heap Sort - Explain and provide an example of heap sort. What is the best and worst case time complexity of heap sort?
 * Write a function that uses memoization to save calculation time for a recursive fibonacci function.
 * Write a function that will take in a number and print out 0 to that number but print every new value out in 3 second intervals. Explain both your function and the reasoning you used to solve the question.
+* What is the output of the following code in JS? Explain why.
+``` 
+var y = 1;
+  if (function f(){}) {
+    y += typeof f;
+  }
+  console.log(y);
+```
+* What is the output of the following code in JS? Explain why.
+```
+var trees = ["xyz","xxxx","test","ryan","apple"];
+delete trees[3];
+console.log(trees.length);
+```
 
 
 ## Unix 
@@ -160,3 +183,4 @@ iter
 * How do single-board computers, like the raspberry pi, differ from conventional computers like laptops or desktops?
 * What is homebrew? How is homebrew implemented? List some other examples of package managers
 * Provide an overview of the steps for setting up a portfolio page on digital ocean.
+* What’s the difference between progressive enhancement and graceful degradation?
