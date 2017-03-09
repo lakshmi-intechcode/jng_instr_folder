@@ -13,7 +13,7 @@ conn.execute(
     """
 )
 
-conn.commit()
+conn.commit() # must commit when manipulating the database
 conn.close()
 
 print("Your database was created")
