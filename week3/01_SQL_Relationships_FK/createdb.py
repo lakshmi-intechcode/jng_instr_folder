@@ -1,6 +1,6 @@
 import sqlite3
 
-db = sqlite3.connect('fitness')
+db = sqlite3.connect('fitness.db')
 
 cursor = db.cursor()
 
@@ -46,7 +46,7 @@ MEMBERS = [
   [1, "Jean", "Grey", 30],
   [4, "Kitty", "Pride", 20],
   [3, "Natasha", "Romenov", 38],
-  [2, "Maria", "Hill", 32],
+  [2, "Maria", "Hill", 32]
 ]
 
 print("Destroying old data")

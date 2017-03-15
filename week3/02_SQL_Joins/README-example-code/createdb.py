@@ -10,8 +10,6 @@ cursor.execute('''
         name TEXT,
         city TEXT,
         build_year INTEGER,
-        resident_id INTEGER,
-        FOREIGN KEY(resident_id) REFERENCES residents(id)
     );
 ''')
 
@@ -24,6 +22,8 @@ cursor.execute('''
         first_name TEXT,
         last_name TEXT,
         rent INTEGER,
+        building_id INTEGER,
+        FOREIGN KEY(building_id) REFERENCES building(id)
     );
 ''')
 # The first parameter in the foreign key will always be the column in the current table
