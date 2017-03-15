@@ -50,6 +50,11 @@ iter
 * Monkey Patching - What is Monkey patching? When would we use it?
 * Is Python called-by-value or call-by-reference? (Also known as pass by value vs pass by reference) Explain.
 * How do you avoid cyclical imports in Python? How can you do this without using imports in functions?
+* Explain the DataFrame memory usage in Pandas. Provide an example
+* How do you handle data that was created on a machine with a different byte order than the one you're using to run Python? Provide an example
+* How do you iterate over rows in a DataFrame in Pandas? Provide at least two ways to solve the question.
+* How do you filter the DataFrame row of pandas if you're looking for exact matches? How do you filter if you have partial matches or substrings you're looking for?
+* What is GIL? Why/How is it used?
 
 ## CSS 
 
@@ -151,6 +156,15 @@ var y = 1;
 var trees = ["xyz","xxxx","test","ryan","apple"];
 delete trees[3];
 console.log(trees.length);
+```
+* Write a `blah` function that will return the following outputs:
+```
+console.log(blah(2)(3)(4)); // output : 24 
+console.log(blah(4)(3)(4)); // output : 48
+```
+* Show and explain at least *3* ways to empty the following array:
+``` 
+var arrayList =  ['a','b','c','d','e','f'];
 ```
 
 
