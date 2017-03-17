@@ -55,6 +55,12 @@ iter
 * How do you iterate over rows in a DataFrame in Pandas? Provide at least two ways to solve the question.
 * How do you filter the DataFrame row of pandas if you're looking for exact matches? How do you filter if you have partial matches or substrings you're looking for?
 * What is GIL? Why/How is it used?
+* virtual environment
+    * What is this
+    * What is it good for
+    * How do we use it
+* What are the functions "help()" and "dir()" for
+    * how do we use it
 
 ## CSS 
 
@@ -85,6 +91,7 @@ iter
 * What are semantic HTML elements? How are they related to Tim Berners-Lee's vision of a "semantic web?"
 * How did the "Beijing doctrine" accelerate the standardization of-- what are now referred to as-- CSS modules? What can we learn, as full-stack developers, from the CSS Working Group's decision to progress from the monolithic specification, which is expressed in CSS2.1, to the modular nature of "CSS3?"
 * What is a "flash of unstyled content?" Describe the way a website is rendered by a browser engine.
+* What is SASS? How do we use it? What is it good for? Examples?
 
 ## Databases 
 
@@ -172,6 +179,10 @@ var arrayList =  ['a','b','c','d','e','f'];
 
 * Bash - What is bash? 
 * What’s the difference between bash, .bashrc and .bash_profile? 
+	* What are environmental variables
+	* Can we use these to store API keys
+	* If we can how can we access those keys
+	* What else can we do with our Bash_profile
 * Explain the use of “#!/bin/bash”. Where is this used? Why is it used? 
 * Curl - What is curl? What is the difference between curl and Wget?
 * Explain the following commands:
@@ -198,3 +209,6 @@ var arrayList =  ['a','b','c','d','e','f'];
 * What is homebrew? How is homebrew implemented? List some other examples of package managers
 * Provide an overview of the steps for setting up a portfolio page on digital ocean.
 * What’s the difference between progressive enhancement and graceful degradation?
+* CDNS
+    * what are they
+    * how do we use it
