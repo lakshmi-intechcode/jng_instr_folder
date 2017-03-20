@@ -161,6 +161,29 @@ Notice the `NaN` values - these are undefined values indicating there wasn't any
 1      Menna    Elsayed               Sociology
 ```
 
+Now, how do we merge two datasets with differing columns? Well, let's take a look of our datasets:
+``` python
+h1 = pd.read_csv("./housing.csv")
+h2 = pd.read_csv("./dorms.csv")
+```
+
+With the `merge()` function in pandas, we can specify which column to merge on and what kind of join to specify:
+
+``` python
+house = pd.merge(h1, h2, on="Dorm", how="left")
+```
+This gets us: 
+``` 
+          Dorm            Name Street    Cost
+0  East Campus      Helen Chen  116th  11,000
+1     Broadway   Danielle Jing  114th    9000
+2      Shapiro    Craig Rhodes  115th    9500
+3         Watt  Lesley Cordero  113th   10500
+4  East Campus    Martin Perez  116th  11,000
+5     Broadway   Menna Elsayed  114th    9000
+6      Wallach   Will Essilfie  114th    9500
+```
+
 ##### Part 7 - Indexing
 
 Given the previous dataframe we created, if we try to access data by its index, we get multiple results, like this: 
