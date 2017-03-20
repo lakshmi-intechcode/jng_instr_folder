@@ -123,7 +123,7 @@ The Naive Bayes model is easy to build and particularly useful for very large da
 
 If you encounter two different datasets that contain the same type of information, you might consider merging them for your analyses. This is yet another functionality built into `pandas`. 
 
-Let's go through an example containing Game of Thrones data on each house and their associated region. `d1` contains 5 of the samples and `d2` contains 2 of them: 
+Let's go through an example containing student data. `d1` contains 5 of the samples and `d2` contains 2 of them: 
 
 ``` python
 d1 = pd.read_csv("./names_original.csv")
