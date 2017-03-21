@@ -119,6 +119,123 @@ Naive Bayes works on Bayes Theorem of probability to predict the class of a give
 
 The Naive Bayes model is easy to build and particularly useful for very large data sets. Along with simplicity, Naive Bayes is known to outperform even highly sophisticated classification methods.
 
+##### Part 6 - Merging
+
+If you encounter two different datasets that contain the same type of information, you might consider merging them for your analyses. This is yet another functionality built into `pandas`. 
+
+Let's go through an example containing student data. `d1` contains 5 of the samples and `d2` contains 2 of them: 
+
+``` python
+d1 = pd.read_csv("./names_original.csv")
+d2 = pd.read_csv("./names_add.csv")
+```
+
+Instead of working with two separate datasets, it's much easier to simply merge, so we do this with the `concat()` function:
+
+``` python
+result = pd.concat([d1,d2])
+```
+
+Now, you might be asking what will happen if one of the datasets has more columns than other - will they still be allowed to merge? Let's try this example with another dataset:
+
+``` python
+d3 = pd.read_csv("./names_extra.csv")
+```
+
+If we use the same `concat()` function, we get:
+
+``` python
+result1 = pd.concat([d1, d3])
+```
+
+Notice the `NaN` values - these are undefined values indicating there wasn't any data to be displayed. `pandas` will simply fill in the missing data for each sample where it's unavailable:  
+
+```
+  First Name  Last Name                   Major
+0     Lesley    Cordero                     NaN
+1       Ojas      Sathe                     NaN
+2      Helen       Chen                     NaN
+3        Eli   Epperson                     NaN
+4      Jacob  Greenberg                     NaN
+0     Martin      Perez  Mechanical Engineering
+1      Menna    Elsayed               Sociology
+```
+
+Now, how do we merge two datasets with differing columns? Well, let's take a look of our datasets:
+``` python
+h1 = pd.read_csv("./housing.csv")
+h2 = pd.read_csv("./dorms.csv")
+```
+
+With the `merge()` function in pandas, we can specify which column to merge on and what kind of join to specify:
+
+``` python
+house = pd.merge(h1, h2, on="Dorm", how="left")
+```
+This gets us: 
+``` 
+          Dorm            Name Street    Cost
+0  East Campus      Helen Chen  116th  11,000
+1     Broadway   Danielle Jing  114th    9000
+2      Shapiro    Craig Rhodes  115th    9500
+3         Watt  Lesley Cordero  113th   10500
+4  East Campus    Martin Perez  116th  11,000
+5     Broadway   Menna Elsayed  114th    9000
+6      Wallach   Will Essilfie  114th    9500
+```
+
+##### Part 7 - Indexing
+
+Given the previous dataframe we created, if we try to access data by its index, we get multiple results, like this: 
+
+``` python
+result1.ix[0]
+```
+```
+  First Name Last Name                   Major
+0     Lesley   Cordero                     NaN
+0     Martin     Perez  Mechanical Engineering
+```
+This is because the indices weren't result when we did the merge. With a simple parameter change, we can fix this, however:
+
+``` python
+names = pd.concat([d1, d3],axis=0,ignore_index=True)
+```
+Notice the `ignore_index` being set to `True`.
+
+##### Part 8 - Dropping Observations
+
+We've established our data isn't always perfect. Sometimes that means dropping values all together. In this example, we'll look at dorm data. We begin by loading the data into `pandas`. 
+
+``` python
+import pandas as pd
+houses = pd.read_csv("./housing.csv")
+```
+
+For this example, we'll be getting rid of the first two rows, which we can easily do with the `drop()` function:
+
+``` python
+houses = houses.drop([0,1])
+```
+This gets us:
+```
+2      Shapiro    Craig Rhodes
+3         Watt  Lesley Cordero
+4  East Campus    Martin Perez
+5     Broadway   Menna Elsayed
+6      Wallach   Will Essilfie
+```
+Now, let's say one of the students graduated and moved out - obviously we no longer want them in our dataset anymore, so we want to filter it out with condition
+``` python
+houses = houses[houses.Name != "Lesley Cordero"]
+```
+```
+          Dorm           Name
+2      Shapiro   Craig Rhodes
+4  East Campus   Martin Perez
+5     Broadway  Menna Elsayed
+6      Wallach  Will Essilfie
+```
 
 ### 2.3 Challenge
 
