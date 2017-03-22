@@ -68,6 +68,12 @@ Very often, when it comes to plotting, less is more. Data usually looks better "
 
 - Remove special effects
 
+##### Colors Matter
+
+The default library, matplotlib, is fairly ugly, as we've reviewed before. This is why using modules like seaborn, bokeh, etc, are so popular - their default color schemes are much more appealing. 
+
+Also, keep in mind that many people are color blind, so choosing your color schemes is incredibly important so that your work is accessible to everyone. 
+
 ##### Python Modules
 
 [matplotlib](http://matplotlib.org/) is a 2D python plotting library which allows you to generate plots, histograms, power spectra, bar charts, errorcharts, scatterplots, etc, with just a few lines of code.
