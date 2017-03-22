@@ -68,6 +68,12 @@ Very often, when it comes to plotting, less is more. Data usually looks better "
 
 - Remove special effects
 
+##### Colors Matter
+
+The default library, matplotlib, is fairly ugly, as we've reviewed before. This is why using modules like seaborn, bokeh, etc, are so popular - their default color schemes are much more appealing. 
+
+Also, keep in mind that many people are color blind, so choosing your color schemes is incredibly important so that your work is accessible to everyone. 
+
 ##### Python Modules
 
 [matplotlib](http://matplotlib.org/) is a 2D python plotting library which allows you to generate plots, histograms, power spectra, bar charts, errorcharts, scatterplots, etc, with just a few lines of code.
@@ -88,7 +94,6 @@ Very often, when it comes to plotting, less is more. Data usually looks better "
 Line graphs are plots where a line is drawn to indicate a relationship between a particular set of x and y values.
 
 ``` python
-import numpy as np
 import matplotlib.pyplot as plt
 ```
 
@@ -120,7 +125,7 @@ x = [1, 2, 3, 4, 5]
 y = [1, 4, 9, 16, 25]
 ```
 
-Next, we plot it with the `plt.plot()` method. Note that the `ro` denotes the type of graph we're plotting. 
+Next, we plot it with the `plt.plot()` method. Note that the `o` denotes the type of graph we're plotting. 
 
 ``` python
 plt.plot(x, y, 'o')
