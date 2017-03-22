@@ -44,6 +44,40 @@ import matplotlib.pyplot as plt
 * A Figure can be saved to a file with the method [`.savefig()`](http://matplotlib.org/api/figure_api.html#matplotlib.figure.Figure.savefig)
 * (`.savefig()` takes the arguments `*args` and `**kwargs`. You don't have to understand them yet, but be sure to notice them because you'll see them again very soon.
 
+##### Introduction
+
+Data Visualization is an important and exciting aspect of data science. It reveals information we otherwise wouldn't have noticed. It allows us to showcase the work we've done through visualizations, which can be stagnant or interactive. 
+
+Unique data visualizations are more memorable. You're very quickly going to lose the attention of your audience with basic plots, which is why utilizing modules like seaborn, bokeh, and ggplot are recommended.
+
+It's important to note that while these approaches definitely have applications, they're not as commonly used as bar graphs, line graphs, scatter plots, or even histograms. These basic visualization types can still be the best choice for certain, straightforward data stories. However, communicating complex topics — hierarchies, longitudinal data, and multi-variable comparisons, and so on — often involves more advanced visualizations. That's our focus for this tutorial. 
+
+But before we go into code, let's overview some strategies for effective data visualization.
+
+##### Less is More
+
+Very often, when it comes to plotting, less is more. Data usually looks better "naked". What does this mean?
+
+- Remove backgrounds
+
+- Remove redundant labels
+
+- Lighten your lines, or remove them!
+
+- Reduce unnecessary colors
+
+- Remove special effects
+
+##### Python Modules
+
+[matplotlib](http://matplotlib.org/) is a 2D python plotting library which allows you to generate plots, histograms, power spectra, bar charts, errorcharts, scatterplots, etc, with just a few lines of code.
+
+[bokeh](http://bokeh.pydata.org/en/latest/) is an interactive visualization library for modern web browsers presentation. 
+
+[seaborn](http://seaborn.pydata.org/introduction.html#introduction) is a library for making statistical graphics in Python. It's built on top of matplotlib and is tightly integrated with the PyData stack, including support for numpy and pandas data structures and statistical routines from scipy and statsmodels. 
+
+[ggplot](http://ggplot.yhathq.com/) is a plotting system built for making profressional-looking plots quickly with minimal code.
+
 
 ##### Basic Plots with matplotlib.pyplot
 
