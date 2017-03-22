@@ -18,3 +18,4 @@ move_zeroes(y) == [6, 9, 12, 13, 24, 0, 0, 0, 0]
 ##### Bonus
 
 * Can you do this `in-place`. This means you cannot make a copy of this array/list.
+* If you already solved this problem move on. If you have extra time try to complete the bonus.
