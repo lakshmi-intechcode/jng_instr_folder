@@ -23,7 +23,7 @@
 * HTML is a `string` read by your browser. 
 * The browser interprets this string and renders everything in the browser window.
 * Every browser renders HTML differently.
-* A `h1` tag may have different sizing and spacing on Chrome vs. Firefox vs. IE, and the like
+* A `heading` tag may have different sizing and spacing on Chrome vs. Firefox vs. IE, and the like
 
 ***Is HTML Programming?***
 
@@ -57,8 +57,10 @@
 * `head`
 	* The top of your document
 	* Consists mainly of elements that will connect the document to other files 
-	* This is where you can attach your css files
+	* This is where you can attach your `css` files
 	* Much of what goes in the head tag is not seen by the user
+	* The only real `tag` that will show to the user may be the `<title></title>` tag
+		* This is the name of the tab for the browser
 * `body` - The bottom of your document
 	* Consists mainly of elements you want to display
 * Elements can be nested
@@ -107,6 +109,13 @@
 	* aside
 ```
 
+***Why Semantic Tags?***
+
+* Take a look at the `index.html` file in this folder
+* Imagine if all the `<section>`, `<header>`, `<nav>`, `<footer>` tags were just `<divs>`
+* That would be pretty hard to read as a programmer and not very descriptive of what the content inside the tags are for
+
+
 ##### Part 3 - Very Important Notes For HTML Knowledge!!!
 
 * Almost all elements default to TWO different `display` types
@@ -141,3 +150,5 @@
 * button - A html tag that will render a default styled button
 
 ***There are many more HTML tags out there, feel free to play around with these or explore others on your own***
+
+## To see how an HTML file will look have it open in your text editor (sublime / atom / VS code). Right click and go to "Open in browser"

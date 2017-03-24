@@ -19,7 +19,7 @@
 
 ##### Part 1 - A brief history. Why is this important?
 
-* JavaScript is the only language that can interact with the DOM (elements in the browser) and because of how annoying the DOM can be, JS is the victim of a lot of unjust hatred
+* JavaScript is the `only language` that can interact with the DOM (elements in the browser) and because of how annoying the DOM can be, JS is the victim of a lot of unjust hatred
 * No matter what language you are going to build your server in, whether it's PHP, Ruby, Python, or even NodeJS, you will still need JavaScript to talk to the browser.
 * JavaScript was created in 10 days in 1995 by Brendan Eich.
 * It is used to build the front end of websites, how they looked, and how users could interact with them. 
@@ -31,10 +31,27 @@
 ##### Part 2 - Node REPL
 
 * We will be installing Node JS to use it's REPL environment in the terminal
-* You can try either of these places for instructions to install Node:
-	* [http://blog.teamtreehouse.com/install-node-js-npm-mac](http://blog.teamtreehouse.com/install-node-js-npm-mac)
-	* [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
-* This is the same as the Python REPL environment except it takes Node syntax
+* To install node on your Mac run `brew install node`
+	* Here's a link for more information. [http://blog.teamtreehouse.com/install-node-js-npm-mac](http://blog.teamtreehouse.com/install-node-js-npm-mac)
+* To install node on your Linux well first install `nvm` the Node Version Manager
+	* Follow the directions here. [https://github.com/creationix/nvm](https://github.com/creationix/nvm)
+	* Run this command in terminal to install it 
+
+	```
+		curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
+	```
+	* Run this command to check if nvm was installed properly
+	
+	```
+		command -v nvm
+	```
+	* Run this command to use nvm to install node
+	
+	```
+		nvm install node
+	```
+* Now you should be able to run `node` in your terminal and the Node REPL should open up
+* This is the same as the Python REPL environment except it takes JavaScript syntax
 
 ##### Part 3 - JS Syntax / Data Types / Data Structures
 
@@ -57,18 +74,39 @@ node main.js
 * `Comparisons are THREE EQUAL SIGNS ===`
 	* Two Equal signs as a comparator in JS exists but we NEVER USE IT!!!
 	* It will check for value but not data type, it's essentially useless.
-* We complete all our JS lines of code with semi colons
+
+```
+0 == "0" // returns true
+
+0 === "0" // returns false
+```
+* We complete all our JS statements with semi colons
+* This does not mean EVERY line gets a semi colon because a statement can extend over multiple lines
+
+```
+var num = 10;
+
+var hello = "Hello World";
+
+var names = [
+	"Jason",
+	"Kimberly",
+	"Zack",
+	"Trini",
+	"Billy"
+];
+```
 
 ***Booleans***
 
 * Same thing as Python.
 * Takes in the factors of `true` or `false`
+* JavaScript is lowercase "t" and "f"
 
 ***Numbers***
 
 * Numbers are the same as well
-* The only difference is in Python 2(which we aren't using) numbers with decimals are called Floats
-* We don't have to worry about Floats in JavaScript and/or Python3
+* Don't worry about "floats" 
 
 ***Arrays***
 
@@ -80,8 +118,8 @@ node main.js
 
 * Now this can be a little confusing since in Python we referred to everything as an Object
 * For the purposes of JavaScript we will be referring to Dictionary like structures as Objects
-* You may also hear others call them associative arrays, but we will be calling them Objects
-* Key:Value Mappings written the same way with curly braces `{}` and the key in quotes followed by a semi colon
+* You may also hear others call them `associative arrays`, but we will be calling them Objects
+* Key:Value Mappings written the same way with curly braces `{}` and the key in quotes followed by a colon
 * JS Objects are pretty cool because they are so much more than just the idea of "Dictionaries". They also have the ability to house functions.
 * Example: DO NOT worry about the "this" keyword yet, we'll touch upon that later in the course.
 

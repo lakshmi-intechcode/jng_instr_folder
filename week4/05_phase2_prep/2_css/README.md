@@ -21,11 +21,16 @@
 
 * CSS stands for Cascading Style Sheets
 * It allows us to control how HTML markup is presented in the browser
-* We use this for everything from controlling colors, to sizing, to positions, and the like
+* We use this for **EVERYTHING**. 
+	* positions
+	* font
+	* color
+	* borders
+	* EVERYTHING	
 
 ##### Part 2 - Box Model
 
-* As mentioned previously browsers may render HTML differently
+* As mentioned in the HTML README browsers may render HTML elements differently
 * All elements will have default positioning properties. (differ depending on browser)
 * This is what we know as the `Box Model`
 * There are four layers to the box model
@@ -40,7 +45,7 @@
 * Open up the inspector. `Do this by right clicking on the page and clicking on inspect`
 * Hover over all the layers of the various elements and check out the box model
 * Check out the example in the folder under `inspector.png`
-* You can also use the inspector to play around with styling the page. 
+* You can also use the inspector to play around with styling of selected element in the "Elements" tab. 
 * All edits you make in the styles portion of the inspector will be gone on refresh
 
 ***Five Min Exercise***
@@ -67,7 +72,7 @@
 ```
 * Inline styling was something done during the "old" days of the web when HTML pages were static and didn't have much in terms of content/user interaction
 * Some newer libraries utilize Inline CSS. 
-* For the purposes of this class we will NOT be using inline styling
+* For the purposes of this class we will **NOT** be using inline styling
 
 ***Internal Style Sheet***
 
@@ -84,7 +89,7 @@
 		</style>
 	</head>
 ```
-* Some newer libraries may prefer internal styling but we will STILL NOT DO IT THIS WAY IN THIS COURSE
+* Some newer practices for front end frameworks may encourage internal styling but we will STILL NOT DO IT THIS WAY IN THIS COURSE
 
 ***External Style Sheet***
 
@@ -97,7 +102,9 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 ```
-* `style.css` is the css file name in the same directory. If it is located elsewhere or named something else you would change this accordingly. e.g. `href=public/stylesheets/style.css`
+* `style.css` is the css file name in the same directory. 
+* If it is located elsewhere or named something else you would change this accordingly. e.g. `href=public/stylesheets/style.css`
+* You should consider using `absolute pathing` when hooking up the CSS. 
 
 ##### Part 5 - Specificity - How To Target Elements
 
@@ -137,3 +144,19 @@
 
 	
 ##### Take a look at the example `index.html` and `style.css` to see how this can be incorporated.
+
+##### Example for some Useful CSS to try out
+
+```
+div{
+	color: red;
+	border: 2px solid blue;
+	border-radius: 10px;
+	font-size: 20px;
+	font-weight: 700;
+	padding: 20px 15px 20px 15px;
+	text-decoration: underline;
+	width: 80%;
+}
+```
+
