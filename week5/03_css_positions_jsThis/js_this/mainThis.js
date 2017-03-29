@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
-	// // example 1
+	// example 1
 
 	// $("button").on("click", function(){
-	// 	// debugger;
+	// 	debugger;
 	// 	console.log(this)
 	// 	//What will it look like if I use the below example instead?
 	// 	console.log($(this))
@@ -39,10 +39,9 @@ $(document).ready(function(){
     name: "Raph",
     color: "Red",
     sayColor: function(){
-        console.log(this.color)
+      console.log(this.color)
 	  }
 	}
 	turtle.sayColor();
-
 
 });

@@ -3,19 +3,19 @@ $(document).ready(function(){
 
 	var xMen = {
 		data: [
-		"Wolverine", 
-		"Cyclops", 
-		"Jean Grey", 
-		"ShadowCat", 
-		"Professor X", 
-		"Gambit",
-		"Rogue",
-		"Nightcrawler",
-		"Storm",
-		"Angel",
-		"Beast",
-		"Colossus",
-		"Jubilee"
+			"Wolverine", 
+			"Cyclops", 
+			"Jean Grey", 
+			"ShadowCat", 
+			"Professor X", 
+			"Gambit",
+			"Rogue",
+			"Nightcrawler",
+			"Storm",
+			"Angel",
+			"Beast",
+			"Colossus",
+			"Jubilee"
 		],
 		clicker : function(event){
 			console.log(this)
@@ -38,5 +38,5 @@ $(document).ready(function(){
 	// $("button").on("click", xMen.clicker)
 
 	// We need to bind what we want to call
-	// $("button").on("click", xMen.clicker.bind(xMen))
+	$("button").on("click", xMen.clicker.bind(xMen))
 })

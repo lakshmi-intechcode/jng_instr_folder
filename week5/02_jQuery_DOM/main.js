@@ -5,9 +5,11 @@ $(document).ready(function(){
 	$("body").append("<h1>HELLO WORLD</h1>")
     // $('li#change_me').text('hello, world')
 
-	// var $listItems = $("#list>li"); 
+	var $listItems = $("#list>li"); 
+	var $asdf = $('article p');
 
-	// $listItems.css("color", "red")
+	$listItems.css("color", "red");
+	$asdf.css("color", "blue");
 	
 	var $add = $('#blah');
 	var $addTo = $('#list');
@@ -18,7 +20,6 @@ $(document).ready(function(){
 		$li.text("I AM NEW")
 		$addTo.append($li)
 	})
-
 
 	// var $z = $('li')
 	// console.log($z)
@@ -32,8 +33,6 @@ $(document).ready(function(){
 		console.log(event)
 		console.log(event.target)
 	})
-
-
 })
 
 
