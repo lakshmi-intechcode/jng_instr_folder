@@ -48,7 +48,23 @@ The transition property allows us to control an animations speed. It can take up
 
 * The Transitions property also gives us control of fading elements
 
-##### Part 3 - Media Queries
+##### Part 3 - Transform
+
+* The Transform property allows you to rotate, scale, move, etc, HTML elements
+* Take a look at the paragraph after the Casper Hover
+* Notice we apply a transform to the p tag on rendering which is why the paragraph is upside down
+* Then we apply a pseudo class `hover` that will `transform` it to have a rotate degree of 0
+
+##### Part 4 - Key Frames
+
+* CSS Keyframes allow us to specify the styling for an element and what is should do "before" and "after". 
+* It does this by allowing you to create styling for the keywords "from" and "to"
+* You can create a keyframe with the `@keyframe name_of_animation` syntax. 
+* Take a look at what we are doing with the Sonic element.
+* We created a keyframe called `spinning_s**t`
+* We then applied it as the first parameter for the `animation` on the sonic element
+
+##### Part 5 - Media Queries
 
 ***What do media queries do?***
 
@@ -144,7 +160,7 @@ https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwizi
 	* 50% width and centered when the screen is half sized
 	* 100% width when the screen is cell phone sized
 
-##### Part 4 - CSS Reset vs Normalize
+##### Part 6 - CSS Reset vs Normalize
 
 * Browsers will render HTML elements differently
 
@@ -163,7 +179,18 @@ https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwizi
 
 * Many frameworks already incorporate this kind of information so we don't always need to download and use Normalize CSS files
 
-##### Part 5 - CSS Grids
+***EXAMPLE***
+
+* Open up the first `index.html` file
+* Comment out the `Normalize CSS` link and see how the page looks. 
+
+***NOTE***
+
+* If you are using CSS and building a navigation bar for a page you may run into an issue where there's a bit of white space between the edge of the browser and your navigation bar that you just can't seem to get rid of.
+* Applying a CDN for Normalize CSS may solve the trick.
+
+
+##### Part 7 - CSS Grids
 
 * What are the different grid systems out there?
 	* Skeleton - extremely lightweight. May have a hard time with mobile responsive
@@ -174,10 +201,15 @@ https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwizi
 * Grids never used to exist before because there weren't many different screen sizes
 * Instead we used "media queries" This leads to very hard to read code in your stylesheet and your HTML 
 * The grid system is used to organize your code while allowing you to easily build a responsive site
+* It does this by formatting the page into "rows" with "12 columns" each
+* We can then specify things like
+	* On a computer screen I want my profile picture to be 3 columns wide (of the screen size)
+	* But on a phone screen I want my profile picture to be 12 columns wide (of the screen size)
 
-##### Part 6 - Foundation CSS
 
-* As you may have already heard my favorite CSS Grid Framework is Foundation CSS
-* It is Semantic, Clean, very easy to use, constantly growing, and has great documentation. 
-* Let's take a look at their [documentation](http://foundation.zurb.com/sites/docs/v/5.5.3/css.html)
-* They even offer customizable [Foundation Templates](http://foundation.zurb.com/templates.html)
+##### Part 8 - Materialize CSS 
+
+* It is clean, very easy to use, constantly growing, and has great documentation. 
+* This is a framework that comes with many built out classes that will can just apply to our html elements
+* Let's take a look at their [documentation](http://materializecss.com/)
+* Visit the `CSS` tab on the left and then view their documentation for the `grid`
