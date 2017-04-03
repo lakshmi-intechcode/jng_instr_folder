@@ -2,13 +2,15 @@
 
 #### Description
 
-* In this folder you have a folder called `booze_api`
+* Visit this github repo:
+* [https://github.com/Jingo88/booze_api](https://github.com/Jingo88/booze_api)
 * This is a Whiskey API I built in SQLite3, and Express.js
-* Inside of the folder there is a README file that will tell you how to set it up.
+* Inside of the repo there is a README file that will explain how to set it up and use it.
 
 #### Objectives
 
-* You will build an single page application that will allow the user to CRUD to this database
+* Inside of the "views" folder start a `index.html`, `style.css`, and `main.js`
+* You will build an single page application that will allow the user to CRUD to the `whiskey.db` from the booze api repo
 * Start the whiskey api in a terminal window
 * Build your application in the views folder
 
