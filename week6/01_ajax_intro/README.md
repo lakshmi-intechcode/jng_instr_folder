@@ -110,7 +110,7 @@ console.log("ELLO WARLD")
 ***Back to the lesson***
 
 * WRAP IT IN CASH
-* jQuery gives us several methods where we can shorten everything we did up top to one command.
+* jQuery gives us several methods where we can shorten everything we did in the previous section into one command.
 
 ```
 $(document).ready(function(){
@@ -126,13 +126,47 @@ $(document).ready(function(){
 })
 ```
 
-#### Part 4 - JSONP
+#### Part 4 - HTTP CRUD
 
-* How does AJAX work with forms?
-* What's this JSONP all about? [http://stackoverflow.com/questions/2067472/what-is-jsonp-all-about](http://stackoverflow.com/questions/2067472/what-is-jsonp-all-about)
+| HTTP Method | Action                        | Example URI                      |
+|-------------|-------------------------------|----------------------------------|
+| GET         | Grab data for ALL items       | http://movies.com/api/movies     |
+| GET         | Grab data for a specific item | http://movies.com/api/movies/898 |
+| POST        | Create a new item             | http://movies.com/api/movies     |
+| PUT         | Update an existing item       | http://movies.com/api/movies/898 |
+| DELETE      | Delete a specific item        | http://movies.com/api/movies/898 |
+
+#### Part 5 - CORS: Cross-Origin Resource Sharing
+
+* Since we are beginning to build web apps we'll need to get data from somewhere
+* APIs are an essential part for building web applications, and making sure we can grab organized data to present to the user
+* Since we will be targeting APIs that are not our own we may run into some of the following errors
+	* `CORS`
+	* `No Access Control Origin Allowed`
+	* Other fun stuff
+* These errors stem from the permissions during an interaction between two resources.
+	1. Resource 1 - The browser on your computer making an ajax request to a Google API
+	2. Resource 2 - The Google server that receives that request and decides to allow it and send a response
+
+#### Part 6 - JSONP
+
 * JSONP stands for "JSON with Padding"
-* It is used to pass information between different domains
-* Normally when making a request you will be crossing over to a different domain and that is usually a problem
+
+***NEGATIVES***
+
+* JSONP can only perform GET requests
+* How sure are you that the server returns JSONP
+	* If the server does not return JSONP you may get an error in your "AJAX Success Callback" that looks like:	* `Unexpected Syntax Token :` OR `Unexpected Syntax Token <`
+* JSONP is not secure. 
+
+***HOW THIS WORKS***
+
+* JSONP allows us to send data because it utilizes the browsers parsing of a `<script>` tag and how script tags can have different sources from different origins
+* We will use this to wrap our data inside of an object. 
+* We will get a response back `(if the server allows JSONP)` in the form of JSONP
+* If it does not support JSONP you may get errors such as `Unexpected Syntax Token :` OR `Unexpected Syntax Token <`
+* This is because your browser may be expecting something back like this
+	* `jQuery16406345664265099913_1319854793396({"red" : "#f00"})`
 * Example Below:
 
 ```
@@ -157,21 +191,13 @@ $(document).ready(function(){
   })
 })
 ```
+* This example uses an HTML form.
 * We are grabbing the button and applying a click event to it
 * The `event.preventDefault()` helps us to prevent the form from actually submitting and re-rendering the template
 * The variable grabs the value and edits it so we can plug it into the url
 * Make the ajax call as usual
 * Add a `dataType: "jsonp"`
 
-#### HTTP CRUD
-
-| HTTP Method | Action                        | Example URI                      |
-|-------------|-------------------------------|----------------------------------|
-| GET         | Grab data for ALL items       | http://movies.com/api/movies     |
-| GET         | Grab data for a specific item | http://movies.com/api/movies/898 |
-| POST        | Create a new item             | http://movies.com/api/movies     |
-| PUT         | Update an existing item       | http://movies.com/api/movies/898 |
-| DELETE      | Delete a specific item        | http://movies.com/api/movies/898 |
 
 #### Postman
 
@@ -181,5 +207,9 @@ $(document).ready(function(){
 
 #### Resources
 
+* [http://stackoverflow.com/questions/2067472/what-is-jsonp-all-about](http://stackoverflow.com/questions/2067472/what-is-jsonp-all-about)
+* [https://jvaneyck.wordpress.com/2014/01/07/cross-domain-requests-in-javascript/](https://jvaneyck.wordpress.com/2014/01/07/cross-domain-requests-in-javascript/)
+* [https://www.html5rocks.com/en/tutorials/cors/](https://www.html5rocks.com/en/tutorials/cors/)
 * [https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started)
+* [https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
 * [http://code.tutsplus.com/tutorials/24-best-practices-for-ajax-implementations--net-9180](http://code.tutsplus.com/tutorials/24-best-practices-for-ajax-implementations--net-9180)
