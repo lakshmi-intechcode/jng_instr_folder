@@ -12,6 +12,8 @@
 * Inside of the "views" folder start a `index.html`, `style.css`, and `main.js`
 * You will build an single page application that will allow the user to CRUD to the `whiskey.db` from the booze api repo
 * Start the whiskey api in a terminal window
+* It will run on port 8080
+* The endpoints of your ajax calls are inside of the repos README file. You should direct them to `http://localhost:8080/`
 * Build your application in the views folder
 
 #### User Stories
@@ -24,4 +26,37 @@
 ***Notes***
 
 * Use Postman to test the routes of the api to make sure it is working
+* Your ajax calls may look something like this
+
+```
+GET REQUEST
+
+$.ajax({
+    url: "http://localhost:8080/",    
+    type: "GET",
+    success:function(data){
+        console.log("SUCCESS ON GET REQUEST!!!");   
+        console.log(data) 
+    }
+});
+
+
+POST REQUEST
+
+$.ajax({
+    url: "http://localhost:8080/whiskeys",    
+    type: "POST",
+    data: {
+        "name":"BLAH",
+        "type":"WINE",
+        "price": 35
+    },
+    success:function(data){
+        console.log("SUCCESS POSTING!!!");   
+        console.log(data) 
+    }
+});
+
+```
+
 
