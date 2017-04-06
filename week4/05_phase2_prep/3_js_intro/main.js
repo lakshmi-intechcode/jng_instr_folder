@@ -42,18 +42,10 @@ function helloWorld(){
 	console.log("Hello");
 };
 
-var helloWorld = function helloWorld(){
-	console.log("Hello");
-};
-
 // this is the way we will be writing our functions for this course
 var helloWorld = function(){ 
 	console.log("Hello");
 };
-
-
-
-
 
 
 
@@ -135,3 +127,5 @@ console.log(name)
 var userInput = process.argv
 console.log(userInput)
 
+
+console.log("jeffityjeffjeff")
