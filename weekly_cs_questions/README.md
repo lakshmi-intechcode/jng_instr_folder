@@ -61,6 +61,10 @@ iter
     * How do we use it
 * What are the functions "help()" and "dir()" for
     * how do we use it
+* Explain the functionality and characteristics of a hashing function, and how they are used(SHA-2, MD5).
+* Walk us through how you build a hash table in python using the chaining method(don't worry about building a hashing function).
+* How do you build a Heap (data structure) in python?
+* Explain how a recursive function works with regards to memory. Use the factorial function (func that produces the factorial n! given an input n) as an example.
 
 ## CSS 
 
