@@ -10,27 +10,13 @@
 * Change Directory into the "star_wars" folder
 * Create a folder called "the_empire"
 * Create a folder called "the_rebellion"
-* Create a text file (txt) named "darth_vader"
-* Open the darth_vader text file and add the text "I AM NOT LORD HELMET"
-	* **Bonus points** if you add the text without opening the file
-	* How can we add text to a file through a bash command?
-	* Us programmers have a "force" too, it's called Google. (Using it properly can make anybody a jedi)
-* Create another text file called "emperor"
-* Enter the following text into the text file "emperor". 
-	* "I used to be beautiful, but then I took an arrow to the knee"
-* Move the "emperor" file and "darth_vader" file into "the_empire"
-* 
-
-***My Version***
-
-* Create a directory called "star_wars"
 * Make the following folders
 	* "tatooine"
 	* "millenium_falcon"
 	* "death_star"
 	* "x_wing"
 	* "tie_fighter"
-* Make the following text files (.txt)
+* Make the following text files (.txt) ***Make Sure to have the .txt extension on these files***
 	* "luke_skywalker"
 	* "old_man_ben"
 	* "han_solo"
@@ -38,6 +24,13 @@
 	* "leia_organa"
 	* "darth_vader"
 	* "emperor_palpatine"
+* Open the darth_vader text file and add the text "I AM NOT LORD HELMET"
+	* **Bonus points** if you add the text without opening the file
+	* How can we add text to a file through a bash command?
+	* Us programmers have a "force" too, it's called Google. (Using it properly can make anybody a jedi)
+* Enter the following text into the text file "emperor". 
+	* "I used to be beautiful, but then I took an arrow to the knee"
+* Move the emperor and darth vader into the folder "empire"
 * Lets move "luke_skywalker" and "old_man_ben" to the "tatooine" folder
 * Luke has found out old man ben is actually Obi Wan Kenobi. Change "old_man_ben" to "obi_wan_kenobi"
 * Now they need to escape tatooine. Move "han_solo" and "chewbacca" in to "tatooine"
