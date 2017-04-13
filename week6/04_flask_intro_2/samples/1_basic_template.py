@@ -3,7 +3,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def raw_template():
-    return render_template('1_basic_sample.html', name='Scarlett Johansson')
+	person = {
+		"name" : "Scarlett Johanson",
+		"spouse" : "Jason Ng",
+	}
+	return render_template('1_basic_sample.html', person=person)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+	app.run(debug=True)	

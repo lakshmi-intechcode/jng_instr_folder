@@ -69,6 +69,12 @@ class User(db.Model):
 * Classes inheriting from `db.Model` get a .query method for free that is used to gather data from your database.
 * [Useful documentation is here.](http://flask-sqlalchemy.pocoo.org/2.1/queries/)
 
+##### Foreign Keys
+
+* The sample code did not show foreign keys.
+* Check out the documentation here.
+* [http://flask-sqlalchemy.pocoo.org/2.1/models/](http://flask-sqlalchemy.pocoo.org/2.1/models/)
+
 ##### Render_template
 
 * For us to tell Flask how to render different html files create a `templates` folder. 

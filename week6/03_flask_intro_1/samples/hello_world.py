@@ -12,7 +12,7 @@ def hello_name(name):
 @app.route('/default/<user>/<age>')
 def create_user(user, age):
 	
-	return "You have just created the user " + user + "They are " + age + "years old"
+	return "You have just created the user " + user + ". They are " + age + " years old"
 
 if __name__ == "__main__":
     app.run(debug=True)
