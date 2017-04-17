@@ -80,6 +80,7 @@ iter
 * What is a callback? What is a closure? 
 * What is hoisting?
 * What is 'this' in javascript?
+* What is Event Bubbling and how do you prevent it?
 * Explain the javascript event loop.
 * What is event delegation? What is event bubbling?
 * What are JavaScript Promises?
