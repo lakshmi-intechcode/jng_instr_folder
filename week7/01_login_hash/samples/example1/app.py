@@ -27,7 +27,10 @@ bcrypt = Bcrypt(app)
 @app.route('/')
 def index():
     un = ''
+    print(session)
     if session.get('logged_in'):
+        print(session.get('logged_in'))
+        
         un = session.get('username')
     return render_template('index.html', username=un)
 
@@ -36,6 +39,8 @@ def login():
     # get the values from the input elements by targeting their "name" attributes
     un = request.form.get('username')
     pw = request.form.get('password')
+    print(un)
+    print(pw)
     # returns a has of the password after running it through bcrypt
     pw_hash = bcrypt.generate_password_hash(pw)
 
