@@ -1,13 +1,49 @@
-# Final Projects Prompt
-
-### Description 
-
-* CONGRATS SOON TO BE ALUMNI!!!!
-* You will have 6-7 weeks to work together and build the greatest apps THE WORLD HAS EVER SEEN
-* You have ALMOST 100% freedom with what you want to work on for this month
-* There are a few requirements...
+# Final Projects Prompt 
+# (To Be Done BEFORE WEEK 9)
 
 ---
+
+### Requirements
+
+* All students will be building ***THREE*** projects
+	* 1 group project
+	* 1 personal project
+	* 1 project either group or solo 
+* Each project will be done in two week sprints
+* Any time you are not working on your project you should be wireframing a portfolio page
+* Two weeks before graduation you will have your first project graded but all the teachers
+
+---
+
+### Objectives (BEFORE YOU START CODING)
+##### You must complete all of these objectives and put them in a presentation for the instructors
+
+* Decide on your project ideas
+* Is your data accessible?
+	* Are there APIs you can use?
+		* Are they free?
+		* Are they limited?
+		* Do they need a key?
+	* 	Do you have to do webscraping?
+* Do you need a database?
+	* Plan out your ERDs?
+	* How many tables do you need? 	
+* Write down your User Stories?
+	* Short descriptions of a feature from the perspective of a user
+	* Examples
+		* A user should be able to see all posts
+		* A user should be able to register
+		* A user should be able to login
+		* After logging in a user should be able to see personal posts
+* Draw out your wireframes
+	* What will your templates look like
+	* Examples:
+		* What will your home page look like
+		* What will your login page look like
+		* What will your user dashboard page look like
+
+---
+
 
 ### Requirements for Phase 3 On Project Idea
 
