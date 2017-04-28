@@ -33,7 +33,7 @@
 * How might your database look like?
 	* We'll have at least two models, one for Users and one for posts
 	* THINK about this idea of reposting. If a user clicks a repost how will that look in the database? 
-* What will your templates look like?
+* What will your templates look like? Remember I want TWO PAGES at most. A login page and a tweets page
 * You can use any templating engine you want for rendering incoming JSON
 	* Jinja
 	* Mustache
@@ -42,7 +42,7 @@
 ***NOTE!***
 
 * Remember if you create a element dynamically after the page has loaded, you need to attach the proper event listener to that element if it needs an event. Or target the parent element. `HINT: Event Delegation` 
-* Remember forms have some `DEFAULT` functionality
+* Remember forms have some `DEFAULT` functionality that we may have to `prevent`...
 
 #### Luxury Goals
 
